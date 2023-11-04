@@ -7,5 +7,5 @@
  --> trotzdem den Library Ordner selber in den EcoGame Ordner (den 2ten) tun.
  --> hier downloaden: https://drive.google.com/drive/folders/1Qm06ftSzsgWwT_g_Irp054nHaVL8pevR?usp=sharing
 
-bitte alle pngs bzw animationen in character ordner speichern
-pngs für Hintergrund und Objekte bitte in environmet Ordner, dabei bitte alle anklickbaren objekte als eigenes png in einen extra Ordner geben
+- bitte alle pngs bzw animationen in character ordner speichern
+- pngs für Hintergrund und Objekte bitte in environmet Ordner, dabei bitte alle anklickbaren objekte als eigenes png in einen extra Ordner geben
