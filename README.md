@@ -8,4 +8,4 @@
  --> hier downloaden: https://drive.google.com/drive/folders/1Qm06ftSzsgWwT_g_Irp054nHaVL8pevR?usp=sharing
 
 - pngs bzw animationen vom Character in character ordner speichern
-- pngs für Hintergrund und Objekte bitte in environmet Ordner, dabei bitte alle anklickbaren objekte als eigenes png in einen extra Ordner geben
+- pngs für Hintergrund und Objekte bitte in environment Ordner, dabei bitte alle anklickbaren objekte als eigenes png in einen extra Ordner geben
