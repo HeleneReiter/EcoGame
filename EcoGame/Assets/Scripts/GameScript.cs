@@ -14,6 +14,9 @@ public class GameScript : MonoBehaviour
 
     RaycastHit2D hit;
 
+    public GameObject lightBackground;
+    public GameObject darkBackground;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,9 +56,21 @@ public class GameScript : MonoBehaviour
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                     
                 }
+
+                if(hit.collider.gameObject.name == "lamp")
+                {
+                    // Lampe erkannt
+                    print("Lamp hit");
+
+                    // Lampe einschalten
+                    lightBackground.SetActive(true);
+                    darkBackground.SetActive(false);
+                    
+                }
             }
             else
             {
+
                 print("No hit");
             }
         }
