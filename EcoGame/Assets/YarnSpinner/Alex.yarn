@@ -1,0 +1,31 @@
+﻿title: Alex
+tags:
+position: -99,-37
+---
+<<declare $lamp_hit = false>>
+Alex: uhhh am i dead?
+-> get up 
+    <<declare $gotUp = true>>
+-> stay in bed
+    <<set $gotUp = false>>
+
+<<if $gotUp is true>>
+    Alex: i guess i'm not dead
+    Alex: Uff its so dark in the mornings of winter, should i turn on the light?
+
+
+<<else>>    
+    Alex: i guess i'll just stay in bed
+    Alex: i guess i'll just stay in bed
+    After some while ... 
+    Alex: i'm bored, i guess i'll get up 
+    -> get up
+        <<set $gotUp = true>>
+<<endif>>
+
+<<if $lamp_hit is true>>
+    Alex: Ok little better
+    Alex: I should get ready for work 
+<<endif>>
+
+===

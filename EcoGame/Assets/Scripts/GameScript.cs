@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
+using Yarn.Unity;
 public class GameScript : MonoBehaviour
 {
     public Vector3 mousePos;
@@ -17,25 +18,30 @@ public class GameScript : MonoBehaviour
     public GameObject lightBackground;
     public GameObject darkBackground;
 
+    public DialogueRunner dialougeRunner;
+    
+
+
     // Start is called before the first frame update
     void Start()
     {
         
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             print("Mouse button pressed");
-            
+
             // Get the mouse position
             mousePos = Input.mousePosition;
-            print("Screenspace:" + mousePos);
+            //print("Screenspace:" + mousePos);
             // pos von screen space zu world space umwandeln
             mousePosWorld = mainCamera.ScreenToWorldPoint(mousePos);
-            print("Worldspace:" + mousePosWorld);
+            //print("Worldspace:" + mousePosWorld);
 
             // umwandeln von Vector3 zu Vector2
             mousePosWorld2D = new Vector2(mousePosWorld.x, mousePosWorld.y);
@@ -43,21 +49,21 @@ public class GameScript : MonoBehaviour
             // Raycast 2D --> hit abspeichern
             hit = Physics2D.Raycast(mousePosWorld2D, Vector2.zero);
 
-            if(hit.collider != null)
+            if (hit.collider != null)
             {
                 print("Hit: " + hit.collider.gameObject.name + hit.collider.gameObject.tag);
 
-                if(hit.collider.gameObject.tag == "Door")
+                if (hit.collider.gameObject.tag == "Door")
                 {
                     // Tür erkannt
                     print("Door hit");
 
                     // nächste Scene laden
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-                    
+
                 }
 
-                if(hit.collider.gameObject.name == "lamp")
+                if (hit.collider.gameObject.name == "lamp")
                 {
                     // Lampe erkannt
                     print("Lamp hit");
@@ -65,23 +71,26 @@ public class GameScript : MonoBehaviour
                     // Lampe einschalten
                     lightBackground.SetActive(true);
                     darkBackground.SetActive(false);
-                    
+
+                    LampHit();
+
                 }
             }
             else
             {
-
                 print("No hit");
             }
+
         }
     }
 
-    
-    private void FixedUpdate()
+    public void LampHit()
     {
-        
+        var variableStorage = GameObject.FindObjectOfType<InMemoryVariableStorage>();
+        bool lamp_hit;
+        variableStorage.TryGetValue("$lamp_hit", out lamp_hit);
+        variableStorage.SetValue("$lamp_hit", true);
     }
-
 
 
 }
