@@ -3,29 +3,25 @@ tags:
 position: -99,-37
 ---
 <<declare $lamp_hit = false>>
-Alex: uhhh am i dead?
--> get up 
+Alex: uhhh am i dead? #line:032f4f5 
+-> get up  #line:05f2517 
     <<declare $gotUp = true>>
--> stay in bed
+-> stay in bed #line:05c53fe 
     <<set $gotUp = false>>
 
 <<if $gotUp is true>>
-    Alex: i guess i'm not dead
-    Alex: Uff its so dark in the mornings of winter, should i turn on the light?
+    Alex: i guess i'm not dead #line:0ac6a5d 
+    Alex: Uff its so dark in the mornings of winter, should i turn on the light? #line:0c2eb4a 
 
 
 <<else>>    
-    Alex: i guess i'll just stay in bed
-    Alex: i guess i'll just stay in bed
-    After some while ... 
-    Alex: i'm bored, i guess i'll get up 
-    -> get up
+    Alex: i guess i'll just stay in bed #line:08797c0 
+    Alex: i guess i'll just stay in bed #line:0fd8975 
+    After some while ...  #line:0321656 
+    Alex: i'm bored, i guess i'll get up  #line:0d881b9 
+    -> get up #line:08e5141 
         <<set $gotUp = true>>
 <<endif>>
 
-<<if $lamp_hit is true>>
-    Alex: Ok little better
-    Alex: I should get ready for work 
-<<endif>>
-
 ===
+

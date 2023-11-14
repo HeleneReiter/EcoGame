@@ -17,14 +17,19 @@ public class GameScript : MonoBehaviour
 
     public GameObject lightBackground;
     public GameObject darkBackground;
+    public DialogueRunner dialogueRunner;
 
-    public DialogueRunner dialougeRunner;
+    private InMemoryVariableStorage variableStorage;
+
+    
     
 
 
     // Start is called before the first frame update
     void Start()
     {
+        variableStorage = FindObjectOfType<InMemoryVariableStorage>();
+        dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
         
 
     }
@@ -38,10 +43,9 @@ public class GameScript : MonoBehaviour
 
             // Get the mouse position
             mousePos = Input.mousePosition;
-            //print("Screenspace:" + mousePos);
+           
             // pos von screen space zu world space umwandeln
             mousePosWorld = mainCamera.ScreenToWorldPoint(mousePos);
-            //print("Worldspace:" + mousePosWorld);
 
             // umwandeln von Vector3 zu Vector2
             mousePosWorld2D = new Vector2(mousePosWorld.x, mousePosWorld.y);
@@ -72,7 +76,9 @@ public class GameScript : MonoBehaviour
                     lightBackground.SetActive(true);
                     darkBackground.SetActive(false);
 
-                    LampHit();
+                    LampHit(false);
+                    dialogueRunner.StartDialogue("lampOn");
+                    // https://docs.yarnspinner.dev/unity-tutorial-projects/example-project-3
 
                 }
             }
@@ -82,14 +88,16 @@ public class GameScript : MonoBehaviour
             }
 
         }
+        
     }
 
-    public void LampHit()
+    public void LampHit(bool light_hit)
     {
-        var variableStorage = GameObject.FindObjectOfType<InMemoryVariableStorage>();
-        bool lamp_hit;
-        variableStorage.TryGetValue("$lamp_hit", out lamp_hit);
-        variableStorage.SetValue("$lamp_hit", true);
+        bool temp;
+        variableStorage.TryGetValue("$light_hit", out temp);
+        temp = true;
+        variableStorage.SetValue("$light_hit", temp);
+        
     }
 
 
