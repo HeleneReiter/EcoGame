@@ -4,9 +4,9 @@ tags:
 position: -99,-37
 ---
 
-<<if $lamp_hit is true>>
+
     Alex: Ok, thats better #line:0514ceb 
     Alex: i guess i'll go get ready for work #line:0df7944 
-<<endif>>
+
 
 ===

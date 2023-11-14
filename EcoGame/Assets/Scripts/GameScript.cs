@@ -17,21 +17,15 @@ public class GameScript : MonoBehaviour
 
     public GameObject lightBackground;
     public GameObject darkBackground;
-    public DialogueRunner dialogueRunner;
 
-    private InMemoryVariableStorage variableStorage;
 
-    
-    
 
 
     // Start is called before the first frame update
     void Start()
     {
-        variableStorage = FindObjectOfType<InMemoryVariableStorage>();
-        dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
-        
-
+        lightBackground.SetActive(false);
+        darkBackground.SetActive(true);
     }
 
     // Update is called once per frame
@@ -43,7 +37,7 @@ public class GameScript : MonoBehaviour
 
             // Get the mouse position
             mousePos = Input.mousePosition;
-           
+
             // pos von screen space zu world space umwandeln
             mousePosWorld = mainCamera.ScreenToWorldPoint(mousePos);
 
@@ -75,11 +69,6 @@ public class GameScript : MonoBehaviour
                     // Lampe einschalten
                     lightBackground.SetActive(true);
                     darkBackground.SetActive(false);
-
-                    LampHit(false);
-                    dialogueRunner.StartDialogue("lampOn");
-                    // https://docs.yarnspinner.dev/unity-tutorial-projects/example-project-3
-
                 }
             }
             else
@@ -88,17 +77,7 @@ public class GameScript : MonoBehaviour
             }
 
         }
-        
-    }
 
-    public void LampHit(bool light_hit)
-    {
-        bool temp;
-        variableStorage.TryGetValue("$light_hit", out temp);
-        temp = true;
-        variableStorage.SetValue("$light_hit", temp);
-        
     }
-
 
 }
