@@ -61,7 +61,7 @@ public class GameScript : MonoBehaviour
 
                 }
 
-                if (hit.collider.gameObject.name == "lamp")
+                if (hit.collider.gameObject.tag == "Lamp")
                 {
                     // Lampe erkannt
                     print("Lamp hit");
