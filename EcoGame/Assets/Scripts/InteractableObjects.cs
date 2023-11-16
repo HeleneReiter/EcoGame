@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,6 +13,7 @@ public class InteractableObjects : MonoBehaviour
     private Vector3 mousePosWorld;
     private Vector2 mousePosWorld2D; // x und y wert von mousePosWorld
     public Camera mainCamera;
+    public Collider2D colliderObject;
     RaycastHit2D hit;
 
     void Start()
@@ -28,7 +30,7 @@ public class InteractableObjects : MonoBehaviour
         mousePosWorld2D = new Vector2(mousePosWorld.x, mousePosWorld.y);
         hit = Physics2D.Raycast(mousePosWorld2D, Vector2.zero);
 
-        if (hit.collider != null)
+        if (hit.collider == colliderObject)
         {
             OnMouseOver();
 
