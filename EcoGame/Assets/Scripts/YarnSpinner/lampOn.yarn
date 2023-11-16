@@ -7,6 +7,7 @@ position: -99,-37
 
     Alex: Ok, thats better #line:0514ceb 
     Alex: i guess i'll go get ready for work #line:0df7944 
+    <<set $lamp_hit = true >>
 
 
 ===

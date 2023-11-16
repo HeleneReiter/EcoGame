@@ -2,10 +2,19 @@
 tags:
 position: -99,-37
 ---
-<<declare $lamp_hit = false>>
+<<declare $lamp_hit = false as bool>>
+<<declare $gotUp = false as bool>>
+<<declare $EcoPoints = 0 as number>>
+<<declare $thirdDayreached = false as bool>>
+
+
 Alex: uhhh am i dead? #line:032f4f5 
 -> get up  #line:05f2517 
-    <<declare $gotUp = true>>
+    <<set $gotUp = true>>
+    <<set $thirdDayreached = true>> // nur zum debuggen
+    <<set $EcoPoints += 10>>
+    
+    
 -> stay in bed #line:05c53fe 
     <<set $gotUp = false>>
 

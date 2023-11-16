@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Yarn.Unity;
 
 // https://docs.yarnspinner.dev/unity-tutorial-projects/example-project-3
@@ -9,11 +10,12 @@ using Yarn.Unity;
 
 public class YarnInteractable : MonoBehaviour
 {
-    
+
     private DialogueRunner dialogueRunner;
     private bool isCurrentConversation;
-    private bool interactable; 
+    private bool interactable;
     public string conversationStartNode;
+
 
     public void Start()
     {
@@ -36,7 +38,7 @@ public class YarnInteractable : MonoBehaviour
         {
             // then run this character's conversation
             StartConversation();
-            
+
         }
     }
 
@@ -46,7 +48,10 @@ public class YarnInteractable : MonoBehaviour
         {
             isCurrentConversation = false;
         }
+
+
     }
+
 
     // make character not able to be clicked on
     [YarnCommand("disable")]
@@ -54,4 +59,5 @@ public class YarnInteractable : MonoBehaviour
     {
         interactable = false;
     }
+
 }
