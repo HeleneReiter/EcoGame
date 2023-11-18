@@ -15,8 +15,7 @@ public class GameScript : MonoBehaviour
 
     RaycastHit2D hit;
 
-    public GameObject lightBackground;
-    public GameObject darkBackground;
+    private DialogueRunner dialogueRunner;
 
 
 
@@ -24,12 +23,19 @@ public class GameScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        lightBackground.SetActive(false);
-        darkBackground.SetActive(true);
+        dialogueRunner = FindObjectOfType<DialogueRunner>();
     }
 
     // Update is called once per frame
     void Update()
+    {
+        Hitdetect();
+
+    }
+
+
+
+    void Hitdetect()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -47,37 +53,31 @@ public class GameScript : MonoBehaviour
             // Raycast 2D --> hit abspeichern
             hit = Physics2D.Raycast(mousePosWorld2D, Vector2.zero);
 
-            if (hit.collider != null)
+
+            if (!dialogueRunner.IsDialogueRunning)
             {
-                print("Hit: " + hit.collider.gameObject.name + hit.collider.gameObject.tag);
-
-                if (hit.collider.gameObject.tag == "Door")
+                if (hit.collider != null)
                 {
-                    // Tür erkannt
-                    print("Door hit");
+                    print("Hit: " + hit.collider.gameObject.name + hit.collider.gameObject.tag);
+                    if (hit.collider.gameObject.tag == "Door")
+                    {
+                        // Tür erkannt
+                        print("Door hit");
 
-                    // nächste Scene laden
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
+                        // nächste Scene laden
+                        SceneManager.LoadScene("Level01");
+                    }
+                }
+                else
+                {
+                    print("No hit");
                 }
 
-                if (hit.collider.gameObject.tag == "Lamp")
-                {
-                    // Lampe erkannt
-                    print("Lamp hit");
-
-                    // Lampe einschalten
-                    lightBackground.SetActive(true);
-                    darkBackground.SetActive(false);
-                }
             }
-            else
-            {
-                print("No hit");
-            }
-
         }
-
     }
+
+
+
 
 }

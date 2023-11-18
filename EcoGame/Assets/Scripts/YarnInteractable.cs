@@ -17,10 +17,11 @@ public class YarnInteractable : MonoBehaviour
     public string conversationStartNode;
 
 
+
     public void Start()
     {
         interactable = true;
-        dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
+        dialogueRunner = FindObjectOfType<DialogueRunner>();
     }
 
 
@@ -38,7 +39,6 @@ public class YarnInteractable : MonoBehaviour
         {
             // then run this character's conversation
             StartConversation();
-
         }
     }
 
@@ -48,7 +48,6 @@ public class YarnInteractable : MonoBehaviour
         {
             isCurrentConversation = false;
         }
-
 
     }
 

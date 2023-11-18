@@ -15,24 +15,30 @@ public class Counter : MonoBehaviour
     public GameObject counterObject;
 
     private float ecoPoints;
+    private bool lamp_hit = false;
+    public GameObject lightBackground;
+    public GameObject darkBackground;
 
 
     // Start is called before the first frame update
     void Start()
     {
-
-        variableStorage = FindObjectOfType<VariableStorageBehaviour>(); //noch zu int umschreiben
+        variableStorage = FindObjectOfType<VariableStorageBehaviour>(); 
+        lightBackground.SetActive(false);
+        darkBackground.SetActive(true);
         counterObject.SetActive(false);   
-        thirdDayreached = false;   
+        thirdDayreached = false;  
+        lamp_hit = false; 
     }
 
     // Update is called once per frame
     void Update()
     {
-
         variableStorage.TryGetValue("$thirdDayreached", out thirdDayreached);
         variableStorage.TryGetValue("$EcoPoints", out ecoPoints);
+        variableStorage.TryGetValue("$lamp_hit", out lamp_hit);
         thirdDay();
+        GotUp();
     }
 
     public void thirdDay()
@@ -42,5 +48,15 @@ public class Counter : MonoBehaviour
             counterObject.SetActive(true);
             counterText.text = ecoPoints.ToString();
         }
+    }
+
+    public void GotUp()
+    {
+        if (lamp_hit == true)
+        {
+            lightBackground.SetActive(true);
+            darkBackground.SetActive(false);
+        }
+
     }
 }

@@ -8,29 +8,47 @@ position: -99,-37
 <<declare $thirdDayreached = false as bool>>
 
 
-Alex: uhhh am i dead? #line:032f4f5 
--> get up  #line:05f2517 
+Alex: uhhh am i dead? 
+-> get up  
     <<set $gotUp = true>>
     <<set $thirdDayreached = true>> // nur zum debuggen
     <<set $EcoPoints += 10>>
+    <<set $lamp_hit = true >>
     
     
--> stay in bed #line:05c53fe 
+-> stay in bed 
     <<set $gotUp = false>>
+    <<set $lamp_hit = false >>
 
 <<if $gotUp is true>>
-    Alex: i guess i'm not dead #line:0ac6a5d 
-    Alex: Uff its so dark in the mornings of winter, should i turn on the light? #line:0c2eb4a 
+    Alex: i guess i'm not dead
+    Alex: Better get it going, i have to go to work
 
 
 <<else>>    
-    Alex: i guess i'll just stay in bed #line:08797c0 
-    Alex: i guess i'll just stay in bed #line:0fd8975 
-    After some while ...  #line:0321656 
-    Alex: i'm bored, i guess i'll get up  #line:0d881b9 
-    -> get up #line:08e5141 
+    Alex: i guess i'll just stay in bed
+    Alex: just a little bit longer...
+    After some while ...  
+    Alex: i'm bored, i guess i'll get up 
+    -> get up 
         <<set $gotUp = true>>
+        <<set $lamp_hit = true >>
+        
 <<endif>>
 
 ===
 
+
+
+title: lampOn
+tags:
+position: -99,-37
+---
+    Alex: Ok, thats better
+    Alex: i guess i'll go get ready for work 
+    
+
+   
+
+
+===

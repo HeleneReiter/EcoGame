@@ -4,6 +4,7 @@ using System.Security.Cryptography.X509Certificates;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Yarn.Unity;
 
 public class InteractableObjects : MonoBehaviour
 {
@@ -15,11 +16,13 @@ public class InteractableObjects : MonoBehaviour
     public Camera mainCamera;
     public Collider2D colliderObject;
     RaycastHit2D hit;
+    private DialogueRunner dialogueRunner;
 
     void Start()
     {
         textDisplay.text = gameObject.name; //obejektname wird in textfeld angezeigt
         textDisplay.enabled = false; //textfeld wird nicht angezeigt
+        dialogueRunner = FindObjectOfType<DialogueRunner>();
     }
 
     void Update()
@@ -30,22 +33,26 @@ public class InteractableObjects : MonoBehaviour
         mousePosWorld2D = new Vector2(mousePosWorld.x, mousePosWorld.y);
         hit = Physics2D.Raycast(mousePosWorld2D, Vector2.zero);
 
-        if (hit.collider == colliderObject)
-        {
-            OnMouseOver();
+        
+            if (hit.collider == colliderObject)
+            {
+                OnMouseOver();
 
-        }
-        else if (hit.collider == null)
-        {
-            OnMouseExit();
-        }
-
+            }
+            else if (hit.collider == null)
+            {
+                OnMouseExit();
+            }
+        
+    
     }
 
     void OnMouseOver()
     {
         Debug.Log("Mouse is over GameObject.");
-        textDisplay.enabled = true;
+        if (!dialogueRunner.IsDialogueRunning){
+            textDisplay.enabled = true;
+        }   
     }
 
     void OnMouseExit()
