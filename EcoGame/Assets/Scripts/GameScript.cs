@@ -11,8 +11,6 @@ public class GameScript : MonoBehaviour
     public Vector2 mousePosWorld2D; // x und y wert von mousePosWorld
     public Camera mainCamera;
 
-    public GameObject player;
-
     RaycastHit2D hit;
 
     private DialogueRunner dialogueRunner;
@@ -24,6 +22,7 @@ public class GameScript : MonoBehaviour
     void Start()
     {
         dialogueRunner = FindObjectOfType<DialogueRunner>();
+       
     }
 
     // Update is called once per frame

@@ -2,37 +2,42 @@
 tags:
 position: -99,-37
 ---
-<<declare $lamp_hit = false as bool>>
 <<declare $gotUp = false as bool>>
 <<declare $EcoPoints = 0 as number>>
 <<declare $thirdDayreached = false as bool>>
+<<declare $awake = false as bool>>
 
 
 Alex: uhhh am i dead? 
 -> get up  
-    <<set $gotUp = true>>
+    <<set $awake = true>>
     <<set $thirdDayreached = true>> // nur zum debuggen
     <<set $EcoPoints += 10>>
-    <<set $lamp_hit = true >>
     
     
 -> stay in bed 
+    <<set $awake = false>>
     <<set $gotUp = false>>
-    <<set $lamp_hit = false >>
+    
 
-<<if $gotUp is true>>
+<<if $awake is true>>
     Alex: i guess i'm not dead
     Alex: Better get it going, i have to go to work
+    -> get out of bed
+    <<set $gotUp = true>>
+    <<set $awake = false>>
 
 
-<<else>>    
+<<else>>  
     Alex: i guess i'll just stay in bed
     Alex: just a little bit longer...
     After some while ...  
+    <<set $awake = true >>
     Alex: i'm bored, i guess i'll get up 
     -> get up 
-        <<set $gotUp = true>>
-        <<set $lamp_hit = true >>
+    <<set $gotUp = true>>
+    <<set $awake = false>>
+        
         
 <<endif>>
 
