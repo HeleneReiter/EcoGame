@@ -1,6 +1,6 @@
-﻿title: Alex
+﻿title: Bedroom(Day1)
 tags:
-position: -99,-37
+position: -255,-313
 ---
 <<declare $gotUp = false as bool>>
 <<declare $EcoPoints = 0 as number>>
@@ -8,11 +8,11 @@ position: -99,-37
 <<declare $awake = false as bool>>
 
 
-Alex: uhhh am i dead? 
--> get up  
+Alex: Hmm? God no, how can it already be morning?
+-> get up
     <<set $awake = true>>
-    <<set $thirdDayreached = true>> // nur zum debuggen
-    <<set $EcoPoints += 10>>
+    //<<set $thirdDayreached = false>> // nur zum debuggen
+    //<<set $EcoPoints += 10>>
     
     
 -> stay in bed 
@@ -21,22 +21,24 @@ Alex: uhhh am i dead?
     
 
 <<if $awake is true>>
-    Alex: i guess i'm not dead
     Alex: Better get it going, i have to go to work
     -> get out of bed
     <<set $gotUp = true>>
     <<set $awake = false>>
+    Alex: Good I have some time left before work, this will be a good morning!
+    Alex: I jump in the shower and make me some awesome breakfast.
 
 
 <<else>>  
-    Alex: i guess i'll just stay in bed
-    Alex: just a little bit longer...
-    After some while ...  
+    Alex: Just a few more minutes.
+    ...
+    after some time...   
     <<set $awake = true >>
-    Alex: i'm bored, i guess i'll get up 
+    Alex: Uchh, i guess i have to get up now.
     -> get up 
     <<set $gotUp = true>>
     <<set $awake = false>>
+    Alex: Uff its a bit late, have to be quick now or i will be late at work.
         
         
 <<endif>>
@@ -47,7 +49,7 @@ Alex: uhhh am i dead?
 
 title: lampOn
 tags:
-position: -99,-37
+position: -272,-473
 ---
     Alex: Ok, thats better
     Alex: i guess i'll go get ready for work 
@@ -56,4 +58,78 @@ position: -99,-37
    
 
 
+===
+title: Book(Object)
+position: -481,-168
+---
+Alex: Oh i must have fell asleep while reading!
+Alex: Happens all the time. Better leave it there or 
+I won't find it later.
+
+===
+title: Closet(Object)
+position: -254,-170
+---
+Alex: Just storage things.
+Alex: Like ... fluffy cats I want to snug with when I feel sad.
+Alex: ...
+Alex: Nevermind that, ehhhm to the bathroom!
+===
+title: Alarm(Object)
+position: -8,-178
+---
+Alex: I hate it, but it does its job...
+===
+title: Socks(Object)
+position: 221,-187
+---
+Alex: Could make some sock puppets out of these. Cuuutee!
+===
+title: Bathroom(Day1)
+position: -244,235
+---
+Alex: Uff, I have to shower and brush my teeth. 
+Alex: Then I in the kitchen for some breakfast.
+
+===
+title: Shower(Object)
+position: -490,378
+---
+Alex: Ok now a fresh start in the day!
+-> long hot shower
+    Alex: Ahh, that was nice.
+-> short shower (ecopoint)
+    Alex: Already over? 
+
+===
+title: Sink(Object)
+position: -243,379
+---
+Alex: Washing my teeth is the first stroke of freshness for the day. 
+Alex: This smell of the toothpaste is signaling that it's time 
+to face the world with a bright smile and a minty-fresh start. 
+
+===
+title: Mirror(Object)
+position: -1,379
+---
+Alex: Do I look ok? 
+Alex: Maybe a bit tired, but should be alright.
+Alex: Right Susanne?
+Silence
+Alex: Uch, nevermind.
+===
+title: Plant(Object)
+position: 246,372
+---
+Alex: Ohh, the only plant I could keep alive. I think she likes the humidity. 
+Alex: Achh Susanne, thanks for not leaving me!
+===
+
+title: Kitchen(Day1)
+position: -231,807
+---
+Radio: Good morning, folks! Today's weather is looking nice 
+and traffic seems to be flowing smoothly. 
+Stay tuned for more updates!
 ===

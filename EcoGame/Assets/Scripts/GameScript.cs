@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Yarn.Unity;
+
 public class GameScript : MonoBehaviour
 {
     public Vector3 mousePos;
@@ -15,24 +16,39 @@ public class GameScript : MonoBehaviour
 
     private DialogueRunner dialogueRunner;
 
+    public GameObject[] scenes;
 
+    public GameObject currentScene;
+    public GameObject nextScene;
 
 
     // Start is called before the first frame update
     void Start()
     {
         dialogueRunner = FindObjectOfType<DialogueRunner>();
-       
+
+        currentScene = scenes[0];
+        int currentIndex = System.Array.IndexOf(scenes, currentScene);
+        nextScene = scenes[(currentIndex + 1) % scenes.Length];
+
+        currentScene.SetActive(true);
+        nextScene.SetActive(false);
+
     }
 
     // Update is called once per frame
     void Update()
     {
         Hitdetect();
+        
 
     }
 
-
+    void SceneChange()
+    {
+        currentScene.SetActive(false);
+        nextScene.SetActive(true);
+    }
 
     void Hitdetect()
     {
@@ -64,7 +80,13 @@ public class GameScript : MonoBehaviour
                         print("Door hit");
 
                         // nächste Scene laden
-                        SceneManager.LoadScene("Level01");
+
+                        SceneChange();
+                        currentScene = nextScene;
+                        int currentIndex = System.Array.IndexOf(scenes, currentScene);
+                        nextScene = scenes[(currentIndex + 1) % scenes.Length];
+                        
+
                     }
                 }
                 else
@@ -75,8 +97,4 @@ public class GameScript : MonoBehaviour
             }
         }
     }
-
-
-
-
 }
