@@ -1,0 +1,80 @@
+﻿title: Book(Object)
+position: -481,-168
+group: bedroom
+---
+Alex: Oh i must have fell asleep while reading!
+Alex: Happens all the time. Better leave it there or 
+I won't find it later.
+
+===
+
+title: Closet(Object)
+position: -254,-170
+group: bedroom
+---
+Alex: Just storage things.
+Alex: Like ... fluffy cats I want to snug with when I feel sad.
+Alex: ...
+Alex: Nevermind that, ehhhm to the bathroom!
+===
+title: Alarm(Object)
+position: -8,-178
+group: bedroom
+---
+Alex: I hate it, but it does its job...
+===
+title: Socks(Object)
+position: 221,-187
+group: bedroom
+---
+Alex: Could make some sock puppets out of these. Cuuutee!
+===
+
+title: Plant(Object)
+position: 246,372
+group: bathroom
+---
+Alex: Ohh, the only plant I could keep alive. I think she likes the humidity. 
+Alex: Achh Susanne, thanks for not leaving me!
+===
+
+title: FridgeNotes(Object)
+position: -8,794
+group: kitchen
+---
+Alex: Uhh right, tomorrow is my mothers birthday. 
+Alex: I didn’t forget, I just reminded myself.
+===
+
+title: Darts(Object)
+position: -73,2196
+group: bar
+---
+Alex: Wow, quite the impressive dart display going on here. 
+Alex: Looks like they're aiming to decorate the walls rather than the dartboard. 
+Alex: Maybe someone should inform them that the dartboard is the actual target. 
+===
+
+title: Score(Object)
+position: -304,2192
+group: bar
+---
+Alex: Take a look at those scores! 
+Alex: Perhaps they've invented their own scoring system – the farther off the mark, the more points you get.
+===
+title: Alcohol(Object)
+position: -548,2193
+group: bar
+---
+Alex: No wonder the darts are exploring uncharted territory! 
+Alex: Looks like they've got a distillery behind the bar instead of the usual drinks. 
+Alex: I guess precision and pints don't mix well!
+===
+title: Lightstrings(Object)
+position: 148,2194
+group: bar
+---
+Alex: This place has its own unique charm. 
+Alex: Is it just me, or does Jeff's Bar has a special talent for turning a simple evening into a tipsy spectacle? 
+Alex: And those fairy lights! It's like stumbling into a tipsy wonderland in here!
+===

@@ -14,6 +14,7 @@ public class YarnDialogueStart : MonoBehaviour
     private DialogueRunner dialogueRunner;
     private bool isCurrentConversation;
     private bool interactable;
+    public bool repeatable;
     public string conversationStartNode;
 
 
@@ -29,7 +30,9 @@ public class YarnDialogueStart : MonoBehaviour
         isCurrentConversation = true;
         dialogueRunner.StartDialogue(conversationStartNode);
         dialogueRunner.onDialogueComplete.AddListener(EndConversation);
-        interactable = false;
+        if (!repeatable){
+            interactable = false;
+            }
     }
 
     public void OnMouseDown()
@@ -57,5 +60,7 @@ public class YarnDialogueStart : MonoBehaviour
     {
         interactable = false;
     }
+
+
 
 }

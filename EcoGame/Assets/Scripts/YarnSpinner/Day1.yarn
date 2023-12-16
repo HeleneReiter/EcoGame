@@ -1,88 +1,67 @@
 ﻿title: BedroomStart
-tags:
+tags: bedroom
+color: blue
 position: -255,-313
 ---
 <<declare $gotUp = false as bool>>
-<<declare $EcoPoints = 0 as number>>
-<<declare $thirdDayreached = false as bool>>
 <<declare $awake = false as bool>>
 <<declare $stayedInBed = false as bool>>
+
+
 <<declare $tookcar = false as bool >>
 <<declare $tookwalk = false as bool>>
 <<declare $tookbus = false as bool>>
 <<declare $tookbike = false as bool>>
-<<declare $talkedtoAnna = false as bool>>
-<<declare $talkedtoTimmy = false as bool>>
 
+<<declare $EcoPoints = 0 as number>>
+<<declare $thirdDayreached = false as bool>>
+<<declare $firstDay = true as bool>>
+<<declare $secondDay = false as bool>>
+<<declare $thirdDay = false as bool>>
+<<declare $fourthDay = false as bool>>
 
-Alex: Hmm? God no, how can it already be morning?
--> get up
-    <<set $awake = true>>
-    //<<set $thirdDayreached = false>> // nur zum debuggen
-    //<<set $EcoPoints += 10>>
-    
-    
--> stay in bed 
-    <<set $awake = false>>
-    <<set $gotUp = false>>
-    <<set $stayedInBed = true>>
-    
-
-<<if $awake is true>>
-    Alex: Better get it going, i have to go to work
-    -> get out of bed
-    <<set $gotUp = true>>
-    <<set $awake = false>>
-    Alex: Good I have some time left before work, this will be a good morning!
-    Alex: I jump in the shower and make me some awesome breakfast.
-
-
-<<else>>  
-    Alex: Just a few more minutes.
-    ...
-    after some time...   
-    <<set $awake = true >>
-    Alex: Uchh, i guess i have to get up now.
-    -> get up 
-    <<set $gotUp = true>>
-    <<set $awake = false>>
-    Alex: Uff its a bit late, have to be quick now or i will be late at work.
+<<if $firstDay is true>>
+    Alex: Hmm? God no, how can it already be morning?
+    -> get up
+        <<set $awake = true>>
         
-        
+    -> stay in bed 
+        <<set $awake = false>>
+        <<set $gotUp = false>>
+        <<set $stayedInBed = true>>
+    
+
+    <<if $awake is true>>
+        Alex: Better get it going, i have to go to work
+        -> get out of bed
+        <<set $gotUp = true>>
+        <<set $awake = false>>
+        Alex: Good I have some time left before work, this will be a good morning!
+        Alex: I jump in the shower and make me some awesome breakfast.
+
+
+    <<else>>  
+        Alex: Just a few more minutes.
+        ...
+        after some time...   
+        <<set $awake = true >>
+        Alex: Uchh, i guess i have to get up now.
+        -> get up 
+        <<set $gotUp = true>>
+        <<set $awake = false>>
+        Alex: Uff its a bit late, have to be quick now or i will be late at work.
+             
+    <<endif>>
 <<endif>>
 
-===
 
-title: Book(Object)
-position: -481,-168
----
-Alex: Oh i must have fell asleep while reading!
-Alex: Happens all the time. Better leave it there or 
-I won't find it later.
+
 
 ===
 
 
-title: Closet(Object)
-position: -254,-170
----
-Alex: Just storage things.
-Alex: Like ... fluffy cats I want to snug with when I feel sad.
-Alex: ...
-Alex: Nevermind that, ehhhm to the bathroom!
-===
-title: Alarm(Object)
-position: -8,-178
----
-Alex: I hate it, but it does its job...
-===
-title: Socks(Object)
-position: 221,-187
----
-Alex: Could make some sock puppets out of these. Cuuutee!
-===
 title: BathroomEnter
-position: -244,235
+position: -242,216
 ---
 Alex: Uff, I have to shower and brush my teeth. 
 Alex: Then I in the kitchen for some breakfast.
@@ -115,12 +94,7 @@ Alex: Right Susanne?
 Silence
 Alex: Uch, nevermind.
 ===
-title: Plant(Object)
-position: 246,372
----
-Alex: Ohh, the only plant I could keep alive. I think she likes the humidity. 
-Alex: Achh Susanne, thanks for not leaving me!
-===
+
 
 title: KitchenEnter
 position: -231,654
@@ -148,12 +122,7 @@ Alex: What should I eat today?
     Alex: I love it!
 
 ===
-title: FridgeNotes(Object)
-position: -8,794
----
-Alex: Uhh right, tomorrow is my mothers birthday. 
-Alex: I didn’t forget, I just reminded myself.
-===
+
 title: KitchenExit
 position: -227,938
 ---
@@ -178,8 +147,10 @@ Alex: How do I get to work today?
 
 
 title: OfficeEnter
-position: -222,1124
+position: -224,1181
 ---
+<<declare $talkedtoAnna = false as bool>>
+<<declare $talkedtoTimmy = false as bool>>
 <<if $tookcar is true>> 
     Alex: The Traffic was smooth like butter, I made it right on time.
 <<elseif $tookbus is true>>
@@ -200,17 +171,21 @@ Alex: Better ask Anna, she gives me always the work.
 
 
 title: Anna
-position: -220,1261
+position: -222,1318
 ---
 -> observe anna
     Alex: That is Anna my boss, she is a nice person.
     Alex: She is always busy, but still finds time to talk to me.
     Alex: She seem to be tired today, maybe I should ask her if she is ok.
     Alex: I should ask her what I have to do today.
--> speak to anna
+    -> speak to anna 
+    <<set $talkedtoAnna = true>>
+-> speak to anna 
+    <<set $talkedtoAnna = true>>
+
+<<if $talkedtoAnna is true>>
     Alex: Good Morning Anna!
     Anna: Oh, good morning Alex! How was your morning so far?
-
     <<if $stayedInBed is true>>
         Alex: Good, I got some good amount of sleep. But the morning was stressful.
     <<else>>
@@ -224,37 +199,42 @@ position: -220,1261
     Anna: Your Job today is to get the written interview from Timmy at his desk and edit it for the next paper for tomorrow morning.
     Alex: Alright I get to it right away.
     Alex: Ok next stop Timmy. I bet he is at his desk right now. Buried under paper as always.
-
-    <<set $talkedtoAnna = true>>
+<<endif>>
 ===
 title: CoffeeMachine(Object)
-position: -459,1258
+position: -461,1315
 ---
 Alex: Uhh a nice coffee is exactly what I need!
--> use mug from desk
+-> use mug 
 -> use plastic cup
 
 Alex: Uff that smells good, brings me back to life!
 
 ===
 title: PileOfPaper
-position: 7,1259
+position: 5,1316
 ---
 -> observe
     Alex: That is Timmy's desk, he is always buried under paper.
     Alex: Wow, did he print that all in one day?
 -> speak to pile of paper
+    <<set $talkedtoTimmy = true>>
+
+<<if $talkedtoTimmy and $talkedtoAnna is true>>
     Alex: Timmy are you there?
     Timmy: Alex! Yeahh I'm here, I have this interview written for you, it has to be here somewhere ...
     After some minutes past
     Timmy: Ahhh here it is! There you go Alex, don't forget to bring it to Anna after you are finished.
     Alex: Thank you Timmy.
+<<else>>
+    Alex: I should talk to Anna first.
+<<endif>>
 
 
-    <<set $talkedtoTimmy = true>>
+   
 ===
 title: WorkingDesk
-position: -224,1412
+position: -226,1469
 ---
 
 <<if $talkedtoAnna and $talkedtoTimmy is true>>
@@ -281,7 +261,7 @@ position: -224,1412
 
 
 title: OfficeExit
-position: -235,1617
+position: -219,1613
 ---
 Alex: Ok now I am finished for the day, time for the bar.
 
@@ -299,58 +279,40 @@ Alex: I will come right to you.
 title: Jeff
 position: -246,2050
 ---
+<<declare $talkedtoJeff = false as bool>>
+<<declare $homebrewed = false as bool>>
+<<declare $imported = false as bool>>
 -> observe Jeff 
     Alex: Ach Jeff, it seems like he's the maestro orchestrating this lively symphony of chaos.
     Alex: I think he was in the army, but never got myself to ask him about his private life. 
     Alex: I wouldn't be surprised if he's mastered the art of mixing drinks while simultaneously dodging rogue darts.
 -> speak to Jeff
+    <<set $talkedtoJeff = true>>
+
+<<if $talkedtoJeff is true>>
     Alex: Hi Jeff, How is it going tonight?
     Jeff: You know, the usual stuff, had to kick some people out. Had to much to drink. But nevermind that, what’s it gonna be today?
     -> homebrewed beer
-    Alex: The homebrewed on for me, support your locals!
-    Jeff: Right you are, it gets brewed right in the back.
-
+        <<set $homebrewed = true>>
     -> imported from germany
-    Alex: The german one please, heard they make some good beer!
-    Jeff: Right you hear.
+        <<set $imported = true>>
+        
+    
+    <<if $homebrewed is true>>
+        Alex: The homebrewed one for me, support your locals!
+        Jeff: Right you are, it gets brewed right in the back.
+    <<elseif $imported is true>>
+        Alex: I will take the imported one from germany.
+        Jeff: Right you are, I will get it for you.
+    <<endif>>
 
 As Jeff finished talking you see a fresh beer in front of you, Jeffs a master at his job.
 Alex: Thanks! That will be all for me tonight. Tomorrow I have to visit my mother for her birthday and have to get up early.
+<<endif>>
 ===
-
-
-title: Darts(Object)
-position: -551,2048
----
-Alex: Wow, quite the impressive dart display going on here. 
-Alex: Looks like they're aiming to decorate the walls rather than the dartboard. 
-Alex: Maybe someone should inform them that the dartboard is the actual target. 
-===
-
-title: Score(Object)
-position: -784,2044
----
-Alex: Take a look at those scores! 
-Alex: Perhaps they've invented their own scoring system – the farther off the mark, the more points you get.
-===
-title: Alcohol(Object)
-position: -776,2197
----
-Alex: No wonder the darts are exploring uncharted territory! 
-Alex: Looks like they've got a distillery behind the bar instead of the usual drinks. 
-Alex: I guess precision and pints don't mix well!
-===
-title: Lightstrings(Object)
-position: -547,2198
----
-Alex: This place has its own unique charm. 
-Alex: Is it just me, or does Jeff's Bar has a special talent for turning a simple evening into a tipsy spectacle? 
-Alex: And those fairy lights! It's like stumbling into a tipsy wonderland in here!
-===
-
 
 title: BarExit
-position: -301,2256
+position: -242,2416
 ---
 Alex: Ok, I should go home now, I have to get up early tomorrow.
 ===

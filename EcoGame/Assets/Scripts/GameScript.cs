@@ -7,23 +7,27 @@ using Yarn.Unity;
 
 public class GameScript : MonoBehaviour
 {
-    public Vector3 mousePos;
-    public Vector3 mousePosWorld;
-    public Vector2 mousePosWorld2D; // x und y wert von mousePosWorld
+    private Vector3 mousePos;
+    private Vector3 mousePosWorld;
+    private Vector2 mousePosWorld2D; // x und y wert von mousePosWorld
     public Camera mainCamera;
 
     RaycastHit2D hit;
 
     private DialogueRunner dialogueRunner;
+    public string[] startnodes;
+    private string currentStartNode;
+    private string nextStartNode;
+    private bool isCurrentConversation;
 
     public GameObject[] scenes;
     public GameObject[] texts;
 
-    public GameObject currentText;
-    public GameObject nextText;
+    private GameObject currentText;
+    private GameObject nextText;
 
-    public GameObject currentScene;
-    public GameObject nextScene;
+    private GameObject currentScene;
+    private GameObject nextScene;
 
 
     // Start is called before the first frame update
@@ -46,18 +50,46 @@ public class GameScript : MonoBehaviour
         currentText.SetActive(true);
         nextText.SetActive(false);
 
+        currentStartNode = startnodes[0];
+        int currentIndexStartNode = System.Array.IndexOf(startnodes, currentStartNode);
+        nextStartNode = startnodes[(currentIndexStartNode + 1) % startnodes.Length];
+
     }
 
     // Update is called once per frame
     void Update()
     {
         Hitdetect();
+
+        int currentIndex = System.Array.IndexOf(scenes, currentScene);
+        int nextIndex = (currentIndex + 1) % scenes.Length;
+
+        nextScene = scenes[nextIndex];
+        nextText = texts[nextIndex];
+        nextStartNode = startnodes[nextIndex];
+
+    
         
+    }
+
+     private void StartConversation()
+    {
+        isCurrentConversation = true;
+        dialogueRunner.StartDialogue(currentStartNode);
+        dialogueRunner.onDialogueComplete.AddListener(EndConversation);
+    }
+     private void EndConversation()
+    {
+        if (isCurrentConversation)
+        {
+            isCurrentConversation = false;
+        }
 
     }
 
     void SceneChange()
     {
+        
         currentScene.SetActive(false);
         nextScene.SetActive(true);
 
@@ -97,13 +129,14 @@ public class GameScript : MonoBehaviour
                         // nächste Scene laden
 
                         SceneChange();
-                        currentScene = nextScene;
-                        int currentIndex = System.Array.IndexOf(scenes, currentScene);
-                        nextScene = scenes[(currentIndex + 1) % scenes.Length];
+                        StartConversation();
 
+
+                        currentStartNode = nextStartNode;
+                        currentScene = nextScene;
                         currentText = nextText;
-                        int currentIndexText = System.Array.IndexOf(texts, currentText);
-                        nextText = texts[(currentIndexText + 1) % texts.Length];
+                  
+                        
 
                         
 
