@@ -17,6 +17,10 @@ public class GameScript : MonoBehaviour
     private DialogueRunner dialogueRunner;
 
     public GameObject[] scenes;
+    public GameObject[] texts;
+
+    public GameObject currentText;
+    public GameObject nextText;
 
     public GameObject currentScene;
     public GameObject nextScene;
@@ -31,8 +35,16 @@ public class GameScript : MonoBehaviour
         int currentIndex = System.Array.IndexOf(scenes, currentScene);
         nextScene = scenes[(currentIndex + 1) % scenes.Length];
 
+        currentText = texts[0];
+        int currentIndexText = System.Array.IndexOf(texts, currentText);
+        nextText = texts[(currentIndexText + 1) % texts.Length];
+
+
         currentScene.SetActive(true);
         nextScene.SetActive(false);
+
+        currentText.SetActive(true);
+        nextText.SetActive(false);
 
     }
 
@@ -48,6 +60,9 @@ public class GameScript : MonoBehaviour
     {
         currentScene.SetActive(false);
         nextScene.SetActive(true);
+
+        currentText.SetActive(false);
+        nextText.SetActive(true);
     }
 
     void Hitdetect()
@@ -85,6 +100,11 @@ public class GameScript : MonoBehaviour
                         currentScene = nextScene;
                         int currentIndex = System.Array.IndexOf(scenes, currentScene);
                         nextScene = scenes[(currentIndex + 1) % scenes.Length];
+
+                        currentText = nextText;
+                        int currentIndexText = System.Array.IndexOf(texts, currentText);
+                        nextText = texts[(currentIndexText + 1) % texts.Length];
+
                         
 
                     }

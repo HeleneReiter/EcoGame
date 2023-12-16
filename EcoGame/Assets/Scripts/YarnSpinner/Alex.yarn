@@ -1,4 +1,4 @@
-﻿title: Bedroom(Day1)
+﻿title: BedroomStart
 tags:
 position: -255,-313
 ---
@@ -6,6 +6,13 @@ position: -255,-313
 <<declare $EcoPoints = 0 as number>>
 <<declare $thirdDayreached = false as bool>>
 <<declare $awake = false as bool>>
+<<declare $stayedInBed = false as bool>>
+<<declare $tookcar = false as bool >>
+<<declare $tookwalk = false as bool>>
+<<declare $tookbus = false as bool>>
+<<declare $tookbike = false as bool>>
+<<declare $talkedtoAnna = false as bool>>
+<<declare $talkedtoTimmy = false as bool>>
 
 
 Alex: Hmm? God no, how can it already be morning?
@@ -18,6 +25,7 @@ Alex: Hmm? God no, how can it already be morning?
 -> stay in bed 
     <<set $awake = false>>
     <<set $gotUp = false>>
+    <<set $stayedInBed = true>>
     
 
 <<if $awake is true>>
@@ -45,20 +53,6 @@ Alex: Hmm? God no, how can it already be morning?
 
 ===
 
-
-
-title: lampOn
-tags:
-position: -272,-473
----
-    Alex: Ok, thats better
-    Alex: i guess i'll go get ready for work 
-    
-
-   
-
-
-===
 title: Book(Object)
 position: -481,-168
 ---
@@ -67,6 +61,8 @@ Alex: Happens all the time. Better leave it there or
 I won't find it later.
 
 ===
+
+
 title: Closet(Object)
 position: -254,-170
 ---
@@ -85,7 +81,7 @@ position: 221,-187
 ---
 Alex: Could make some sock puppets out of these. Cuuutee!
 ===
-title: Bathroom(Day1)
+title: BathroomEnter
 position: -244,235
 ---
 Alex: Uff, I have to shower and brush my teeth. 
@@ -98,7 +94,7 @@ position: -490,378
 Alex: Ok now a fresh start in the day!
 -> long hot shower
     Alex: Ahh, that was nice.
--> short shower (ecopoint)
+-> short shower 
     Alex: Already over? 
 
 ===
@@ -110,7 +106,7 @@ Alex: This smell of the toothpaste is signaling that it's time
 to face the world with a bright smile and a minty-fresh start. 
 
 ===
-title: Mirror(Object)
+title: Mirror
 position: -1,379
 ---
 Alex: Do I look ok? 
@@ -126,10 +122,235 @@ Alex: Ohh, the only plant I could keep alive. I think she likes the humidity.
 Alex: Achh Susanne, thanks for not leaving me!
 ===
 
-title: Kitchen(Day1)
-position: -231,807
+title: KitchenEnter
+position: -231,654
 ---
 Radio: Good morning, folks! Today's weather is looking nice 
 and traffic seems to be flowing smoothly. 
 Stay tuned for more updates!
+
+<<if $stayedInBed is true>>
+    Alex: Alex: No time for breakfast, I will buy some on the way.
+<<else>>
+    Alex: I have some time left, I will make some breakfast.
+<<endif>>
+===
+
+
+
+title: Fridge
+position: -230,795
+---
+Alex: What should I eat today?
+-> Sandwich with meat
+    Alex: Uh yummy!
+-> Toast with marmelade 
+    Alex: I love it!
+
+===
+title: FridgeNotes(Object)
+position: -8,794
+---
+Alex: Uhh right, tomorrow is my mothers birthday. 
+Alex: I didn’t forget, I just reminded myself.
+===
+title: KitchenExit
+position: -227,938
+---
+Alex gets a message on his phone:
+Alex's mom: Hey sweetie, don't forget my party tomorrow at 1pm. We are happy to see you soon :)
+Alex: I didn't forget, but thanks for the reminder mom.
+
+Alex: How do I get to work today?
+-> car 
+    <<set $tookcar = true>>
+    Alex: I will take the car.
+-> bus
+    <<set $tookbus = true>>
+    Alex: I will take the bus.
+-> bike
+    <<set $tookbike = true>>
+    Alex: I will take the bike.
+-> walk
+    <<set $tookwalk = true>>
+    Alex: I will walk.
+===
+
+
+title: OfficeEnter
+position: -222,1124
+---
+<<if $tookcar is true>> 
+    Alex: The Traffic was smooth like butter, I made it right on time.
+<<elseif $tookbus is true>>
+    Alex: The Traffic was smooth like butter, the bus had no delay and I made it right on time.
+<<elseif $tookbike is true>>
+    Alex: Perfect weather for riding a bike, shame I have now to work.
+<<elseif $tookwalk is true>>
+    Alex: Perfect weather for a walk, shame I have now to work.
+<<endif>>
+
+<<if $stayedInBed is true>>
+    Alex: Got a nice Coffee to Go and sandwich. 
+<<endif>>
+
+Alex: Ok, first things first, I need to check what I have to do today.
+Alex: Better ask Anna, she gives me always the work.
+===
+
+
+title: Anna
+position: -220,1261
+---
+-> observe anna
+    Alex: That is Anna my boss, she is a nice person.
+    Alex: She is always busy, but still finds time to talk to me.
+    Alex: She seem to be tired today, maybe I should ask her if she is ok.
+    Alex: I should ask her what I have to do today.
+-> speak to anna
+    Alex: Good Morning Anna!
+    Anna: Oh, good morning Alex! How was your morning so far?
+
+    <<if $stayedInBed is true>>
+        Alex: Good, I got some good amount of sleep. But the morning was stressful.
+    <<else>>
+        Alex: I got up early and had some awesome breakfast, the perfect start in the day.
+    <<endif>>
+
+    Alex: How was your morning Anna?
+    Anna: As you know I am not a morning person and had to watch the final season of The green Awakening yesterday.
+    Anna: This made it even more difficult to get up today, but there is nothing coffee can't fix.
+    Anna: Anyway, I have some work for you!
+    Anna: Your Job today is to get the written interview from Timmy at his desk and edit it for the next paper for tomorrow morning.
+    Alex: Alright I get to it right away.
+    Alex: Ok next stop Timmy. I bet he is at his desk right now. Buried under paper as always.
+
+    <<set $talkedtoAnna = true>>
+===
+title: CoffeeMachine(Object)
+position: -459,1258
+---
+Alex: Uhh a nice coffee is exactly what I need!
+-> use mug from desk
+-> use plastic cup
+
+Alex: Uff that smells good, brings me back to life!
+
+===
+title: PileOfPaper
+position: 7,1259
+---
+-> observe
+    Alex: That is Timmy's desk, he is always buried under paper.
+    Alex: Wow, did he print that all in one day?
+-> speak to pile of paper
+    Alex: Timmy are you there?
+    Timmy: Alex! Yeahh I'm here, I have this interview written for you, it has to be here somewhere ...
+    After some minutes past
+    Timmy: Ahhh here it is! There you go Alex, don't forget to bring it to Anna after you are finished.
+    Alex: Thank you Timmy.
+
+
+    <<set $talkedtoTimmy = true>>
+===
+title: WorkingDesk
+position: -224,1412
+---
+
+<<if $talkedtoAnna and $talkedtoTimmy is true>>
+    Alex: Ok I have to type it off and then make the layout for the newspaper tomorrow.
+
+    After some time
+
+    Alex: Ok finished, should I print it or just send it per email to Anna?
+    -> print
+        Alex: Anna here the interview for tomorrow.
+        Anna: Thank you Alex, you could have sent it per email as well, but thanks.
+        Alex: I will remember for the next time, wish you a nice evening bye.
+        Anna: You too, bye Alex!
+    -> send email
+        Alex: I have sent you the interview per email, hope thats ok.
+        Anna: Yeah really good, printing is outdated this times.
+        Alex: Wish you a nice evening, bye.
+        Anna: You too, bye Alex.    
+<<else>>
+    Alex: I should ask Anna what I have to do today.
+<<endif>>
+
+===
+
+
+title: OfficeExit
+position: -235,1617
+---
+Alex: Ok now I am finished for the day, time for the bar.
+
+===
+
+title: BarEnter
+position: -244,1889
+---
+Alex: Hello Jeff! 
+Jeff: Alex, I already thought you wouldn’t come today.
+Jeff: Come have a beer.
+Alex: I will come right to you.
+===
+
+title: Jeff
+position: -246,2050
+---
+-> observe Jeff 
+    Alex: Ach Jeff, it seems like he's the maestro orchestrating this lively symphony of chaos.
+    Alex: I think he was in the army, but never got myself to ask him about his private life. 
+    Alex: I wouldn't be surprised if he's mastered the art of mixing drinks while simultaneously dodging rogue darts.
+-> speak to Jeff
+    Alex: Hi Jeff, How is it going tonight?
+    Jeff: You know, the usual stuff, had to kick some people out. Had to much to drink. But nevermind that, what’s it gonna be today?
+    -> homebrewed beer
+    Alex: The homebrewed on for me, support your locals!
+    Jeff: Right you are, it gets brewed right in the back.
+
+    -> imported from germany
+    Alex: The german one please, heard they make some good beer!
+    Jeff: Right you hear.
+
+As Jeff finished talking you see a fresh beer in front of you, Jeffs a master at his job.
+Alex: Thanks! That will be all for me tonight. Tomorrow I have to visit my mother for her birthday and have to get up early.
+===
+
+
+title: Darts(Object)
+position: -551,2048
+---
+Alex: Wow, quite the impressive dart display going on here. 
+Alex: Looks like they're aiming to decorate the walls rather than the dartboard. 
+Alex: Maybe someone should inform them that the dartboard is the actual target. 
+===
+
+title: Score(Object)
+position: -784,2044
+---
+Alex: Take a look at those scores! 
+Alex: Perhaps they've invented their own scoring system – the farther off the mark, the more points you get.
+===
+title: Alcohol(Object)
+position: -776,2197
+---
+Alex: No wonder the darts are exploring uncharted territory! 
+Alex: Looks like they've got a distillery behind the bar instead of the usual drinks. 
+Alex: I guess precision and pints don't mix well!
+===
+title: Lightstrings(Object)
+position: -547,2198
+---
+Alex: This place has its own unique charm. 
+Alex: Is it just me, or does Jeff's Bar has a special talent for turning a simple evening into a tipsy spectacle? 
+Alex: And those fairy lights! It's like stumbling into a tipsy wonderland in here!
+===
+
+
+title: BarExit
+position: -301,2256
+---
+Alex: Ok, I should go home now, I have to get up early tomorrow.
 ===
