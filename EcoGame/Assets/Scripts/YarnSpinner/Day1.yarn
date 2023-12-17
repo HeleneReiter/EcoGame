@@ -15,12 +15,9 @@ position: -255,-313
 
 <<declare $EcoPoints = 0 as number>>
 <<declare $thirdDayreached = false as bool>>
-<<declare $firstDay = true as bool>>
-<<declare $secondDay = false as bool>>
-<<declare $thirdDay = false as bool>>
-<<declare $fourthDay = false as bool>>
+<<declare $days = 1 as number>>
 
-<<if $firstDay is true>>
+<<if $days is 1>>
     Alex: Hmm? God no, how can it already be morning?
     -> get up
         <<set $awake = true>>
@@ -57,12 +54,16 @@ position: -255,-313
 
 
 
+
 ===
 
 
 title: BathroomEnter
 position: -242,216
 ---
+<<declare $usedShower = false as bool>>
+<<declare $usedSink = false as bool>>
+
 Alex: Uff, I have to shower and brush my teeth. 
 Alex: Then I in the kitchen for some breakfast.
 
@@ -71,6 +72,7 @@ title: Shower(Object)
 position: -490,378
 ---
 Alex: Ok now a fresh start in the day!
+<<set $usedShower = true>>
 -> long hot shower
     Alex: Ahh, that was nice.
 -> short shower 
@@ -80,6 +82,7 @@ Alex: Ok now a fresh start in the day!
 title: Sink(Object)
 position: -243,379
 ---
+<<set $usedSink = true>>
 Alex: Washing my teeth is the first stroke of freshness for the day. 
 Alex: This smell of the toothpaste is signaling that it's time 
 to face the world with a bright smile and a minty-fresh start. 
@@ -88,25 +91,49 @@ to face the world with a bright smile and a minty-fresh start.
 title: Mirror
 position: -1,379
 ---
-Alex: Do I look ok? 
-Alex: Maybe a bit tired, but should be alright.
-Alex: Right Susanne?
-Silence
-Alex: Uch, nevermind.
+<<if $days is 1>>
+    Alex: Do I look ok? 
+    Alex: Maybe a bit tired, but should be alright.
+    Alex: Right Susanne?
+    Silence
+    Alex: Uch, nevermind.
+<<endif>>
+===
+
+title: BathroomExit
+position: -1,379
+---
+<<declare $BathroomExit = 0 as number>>
+
+<<if $BathroomExit is 0>>
+    <<if $usedShower is true and $usedSink is true>>
+        <<set $BathroomExit = 1>>
+        Alex: Ok, I am ready for the day.
+    <<elseif $usedShower is true and $usedSink is false>>
+        Alex: I should wash my teeth first.
+    <<elseif $usedShower is false and $usedSink is true>>
+        Alex: I should take a shower first.
+    <<else>>
+        Alex: I'm not ready yet, I should take a shower and wash my teeth first.
+    <<endif>>
+<<endif>>
 ===
 
 
 title: KitchenEnter
 position: -231,654
 ---
-Radio: Good morning, folks! Today's weather is looking nice 
-and traffic seems to be flowing smoothly. 
-Stay tuned for more updates!
+<<declare $Kitchenready = false as bool>>
+<<if $days is 1>>
+    Radio: Good morning, folks! Today's weather is looking nice 
+    and traffic seems to be flowing smoothly. 
+    Stay tuned for more updates!
 
-<<if $stayedInBed is true>>
-    Alex: Alex: No time for breakfast, I will buy some on the way.
-<<else>>
-    Alex: I have some time left, I will make some breakfast.
+    <<if $stayedInBed is true>>
+        Alex: Alex: No time for breakfast, I will buy some on the way.
+    <<else>>
+        Alex: I have some time left, I will make some breakfast. Let's see what I have in the fridge.
+    <<endif>>
 <<endif>>
 ===
 
@@ -115,34 +142,54 @@ Stay tuned for more updates!
 title: Fridge
 position: -230,795
 ---
+
 Alex: What should I eat today?
 -> Sandwich with meat
     Alex: Uh yummy!
+    <<set $Kitchenready = true>>
+    
 -> Toast with marmelade 
     Alex: I love it!
+     <<set $Kitchenready = true>>
+
 
 ===
 
 title: KitchenExit
 position: -227,938
----
-Alex gets a message on his phone:
-Alex's mom: Hey sweetie, don't forget my party tomorrow at 1pm. We are happy to see you soon :)
-Alex: I didn't forget, but thanks for the reminder mom.
 
-Alex: How do I get to work today?
--> car 
-    <<set $tookcar = true>>
-    Alex: I will take the car.
--> bus
-    <<set $tookbus = true>>
-    Alex: I will take the bus.
--> bike
-    <<set $tookbike = true>>
-    Alex: I will take the bike.
--> walk
-    <<set $tookwalk = true>>
-    Alex: I will walk.
+---
+<<declare $KitchenExit = 0 as number>>
+<<if $KitchenExit is 0 >>
+    <<if $days is 1>>
+        <<if $Kitchenready is true>>
+            <<set $KitchenExit = 1>>
+            Alex gets a message on his phone:
+            Alex's mom: Hey sweetie, don't forget my party tomorrow at 1pm. We are happy to see you soon :)
+            Alex: I didn't forget, but thanks for the reminder mom.
+
+            Alex: How do I get to work today?
+            -> car 
+                <<set $tookcar = true>>
+                Alex: I will take the car.
+            -> bus
+                <<set $tookbus = true>>
+                Alex: I will take the bus.
+            -> bike
+                <<set $tookbike = true>>
+                Alex: I will take the bike.
+            -> walk
+                <<set $tookwalk = true>>
+                Alex: I will walk.
+        <<else>>
+            <<if $stayedInBed is true>>
+                Alex: I should get some breakfast on the way.
+            <<else>>
+                Alex: I should make some breakfast first.
+            <<endif>>
+        <<endif>>
+    <<endif>>
+<<endif>>
 ===
 
 
@@ -151,55 +198,67 @@ position: -224,1181
 ---
 <<declare $talkedtoAnna = false as bool>>
 <<declare $talkedtoTimmy = false as bool>>
-<<if $tookcar is true>> 
-    Alex: The Traffic was smooth like butter, I made it right on time.
-<<elseif $tookbus is true>>
-    Alex: The Traffic was smooth like butter, the bus had no delay and I made it right on time.
-<<elseif $tookbike is true>>
-    Alex: Perfect weather for riding a bike, shame I have now to work.
-<<elseif $tookwalk is true>>
-    Alex: Perfect weather for a walk, shame I have now to work.
-<<endif>>
+<<declare $finishedwork = false as bool>>
+<<if $days is 1>>
+    
+    <<if $tookcar is true>> 
+        Alex: The Traffic was smooth like butter, I made it right on time.
+    <<elseif $tookbus is true>>
+        Alex: The Traffic was smooth like butter, the bus had no delay and I made it right on time.
+    <<elseif $tookbike is true>>
+        Alex: Perfect weather for riding a bike, shame I have now to work.
+    <<elseif $tookwalk is true>>
+        Alex: Perfect weather for a walk, shame I have now to work.
+    <<endif>>
 
-<<if $stayedInBed is true>>
-    Alex: Got a nice Coffee to Go and sandwich. 
-<<endif>>
+    <<if $stayedInBed is true>>
+        Alex: Got a nice Coffee to Go and sandwich. 
+    <<endif>>
 
-Alex: Ok, first things first, I need to check what I have to do today.
-Alex: Better ask Anna, she gives me always the work.
+    Alex: Ok, first things first, I need to check what I have to do today.
+    Alex: Better ask Anna, she gives me always the work.
+<<endif>>
 ===
 
 
 title: Anna
 position: -222,1318
 ---
+
 -> observe anna
     Alex: That is Anna my boss, she is a nice person.
     Alex: She is always busy, but still finds time to talk to me.
     Alex: She seem to be tired today, maybe I should ask her if she is ok.
     Alex: I should ask her what I have to do today.
-    -> speak to anna 
-    <<set $talkedtoAnna = true>>
 -> speak to anna 
-    <<set $talkedtoAnna = true>>
-
-<<if $talkedtoAnna is true>>
-    Alex: Good Morning Anna!
-    Anna: Oh, good morning Alex! How was your morning so far?
-    <<if $stayedInBed is true>>
-        Alex: Good, I got some good amount of sleep. But the morning was stressful.
-    <<else>>
-        Alex: I got up early and had some awesome breakfast, the perfect start in the day.
+    <<if $days is 1>>
+        <<if $talkedtoAnna is false>>
+            Alex: Good Morning Anna!
+            Anna: Oh, good morning Alex! How was your morning so far?
+            <<if $stayedInBed is true>>
+                Alex: Good, I got some good amount of sleep. But the morning was stressful.
+            <<else>>
+                Alex: I got up early and had some awesome breakfast, the perfect start in the day.
+            <<endif>>
+            Alex: How was your morning Anna?
+            Anna: As you know I am not a morning person and had to watch the final season of The green Awakening yesterday.
+            Anna: This made it even more difficult to get up today, but there is nothing coffee can't fix.
+            Anna: Anyway, I have some work for you!
+            Anna: Your Job today is to get the written interview from Timmy at his desk and edit it for the next paper for tomorrow morning.
+            Alex: Alright I get to it right away.
+            Alex: Ok next stop Timmy. I bet he is at his desk right now. Buried under paper as always.
+            <<set $talkedtoAnna = true>>
+        <<else>>
+            Anna: Hey Alex, how is it going?
+            <<if $talkedtoTimmy is false>>
+                Alex: Good, I am just on my way to Timmy to get the interview.
+            <<elseif $finishedwork is false>>
+                Alex: Good, I am just on my way to my desk to write the interview.
+            <<elseif $finishedwork is true>>
+                Alex: Good, I am heading now out for the day.
+            <<endif>>
+        <<endif>>
     <<endif>>
-
-    Alex: How was your morning Anna?
-    Anna: As you know I am not a morning person and had to watch the final season of The green Awakening yesterday.
-    Anna: This made it even more difficult to get up today, but there is nothing coffee can't fix.
-    Anna: Anyway, I have some work for you!
-    Anna: Your Job today is to get the written interview from Timmy at his desk and edit it for the next paper for tomorrow morning.
-    Alex: Alright I get to it right away.
-    Alex: Ok next stop Timmy. I bet he is at his desk right now. Buried under paper as always.
-<<endif>>
 ===
 title: CoffeeMachine(Object)
 position: -461,1315
@@ -218,17 +277,20 @@ position: 5,1316
     Alex: That is Timmy's desk, he is always buried under paper.
     Alex: Wow, did he print that all in one day?
 -> speak to pile of paper
-    <<set $talkedtoTimmy = true>>
-
-<<if $talkedtoTimmy and $talkedtoAnna is true>>
-    Alex: Timmy are you there?
-    Timmy: Alex! Yeahh I'm here, I have this interview written for you, it has to be here somewhere ...
-    After some minutes past
-    Timmy: Ahhh here it is! There you go Alex, don't forget to bring it to Anna after you are finished.
-    Alex: Thank you Timmy.
-<<else>>
-    Alex: I should talk to Anna first.
-<<endif>>
+    <<if $days is 1>>
+        <<if $talkedtoAnna is true>>
+            Alex: Timmy are you there?
+            Timmy: Alex! Yeahh I'm here, I have this interview written for you, it has to be here somewhere ...
+            After some minutes past
+            Timmy: Ahhh here it is! There you go Alex, don't forget to bring it to Anna after you are finished.
+            Alex: Thank you Timmy.
+            <<set $talkedtoTimmy = true>>
+        <<elseif $talkedtoTimmy is true>>
+            Alex: I already have the interview, I should go to my desk and work on it.
+        <<else>>
+            Alex: I should talk to Anna first.
+        <<endif>>
+    <<endif>>
 
 
    
@@ -236,25 +298,29 @@ position: 5,1316
 title: WorkingDesk
 position: -226,1469
 ---
+<<if $days is 1>>
+    <<if $talkedtoAnna and $talkedtoTimmy is true>>
+        <<set $finishedwork = true>>
+        Alex: Ok I have to type it off and then make the layout for the newspaper tomorrow.
 
-<<if $talkedtoAnna and $talkedtoTimmy is true>>
-    Alex: Ok I have to type it off and then make the layout for the newspaper tomorrow.
+        After some time
 
-    After some time
-
-    Alex: Ok finished, should I print it or just send it per email to Anna?
-    -> print
-        Alex: Anna here the interview for tomorrow.
-        Anna: Thank you Alex, you could have sent it per email as well, but thanks.
-        Alex: I will remember for the next time, wish you a nice evening bye.
-        Anna: You too, bye Alex!
-    -> send email
-        Alex: I have sent you the interview per email, hope thats ok.
-        Anna: Yeah really good, printing is outdated this times.
-        Alex: Wish you a nice evening, bye.
-        Anna: You too, bye Alex.    
-<<else>>
-    Alex: I should ask Anna what I have to do today.
+        Alex: Ok finished, should I print it or just send it per email to Anna?
+        -> print
+            Alex: Anna here the interview for tomorrow.
+            Anna: Thank you Alex, you could have sent it per email as well, but thanks.
+            Alex: I will remember for the next time, wish you a nice evening bye.
+            Anna: You too, bye Alex!
+        -> send email
+            Alex: I have sent you the interview per email, hope thats ok.
+            Anna: Yeah really good, printing is outdated this times.
+            Alex: Wish you a nice evening, bye.
+            Anna: You too, bye Alex.    
+    <<elseif $talkedtoAnna is false>>
+        Alex: I should ask Anna what I have to do today.
+    <<else>>
+        Alex: I should get the interview from Timmy.
+    <<endif>>
 <<endif>>
 
 ===
@@ -263,17 +329,30 @@ position: -226,1469
 title: OfficeExit
 position: -219,1613
 ---
-Alex: Ok now I am finished for the day, time for the bar.
+<<declare $OfficeExit = 0 as number>>
+<<if $OfficeExit is 0>>
+    <<if $days is 1>>
+        <<if $finishedwork is true>>
+            Alex: Ok, I am finished for today, time to go to the bar
+            <<set $OfficeExit = 1>>
+        <<else>>
+            Alex: I should finish my work first.
+        <<endif>>
 
+    <<endif>>
+<<endif>>
 ===
 
 title: BarEnter
 position: -244,1889
 ---
-Alex: Hello Jeff! 
-Jeff: Alex, I already thought you wouldn’t come today.
-Jeff: Come have a beer.
-Alex: I will come right to you.
+<<if $days is 1>>
+    Alex: Hello Jeff! 
+    Jeff: Alex, I already thought you wouldn't come today.
+    Jeff: Come have a beer.
+    Alex: I will come right to you.
+<<endif>>
+
 ===
 
 title: Jeff
@@ -282,37 +361,47 @@ position: -246,2050
 <<declare $talkedtoJeff = false as bool>>
 <<declare $homebrewed = false as bool>>
 <<declare $imported = false as bool>>
+
 -> observe Jeff 
     Alex: Ach Jeff, it seems like he's the maestro orchestrating this lively symphony of chaos.
     Alex: I think he was in the army, but never got myself to ask him about his private life. 
     Alex: I wouldn't be surprised if he's mastered the art of mixing drinks while simultaneously dodging rogue darts.
 -> speak to Jeff
-    <<set $talkedtoJeff = true>>
-
-<<if $talkedtoJeff is true>>
-    Alex: Hi Jeff, How is it going tonight?
-    Jeff: You know, the usual stuff, had to kick some people out. Had to much to drink. But nevermind that, what’s it gonna be today?
-    -> homebrewed beer
-        <<set $homebrewed = true>>
-    -> imported from germany
-        <<set $imported = true>>
-        
-    
-    <<if $homebrewed is true>>
-        Alex: The homebrewed one for me, support your locals!
-        Jeff: Right you are, it gets brewed right in the back.
-    <<elseif $imported is true>>
-        Alex: I will take the imported one from germany.
-        Jeff: Right you are, I will get it for you.
+    <<if $days is 1>>
+        <<if $talkedtoJeff is false>>
+            <<set $talkedtoJeff = true>>
+            Alex: Hi Jeff, How is it going tonight?
+            Jeff: You know, the usual stuff, had to kick some people out. Had to much to drink. But nevermind that, what's it gonna be today?
+            -> homebrewed beer
+                Alex: The homebrewed one for me, support your locals!
+                Jeff: Right you are, it gets brewed right in the back.
+                
+            -> imported from germany
+                Alex: I will take the imported one from germany.
+                Jeff: Right you are, I will get it for you.
+                
+            As Jeff finished talking you see a fresh beer in front of you, Jeffs a master at his job.
+            Alex: Thanks! That will be all for me tonight. Tomorrow I have to visit my mother for her birthday and have to get up early.
+        <<else>>
+            Jeff: Have a good night Alex!
+            Alex: You too Jeff!
+        <<endif>>
     <<endif>>
-
-As Jeff finished talking you see a fresh beer in front of you, Jeffs a master at his job.
-Alex: Thanks! That will be all for me tonight. Tomorrow I have to visit my mother for her birthday and have to get up early.
-<<endif>>
 ===
 
 title: BarExit
 position: -242,2416
 ---
-Alex: Ok, I should go home now, I have to get up early tomorrow.
+
+<<declare $BarExit = 0 as number>>
+
+<<if $BarExit is 0>>
+    <<if $talkedtoJeff is true>>
+        <<set $BarExit = 1>>
+        Alex: Ok, I should go home now, I have to get up early tomorrow.
+        <<set $days +=1>>
+    <<else>>
+        Alex: I should talk to Jeff first.
+    <<endif>>
+<<endif>>
 ===

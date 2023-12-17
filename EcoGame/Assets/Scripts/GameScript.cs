@@ -30,6 +30,7 @@ public class GameScript : MonoBehaviour
     private GameObject nextScene;
 
 
+
     // Start is called before the first frame update
     void Start()
     {

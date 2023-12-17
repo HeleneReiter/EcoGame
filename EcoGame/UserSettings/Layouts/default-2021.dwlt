@@ -557,9 +557,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.1910355, y: 0.8386731, z: 17.040152}
+    m_Target: {x: 1.8053892, y: -0.045773078, z: 9.54425}
     speed: 2
-    m_Value: {x: -1.1910355, y: 0.8386731, z: 17.040152}
+    m_Value: {x: 1.8053892, y: -0.045773078, z: 9.54425}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -610,9 +610,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 8.618784
+    m_Target: 7.6878276
     speed: 2
-    m_Value: 8.618784
+    m_Value: 7.6079445
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -668,24 +668,24 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
+      scrollPos: {x: 0, y: 444}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 12faffffe85f0000286000004c610000
+      m_ExpandedIDs: 10faffff12faffffe85f0000286000002c600000166100003e6100004a610000fe61000032620000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Bar
+        m_OriginalName: Bar
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 24748
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -757,7 +757,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -828,23 +828,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/YarnSpinner
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
     m_FilterByTypeIntersection: 0
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/YarnSpinner
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 14}
-    m_SelectedIDs: 4a640000
-    m_LastClickedID: 25674
-    m_ExpandedIDs: 00000000126400001464000016640000186400001a6400001c6400001e640000206400002264000024640000266400004064000000ca9a3b
+    m_SelectedIDs: 3e640000
+    m_LastClickedID: 25662
+    m_ExpandedIDs: 0000000010640000126400001464000016640000186400001a6400001c6400001e6400002064000022640000246400003e64000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -872,7 +872,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000126400001464000016640000186400001a6400001c6400001e64000020640000226400002464000026640000
+    m_ExpandedIDs: 0000000010640000126400001464000016640000186400001a6400001c6400001e640000206400002264000024640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

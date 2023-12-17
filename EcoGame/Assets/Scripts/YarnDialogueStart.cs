@@ -22,7 +22,10 @@ public class YarnDialogueStart : MonoBehaviour
     {
         interactable = true;
         dialogueRunner = FindObjectOfType<DialogueRunner>();
+      
     }
+
+ 
 
 
     private void StartConversation()
