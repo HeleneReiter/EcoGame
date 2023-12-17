@@ -18,6 +18,8 @@ position: -255,-313
 <<declare $thirdDayreached = false as bool>>
 <<declare $days = 1 as number>>
 
+<<declare $endingReached = false as bool>>
+
 <<set $gotUp = false>>
 <<set $awake = false>>
 
@@ -89,7 +91,7 @@ position: -255,-313
 <<endif>>
 
 //end
-<<if $days is 5>>
+<<if $ending is true>>
     <<set $awake = true>>
     Alex: Already morning? Uff, ok I have to get up.
     Alex: Lets see if today is actually my mom's birthday...
@@ -202,7 +204,7 @@ position: -231,654
     Alex: Ok nothing can be done with an empty stomach, better get something to eat.
 <<endif>>
 
-<<if $days is 5>>
+<<if $ending is true>>
     Radio: Greetings, everyone! This beautiful Saturday morning brings with it delightful weather, 
     and the traffic appears to be moving effortlessly. On a different note, the city is steadfast 
     in its commitment to sustainability. Keep an eye out for further updates!
@@ -210,7 +212,9 @@ position: -231,654
     Alex: Saturday, he said Saturday!
     Alex: It is finally over!! My mom has her party today!
     Alex: Now quickly! No time for breakfast!
+    <<set $endingReached = true>>
 <<endif>>
+
 ===
 
 
@@ -348,7 +352,7 @@ position: -227,938
             Alex: I should make some breakfast first.
         <<endif>>
 
-    <<elseif $days is 5>>
+    <<elseif $ending is true>>
         <<if $Kitchenready is true>>
             <<set $KitchenExit = 1>>
             Alex gets a message on his phone:
@@ -903,8 +907,9 @@ position: -242,2416
         <<set $BarExit = 1>>
         Alex: Ok, I should go home now, I have to get up early tomorrow.
         <<set $days +=1>> //tage erhöhen
-
-        
+        <<if $days > 4>>
+            <<set $days = 4>>
+        <<endif>>
     <<else>>
         Alex: I should talk to Jeff first.
     <<endif>>
@@ -919,6 +924,7 @@ position: -242,2416
 //Ende
 <<if $EcoPoints is 9>>
     <<set $ending = true>>
+    <<set $days = 5>>
 <<else>>
 // set all variables back to false
     <<set $BathroomExit = 0>>

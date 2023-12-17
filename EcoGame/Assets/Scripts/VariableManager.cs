@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Yarn.Unity;
 
@@ -13,6 +14,8 @@ public class VariableManager : MonoBehaviour
     public bool thirdDayreached;
     public TextMeshProUGUI counterText;
     public GameObject counterObject;
+
+    private bool endingReached;
 
     private float ecoPoints;
     private bool lamp_hit = false;
@@ -48,7 +51,10 @@ public class VariableManager : MonoBehaviour
 
         // Counter
         counterObject.SetActive(false);   
-        thirdDayreached = false; 
+        thirdDayreached = false;
+
+        //Ending
+        endingReached = false; 
     }
 
     // Update is called once per frame
@@ -59,8 +65,10 @@ public class VariableManager : MonoBehaviour
         variableStorage.TryGetValue("$lamp_hit", out lamp_hit);
         variableStorage.TryGetValue("$gotUp", out gotUp);
         variableStorage.TryGetValue("$awake", out awake);
+        variableStorage.TryGetValue("$endingReached", out endingReached);
         thirdDay();
         GotUp();
+        Ending();
     }
 
     public void thirdDay()
@@ -96,6 +104,14 @@ public class VariableManager : MonoBehaviour
             playerSleeping.SetActive(true);
             lightBackground.SetActive(false);
             darkBackground.SetActive(true);
+        }
+    }
+
+    public void Ending()
+    {
+        if (endingReached == true)
+        {
+            SceneManager.LoadScene("End");
         }
     }
 }
