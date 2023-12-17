@@ -398,7 +398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d54a7baa3a314a1281784e083ada84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  repeatable: 0
+  repeatable: 1
   conversationStartNode: Fridge
 --- !u!1 &20697682
 GameObject:
@@ -918,7 +918,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &89175612
 Transform:
   m_ObjectHideFlags: 0
@@ -1003,7 +1003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d54a7baa3a314a1281784e083ada84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  repeatable: 0
+  repeatable: 1
   conversationStartNode: WorkingDesk
 --- !u!61 &193250855
 BoxCollider2D:
@@ -1145,7 +1145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d54a7baa3a314a1281784e083ada84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  repeatable: 0
+  repeatable: 1
   conversationStartNode: CoffeeMachine(Object)
 --- !u!61 &204272697
 BoxCollider2D:
@@ -4332,7 +4332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d54a7baa3a314a1281784e083ada84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  repeatable: 0
+  repeatable: 1
   conversationStartNode: Sink(Object)
 --- !u!61 &947354369
 BoxCollider2D:
@@ -5393,7 +5393,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1128545442
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7665,7 +7665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d54a7baa3a314a1281784e083ada84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  repeatable: 0
+  repeatable: 1
   conversationStartNode: Shower(Object)
 --- !u!61 &1660971072
 BoxCollider2D:

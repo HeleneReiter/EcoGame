@@ -78,3 +78,15 @@ Alex: This place has its own unique charm.
 Alex: Is it just me, or does Jeff's Bar has a special talent for turning a simple evening into a tipsy spectacle? 
 Alex: And those fairy lights! It's like stumbling into a tipsy wonderland in here!
 ===
+
+title: Mirror
+position: -1,379
+---
+<<if $days is 1>>
+    Alex: Do I look ok? 
+    Alex: Maybe a bit tired, but should be alright.
+    Alex: Right Susanne?
+    Silence
+    Alex: Uch, nevermind.
+<<endif>>
+===

@@ -1,0 +1,946 @@
+﻿title: BedroomStart
+tags: bedroom
+color: blue
+position: -255,-313
+---
+<<declare $gotUp = false as bool>>
+<<declare $awake = false as bool>>
+<<declare $stayedInBed = false as bool>>
+
+
+<<declare $tookcar = false as bool >>
+<<declare $tookwalk = false as bool>>
+<<declare $tookbus = false as bool>>
+<<declare $tookbike = false as bool>>
+
+
+<<declare $EcoPoints = 0 as number>>
+<<declare $thirdDayreached = false as bool>>
+<<declare $days = 1 as number>>
+
+<<set $gotUp = false>>
+<<set $awake = false>>
+
+<<if $days is 1>>
+    Alex: Hmm? God no, how can it already be morning?
+    -> get up
+        <<set $awake = true>>
+        
+    -> stay in bed 
+        <<set $awake = false>>
+        <<set $gotUp = false>>
+        <<set $stayedInBed = true>>
+    
+
+    <<if $awake is true>>
+        Alex: Better get it going, i have to go to work
+        -> get out of bed
+        <<set $gotUp = true>>
+        <<set $awake = false>>
+        Alex: Good I have some time left before work, this will be a good morning!
+        Alex: I jump in the shower and make me some awesome breakfast.
+
+
+    <<else>>  
+        Alex: Just a few more minutes.
+        ...
+        after some time...   
+        <<set $awake = true >>
+        Alex: Uchh, i guess i have to get up now.
+        -> get up 
+        <<set $gotUp = true>>
+        <<set $awake = false>>
+        Alex: Uff its a bit late, have to be quick now or i will be late at work.
+             
+    <<endif>>
+<<endif>>
+
+<<if $days is 2>>
+    <<set $awake = true>>
+    Alex: Already morning? Uff, ok I have to get up.
+    Alex: Today is the Birthday of my mom, long drive ahead of me.
+    -> Get up
+    <<set $gotUp = true>>
+    <<set $awake = false>>
+    Alex: Better get ready
+    
+<<endif>>
+
+<<if $days is 3>>
+    <<set $awake = true>>
+    <<set $thirdDayreached = true>>
+    Alex: Already morning? Uff, ok I have to get up.
+    Alex: Today has to be the Birthday of my mom, long drive ahead of me.
+    -> Get up
+    <<set $gotUp = true>>
+    <<set $awake = false>>
+    Alex: Better get ready
+<<endif>>
+
+//loop days
+<<if $days is 4>>
+    <<set $awake = true>>
+    Alex: Already morning? Uff, ok I have to get up.
+    Alex: So today it counts, make right decisions and get out of this loop...
+    -> Get up
+    <<set $gotUp = true>>
+    <<set $awake = false>>
+    Alex: Better get ready
+<<endif>>
+
+//end
+<<if $days is 5>>
+    <<set $awake = true>>
+    Alex: Already morning? Uff, ok I have to get up.
+    Alex: Lets see if today is actually my mom's birthday...
+    -> Get up
+    <<set $gotUp = true>>
+    <<set $awake = false>>
+    Alex: Better get ready
+<<endif>>
+
+===
+
+
+title: BathroomEnter
+position: -242,216
+---
+<<declare $usedShower = false as bool>>
+<<declare $usedSink = false as bool>>
+
+Alex: Uff, I have to shower and brush my teeth. 
+Alex: Then I in the kitchen for some breakfast.
+
+===
+title: Shower(Object)
+position: -490,378
+---
+Alex: Ok now a fresh start in the day!
+<<set $usedShower = true>>
+-> long hot shower
+    Alex: Ahh, that was nice. 
+-> short shower 
+    Alex: Already over? 
+    <<set $EcoPoints +=1>>
+
+===
+title: Sink(Object)
+position: -243,379
+---
+<<set $usedSink = true>>
+Alex: Minty toothpaste, my favorite. Washing my teeth is the first stroke of freshness for the day.  
+
+===
+
+title: BathroomExit
+position: -1,379
+---
+<<declare $BathroomExit = 0 as number>>
+
+<<if $BathroomExit is 0>>
+    <<if $usedShower is true and $usedSink is true>>
+        <<set $BathroomExit = 1>>
+        Alex: Ok, I am ready for the day.
+    <<elseif $usedShower is true and $usedSink is false>>
+        Alex: I should wash my teeth first.
+    <<elseif $usedShower is false and $usedSink is true>>
+        Alex: I should take a shower first.
+    <<else>>
+        Alex: I'm not ready yet, I should take a shower and wash my teeth first.
+    <<endif>>
+<<endif>>
+===
+
+
+title: KitchenEnter
+position: -231,654
+---
+<<declare $Kitchenready = false as bool>>
+<<if $days is 1>>
+    Radio: Good morning, folks! Today's weather is looking nice 
+    and traffic seems to be flowing smoothly. 
+    Stay tuned for more updates!
+
+    <<if $stayedInBed is true>>
+        Alex: Alex: No time for breakfast, I will buy some on the way.
+    <<else>>
+        Alex: I have some time left, I will make some breakfast. Let's see what I have in the fridge.
+    <<endif>>
+<<endif>>
+
+<<if $days is 2>>
+    Radio: "Greetings! This Friday, we regret to inform you that the plastic bags
+    in your kitchen have formed an alliance and are currently plotting world 
+    domination. Reports suggest they're demanding better treatment and 
+    considering a strike. In other news, it appears that seagulls are now forming an 
+    organized choir to protest against beach pollution. Tune in for updates on this 
+    feathery musical revolution.
+
+    Alex: Did he say Friday? And what about plastic bags?
+    Alex: Uff am I this tired? Better make some coffee and breakfast.
+<<endif>>
+
+<<if $days is 3>>
+    Radio: Rise and shine, eco-champions! Brace yourselves for this Friday! 
+    The bees in your backyard have declared themselves the rulers of the garden kingdom, 
+    and they're demanding more nectar rights. Meanwhile, the local river has decided to take a 
+    spontaneous vacation and is now flowing through the streets near town, offering free swimming lessons to everyone. 
+    Stay tuned for our exclusive coverage of this liquid escapade!
+
+    Alex: Did he say Friday, again??
+    Alex: What was that? The river is overflown, what is happening on earth?
+    Alex: Ok nothing can be done with an empty stomach, better get something to eat.
+<<endif>>
+
+<<if $days is 4>>
+    Radio: Good morning, defenders of the green! Today, we regret to announce that the sun has gone on strike, 
+    tired of being taken for granted. In its absence, we are now facing a global shortage of sunshine, prompting 
+    a surge in sales of glow-in-the-dark sunglasses. On a brighter note, the squirrels seem to have organized a 
+    nutty carnival, showcasing their acrobatic skills in the treetops. Grab your front-row seats for this treetop extravaganza!
+
+    Alex: Omg what is happening to the world?!
+    Alex: Ok nothing can be done with an empty stomach, better get something to eat.
+<<endif>>
+
+<<if $days is 5>>
+    Radio: Greetings, everyone! This beautiful Saturday morning brings with it delightful weather, 
+    and the traffic appears to be moving effortlessly. On a different note, the city is steadfast 
+    in its commitment to sustainability. Keep an eye out for further updates!
+
+    Alex: Saturday, he said Saturday!
+    Alex: It is finally over!! My mom has her party today!
+    Alex: Now quickly! No time for breakfast!
+<<endif>>
+===
+
+
+
+title: Fridge
+position: -230,795
+---
+
+Alex: What should I eat today?
+-> Sandwich with meat
+    Alex: Uh yummy!
+    <<set $Kitchenready = true>>
+    
+-> Toast with marmelade 
+    Alex: I love it!
+     <<set $Kitchenready = true>>
+     <<set $EcoPoints +=1>>
+
+
+===
+
+title: KitchenExit
+position: -227,938
+
+---
+<<declare $KitchenExit = 0 as number>>
+<<if $KitchenExit is 0 >>
+    <<if $days is 1>>
+        <<if $Kitchenready is true>>
+            <<set $KitchenExit = 1>>
+            Alex gets a message on his phone:
+            Alex's mom: Hey sweetie, don't forget my party tomorrow at 1pm. We are happy to see you soon!
+            Alex: I didn't forget, but thanks for the reminder mom.
+
+            Alex: How do I get to work today?
+            -> car 
+                <<set $tookcar = true>>
+                Alex: I will take the car.
+            -> bus
+                <<set $tookbus = true>>
+                Alex: I will take the bus.
+            -> bike
+                <<set $tookbike = true>>
+                Alex: I will take the bike.
+            -> walk
+                <<set $tookwalk = true>>
+                Alex: I will walk.
+        <<else>>
+            <<if $stayedInBed is true>>
+                Alex: I should get some breakfast on the way.
+            <<else>>
+                Alex: I should make some breakfast first.
+            <<endif>>
+        <<endif>>
+
+    <<elseif $days is 2>>
+        <<if $Kitchenready is true>>
+            <<set $KitchenExit = 1>>
+            Alex gets a message on his phone:
+            Alex's mom: Hey sweetie, don't forget my party tomorrow at 1pm. We are happy to see you soon!
+            Alex: Wait!? Isn't today the party? There are no messages from yesterday...
+            Alex: And my phone says it's Friday too.
+            Alex: This is so strange. Yesterday was Friday, wasn't it?
+            Alex: I see if anybody is at work ... how can this be?
+            Alex: Ok better get going. If it's a Workday I am more than late.
+
+            Alex: How do I get to work today?
+            -> car 
+                <<set $tookcar = true>>
+                Alex: I will take the car.
+            -> bus
+                <<set $tookbus = true>>
+                Alex: I will take the bus.
+            -> bike
+                <<set $tookbike = true>>
+                Alex: I will take the bike.
+            -> walk
+                <<set $tookwalk = true>>
+                Alex: I will walk.
+        <<else>>
+            Alex: I should make some breakfast first.
+        <<endif>>
+    
+     <<elseif $days is 3>>
+        <<if $Kitchenready is true>>
+            <<set $KitchenExit = 1>>
+            Alex gets a message on his phone:
+            Alex: If that is my mom again, I am going crazy.
+            Alex's mom: Hey sweetie, don't forget my party tomorrow at 1pm. We are happy to see you soon!
+            Alex: ... what is happening?
+            Alex: And my phone says it's Friday too.
+            Alex: This can't be a mistake from me anymore.
+            Alex: I have to tell anybody, talk to anybody about this...
+            Alex: I see if someone at work can help me.
+
+            Alex: How do I get to work today?
+            -> car 
+                <<set $tookcar = true>>
+                Alex: I will take the car.
+            -> bus
+                <<set $tookbus = true>>
+                Alex: I will take the bus.
+            -> bike
+                <<set $tookbike = true>>
+                Alex: I will take the bike.
+            -> walk
+                <<set $tookwalk = true>>
+                Alex: I will walk.
+        <<else>>
+            Alex: I should make some breakfast first.
+        <<endif>>
+
+    <<elseif $days is 4>>
+        <<if $Kitchenready is true>>
+            <<set $KitchenExit = 1>>
+            Alex gets a message on his phone:
+            Alex: One positive thing has this loop stuff, I get to hear from my mom everyday.
+            Alex's mom: Hey sweetie, don't forget my party tomorrow at 1pm. We are happy to see you soon!
+            Alex: Time for work as always.
+
+            Alex: How do I get to work today?
+            -> car 
+                <<set $tookcar = true>>
+                Alex: I will take the car.
+            -> bus
+                <<set $tookbus = true>>
+                Alex: I will take the bus.
+            -> bike
+                <<set $tookbike = true>>
+                Alex: I will take the bike.
+            -> walk
+                <<set $tookwalk = true>>
+                Alex: I will walk.
+        <<else>>
+            Alex: I should make some breakfast first.
+        <<endif>>
+
+    <<elseif $days is 5>>
+        <<if $Kitchenready is true>>
+            <<set $KitchenExit = 1>>
+            Alex gets a message on his phone:
+            Alex: If that is my mom again, I am going crazy.
+            Alex's mom: Today is the day! We can't wait to see you!
+            Alex: Me too! Finally it is time!
+            //hier ende einfügen
+        <<endif>>
+    <<endif>>
+<<endif>>
+===
+
+
+title: OfficeEnter
+position: -224,1181
+---
+<<declare $talkedtoAnna = false as bool>>
+<<declare $talkedtoTimmy = false as bool>>
+<<declare $finishedwork = false as bool>>
+<<if $days is 1>>
+    
+    <<if $tookcar is true>> 
+        Alex: The Traffic was smooth like butter, I made it right on time.
+    <<elseif $tookbus is true>>
+        Alex: The Traffic was smooth like butter, the bus had no delay and I made it right on time.
+    <<elseif $tookbike is true>>
+        Alex: Perfect weather for riding a bike, shame I have now to work.
+    <<elseif $tookwalk is true>>
+        Alex: Perfect weather for a walk, shame I have now to work.
+    <<endif>>
+
+    <<if $stayedInBed is true>>
+        Alex: Got a nice Coffee to Go and sandwich. 
+    <<endif>>
+
+    Alex: Ok, first things first, I need to check what I have to do today.
+    Alex: Better ask Anna, she gives me always the work.
+<<endif>>
+
+<<if $days is 2>>
+    
+    <<if $tookcar is true>> 
+        Alex: Traffic was terrible, cars everywhere.
+    <<elseif $tookbus is true>>
+        Alex: The bus did't come, so I had to walk.
+    <<elseif $tookbike is true>>
+        Alex: I had really difficulties by navigating through the cars.
+    <<elseif $tookwalk is true>>
+        Alex: I walked, but the air was so bad, there were cars everywhere.
+    <<endif>>
+
+
+    Alex: Ok, looks like everyone is at work like a normal workday. 
+    Alex: Better talk to Anna.
+<<endif>>
+
+<<if $days is 3>>
+    
+    <<if $tookcar is true>> 
+        Alex: Traffic was terrible, cars everywhere.
+    <<elseif $tookbus is true>>
+        Alex: The bus did’t come, so I had to walk.
+    <<elseif $tookbike is true>>
+        Alex: I had really difficulties by navigating through the cars.
+    <<elseif $tookwalk is true>>
+        Alex: I walked, but the air was so bad, there were cars everywhere.
+    <<endif>>
+
+    Alex: Ok, looks like everyone is at work like a normal workday. 
+    Alex: Better talk to Anna.
+<<endif>>
+
+<<if $days is 4>>
+    
+    <<if $tookcar is true>> 
+        Alex: Traffic was terrible, cars everywhere.
+    <<elseif $tookbus is true>>
+        Alex: The bus did't come, so I had to walk.
+    <<elseif $tookbike is true>>
+        Alex: I had really difficulties by navigating through the cars.
+    <<elseif $tookwalk is true>>
+        Alex: I walked, but the air was so bad, there were cars everywhere.
+    <<endif>>
+
+    Alex: Ok, looks like everyone is at work like a normal workday. 
+    Alex: Better talk to Anna.
+<<endif>>
+
+
+===
+
+
+title: Anna
+position: -222,1318
+---
+
+-> observe anna
+    Alex: That is Anna my boss, she is a nice person.
+    Alex: She is always busy, but still finds time to talk to me.
+    Alex: She seem to be tired today, maybe I should ask her if she is ok.
+    Alex: I should ask her what I have to do today.
+-> speak to anna 
+    <<if $days is 1>>
+        <<if $talkedtoAnna is false>>
+            Alex: Good Morning Anna!
+            Anna: Oh, good morning Alex! How was your morning so far?
+            <<if $stayedInBed is true>>
+                Alex: Good, I got some good amount of sleep. But the morning was stressful.
+            <<else>>
+                Alex: I got up early and had some awesome breakfast, the perfect start in the day.
+            <<endif>>
+            Alex: How was your morning Anna?
+            Anna: As you know I am not a morning person and had to watch the final season of The green Awakening yesterday.
+            Anna: This made it even more difficult to get up today, but there is nothing coffee can't fix.
+            Anna: Anyway, I have some work for you!
+            Anna: Your Job today is to get the written interview from Timmy at his desk and edit it for the next paper for tomorrow morning.
+            Alex: Alright I get to it right away.
+            Alex: Ok next stop Timmy. I bet he is at his desk right now. Buried under paper as always.
+            <<set $talkedtoAnna = true>>
+        <<else>>
+            Anna: Hey Alex, how is it going?
+            <<if $talkedtoTimmy is false>>
+                Alex: Good, I am just on my way to Timmy to get the interview.
+            <<elseif $finishedwork is false>>
+                Alex: Good, I am just on my way to my desk to write the interview.
+            <<elseif $finishedwork is true>>
+                Alex: Good, I am heading now out for the day.
+            <<endif>>
+        <<endif>>
+    <<endif>>
+
+    <<if $days is 2>>
+        <<if $talkedtoAnna is false>>
+            Alex: Hey Anna!
+            Anna: Oh, good morning Alex! You are kinda late, did something happen this morning?
+            Alex: It was kind of weird. I thought today was Saturday and was ready to drive to my mother for her birthday, but thank god she reminded me that today is Friday.
+            Anna: You got lucky. It would have been really embarrassing to show up at your mother's house for her birthday one day too early.
+            Alex: Yeah, really lucky. So, how was your morning?
+            Anna: As you know, I'm not a morning person and had to watch the final season of "The Green Awakening" yesterday. 
+            This made it even more difficult to get up today, but there's nothing coffee can't fix.
+            Alex: Wait, didn't you already watch that two days earlier?
+            Anna: No, the last episode got published only yesterday.
+            Alex: Okay, weird. I thought you told me that yesterday already...
+            Anna: Are you sure you're alright today?
+            Alex: Yeah, I'm fine. What do I have to do today?
+            Anna: Your job today is to get the written interview from Timmy at his desk and edit it for the next paper for tomorrow morning.
+            Alex: Same as yesterday, alright!
+            Alex: Ok next stop Timmy. I bet 5$ that he is under the pile of paper.
+
+            <<set $talkedtoAnna = true>>
+        <<else>>
+            Anna: Hey Alex, how is it going?
+            <<if $talkedtoTimmy is false>>
+                Alex: Good, I am just on my way to Timmy to get the interview.
+            <<elseif $finishedwork is false>>
+                Alex: Good, I am just on my way to my desk to write the interview.
+            <<elseif $finishedwork is true>>
+                Alex: Good, I am heading now out for the day.
+            <<endif>>
+        <<endif>>
+    <<endif>>
+
+    <<if $days is 3>>
+        <<if $talkedtoAnna is false>>
+            Alex: Hey Anna!
+            Anna: Oh, good morning Alex! You are kinda late, did something happen this morning?
+            Alex: Anna, I think something's seriously wrong. It's the third consecutive Friday, 
+            and I'm completely baffled about what's happening to me.
+            Anna: What are you talking about? Yesterday was Thursday, and today is Friday, just like always.
+            Alex: No, it's not! Yesterday was Friday, the day before was Friday, and today is Friday again. 
+            I know it sounds unbelievable, but you have to believe me.
+            Anna: Alex, I think you might be sick. You should go home and rest. Maybe you've overexerted yourself.
+            Alex thinks: She doesn't believe me, and honestly, I can't blame her. I sound like a lunatic who has lost touch with reality.
+            Alex: No, I'm fine. Maybe I was just stressed, and I got confused with the days. What's on my agenda for today?
+            Anna: Are you sure you're okay? That sounded really stressed.
+            Alex: Yeah, I have to do the interview, right? I heard it from Timmy.
+            Anna: Yes, your task for today is to retrieve the written interview from Timmy at his desk and edit it for tomorrow morning's paper.
+            Anna: How did you know that?
+            Alex: Just guessed. I'll get right on it.
+            <<set $talkedtoAnna = true>>
+        <<else>>
+            Anna: Hey Alex, how is it going?
+            <<if $talkedtoTimmy is false>>
+                Alex: Good, I am just on my way to Timmy to get the interview.
+            <<elseif $finishedwork is false>>
+                Alex: Good, I am just on my way to my desk to write the interview.
+            <<elseif $finishedwork is true>>
+                Alex: Good, I am heading now out for the day.
+            <<endif>>
+        <<endif>>
+    <<endif>>
+
+    <<if $days is 4>>
+        <<if $talkedtoAnna is false>>
+            Alex: Hey Anna!
+            Anna: Oh, good morning Alex! How was your morning so far?
+            Alex: How was your morning, Anna?
+            Anna: As you know, I'm not a morning person and had to watch the final season of 
+            "The Green Awakening" yesterday. This made it even more difficult to get up today, but there is nothing coffee can't fix.
+            Anna: Anyway, I have some work for you:
+            Anna: Your job today is to get the written interview from Timmy at his desk and edit it for the next paper for tomorrow morning.
+            Alex: Alright, I'll get to it right away.
+            <<set $talkedtoAnna = true>>
+        <<else>>
+            Anna: Hey Alex, how is it going?
+            <<if $talkedtoTimmy is false>>
+                Alex: Good, I am just on my way to Timmy to get the interview.
+            <<elseif $finishedwork is false>>
+                Alex: Good, I am just on my way to my desk to write the interview.
+            <<elseif $finishedwork is true>>
+                Alex: Good, I am heading now out for the day.
+            <<endif>>
+        <<endif>>
+    <<endif>>
+===
+title: CoffeeMachine(Object)
+position: -461,1315
+---
+Alex: Uhh a nice coffee is exactly what I need!
+-> use mug 
+    <<set $EcoPoints +=1>>
+-> use plastic cup
+
+Alex: Uff that smells good, brings me back to life!
+
+===
+title: PileOfPaper
+position: 5,1316
+---
+-> observe
+    Alex: That is Timmy's desk, he is always buried under paper.
+    Alex: Wow, did he print that all in one day?
+-> speak to pile of paper
+    <<if $days is 1>>
+        <<if $talkedtoAnna is true>>
+            Alex: Timmy are you there?
+            Timmy: Alex! Yeahh I'm here, I have this interview written for you, it has to be here somewhere ...
+            After some minutes past
+            Timmy: Ahhh here it is! There you go Alex, don't forget to bring it to Anna after you are finished.
+            Alex: Thank you Timmy.
+            <<set $talkedtoTimmy = true>>
+        <<elseif $talkedtoTimmy is true>>
+            Alex: I already have the interview, I should go to my desk and work on it.
+        <<else>>
+            Alex: I should talk to Anna first.
+        <<endif>>
+    <<endif>>
+
+     <<if $days is 2>>
+        <<if $talkedtoAnna is true>>
+            Alex: Timmy where are you?
+            Timmy: Alex! Yeahh I'm here, I have this interview written for you, it has to be here somewhere ...
+            Alex recognizes the scribbled paper and points at it.
+            Alex: Is that it?
+            Timmy: Ahhh yess! There you go Alex, don't forget to bring it to Anna after you are finished.
+            Alex: Thank you Timmy, but is that interview not from yesterday?
+            A hand sticks out of the pile of paper, grabs the paper from Alex's hands and returns in the pile.
+            Timmy: No, no everything is alright. I'm messy but I don't make mistakes with my papers.
+            Timmy gives the paper back to Alex
+            Alex: Thank you Timmy.
+            <<set $talkedtoTimmy = true>>
+        <<elseif $talkedtoTimmy is true>>
+            Alex: I already have the interview, I should go to my desk and work on it.
+        <<else>>
+            Alex: I should talk to Anna first.
+        <<endif>>
+    <<endif>>
+
+     <<if $days is 3>>
+        <<if $talkedtoAnna is true>>
+            Alex: Timmy?
+            Timmy: Alex! I have this interview written for you, it has to be here somewhere ...
+            Alex takes the paper he recognizes 
+            Alex: Is that it?
+            Timmy: Ahhh yess, you are very smart today! Don't forget to bring it to Anna after you are finished.
+            Alex: Thanks for the paper and have a nice day!
+            <<set $talkedtoTimmy = true>>
+        <<elseif $talkedtoTimmy is true>>
+            Alex: I already have the interview, I should go to my desk and work on it.
+        <<else>>
+            Alex: I should talk to Anna first.
+        <<endif>>
+    <<endif>>
+
+     <<if $days is 4>>
+        <<if $talkedtoAnna is true>>
+            Alex: Timmy, are you there?
+            Timmy: Alex! Yeah, I'm here. I have this interview written for you; it has to be here somewhere...
+            Alex points to one paper
+            Alex: Is that it?
+            Timmy: Yess! There you go, Alex. Don't forget to bring it to Anna after you are finished.
+            Alex: Thank you, Timmy. You really don't want to use a PC?
+            Timmy: No, thank you I am good.
+
+            -> try to convince Timmy 
+                Alex considers how to approach convincing Timmy to use a PC.
+                Alex: Hey, Timmy, can I talk to you for a moment?
+                Timmy: Sure, what's up?
+                Alex: I've been thinking, you know, about our work and all these piles of paper. What if we considered using a computer instead of printing everything?
+                Timmy: Oh, I don't know, Alex. I like the old-school feel of paper. It's comforting.
+                Alex: I get that, but think about the convenience and efficiency of digital work. No more searching through piles, and we could easily make edits without wasting paper.
+                Timmy: Yeah, but I'm used to this. It feels real.
+                Alex: I hear you, but consider the environmental impact. We're cutting down a lot of trees for all this printing. Going digital is a greener option, you know?
+                Timmy: I never really thought about it that way.
+                Alex: Plus, it's not as complicated as it sounds. I can help you set up a laptop, and we can give it a trial period. If you don't like it, we can always go back to the old way.
+                Timmy: Hmm, you make some good points. Okay, let's give it a shot. But if I can't get used to it, we're reverting to paper.
+                Alex: Fair enough, Timmy. Thanks for being open to it. This might make our work a lot smoother.
+            -> leave
+                Alex: Ok, thanks, and have a nice day!
+
+            <<set $talkedtoTimmy = true>>
+        <<elseif $talkedtoTimmy is true>>
+            Alex: I already have the interview, I should go to my desk and work on it.
+        <<else>>
+            Alex: I should talk to Anna first.
+        <<endif>>
+    <<endif>>
+
+
+   
+===
+title: WorkingDesk
+position: -226,1469
+---
+<<if $days is 1>>
+    <<if $talkedtoAnna and $talkedtoTimmy is true>>
+        <<set $finishedwork = true>>
+        Alex: Ok I now that I have the paper I have to type it off and then make the layout for the newspaper tomorrow.
+        After some time ...
+        Alex: Ok finished, should I print it or just send it per email to Anna?
+        -> print
+            Alex: Anna here the interview for tomorrow.
+            Anna: Thank you Alex, you could have sent it per email as well, but thanks.
+            Alex: I will remember for the next time, wish you a nice evening bye.
+            Anna: You too, bye Alex!
+        -> send email
+            <<set $EcoPoints +=1>>
+            Alex: I have sent you the interview per email, hope thats ok.
+            Anna: Yeah really good, printing is outdated this times.
+            Alex: Wish you a nice evening, bye.
+            Anna: You too, bye Alex.    
+    <<elseif $talkedtoAnna is false>>
+        Alex: I should ask Anna what I have to do today.
+    <<elseif $finishedwork is true>>
+        Alex: I'm already finished with my work.
+    <<else>>
+        Alex: I should get the interview from Timmy.
+    <<endif>>
+<<else>>
+    <<if $talkedtoAnna and $talkedtoTimmy is true>>
+        <<set $finishedwork = true>>
+        Alex: Ok I now that I have the paper I have to type it off and then make the layout for the newspaper tomorrow.
+        Alex: It is the paper from yesterday...
+        After some time ...
+        Alex: Ok finished, should I print it or just send it per email to Anna?
+        -> print
+            Alex: Anna here the interview for tomorrow.
+            Anna: Thank you Alex, you could have sent it per email as well, but thanks.
+            Alex: I will remember for the next time, wish you a nice evening bye.
+            Anna: You too, bye Alex!
+        -> send email
+            <<set $EcoPoints +=1>>
+            Alex: I have sent you the interview per email, hope thats ok.
+            Anna: Yeah really good, printing is outdated this times.
+            Alex: Wish you a nice evening, bye.
+            Anna: You too, bye Alex.    
+    <<elseif $talkedtoAnna is false>>
+        Alex: I should ask Anna what I have to do today.
+    <<elseif $finishedwork is true>>
+        Alex: I'm already finished with my work.
+    <<else>>
+        Alex: I should get the interview from Timmy.
+    <<endif>>
+
+<<endif>>
+
+===
+
+
+title: OfficeExit
+position: -219,1613
+---
+<<declare $OfficeExit = 0 as number>>
+<<if $OfficeExit is 0>>
+    <<if $days is 1>>
+        <<if $finishedwork is true>>
+            Alex: Ok, I am finished for today, time to go to the bar
+            <<set $OfficeExit = 1>>
+        <<else>>
+            Alex: I should finish my work first.
+        <<endif>>
+
+    <<endif>>
+<<endif>>
+===
+
+title: BarEnter
+position: -244,1889
+---
+<<if $days is 1>>
+    Alex: Hello Jeff! 
+    Jeff: Alex, I already thought you wouldn't come today.
+    Jeff: Come have a beer.
+    Alex: I will come right to you.
+<<endif>>
+
+===
+
+title: Jeff
+position: -246,2050
+---
+<<declare $talkedtoJeff = false as bool>>
+
+-> observe Jeff 
+    Alex: Ach Jeff, it seems like he's the maestro orchestrating this lively symphony of chaos.
+    Alex: I think he was in the army, but never got myself to ask him about his private life. 
+    Alex: I wouldn't be surprised if he's mastered the art of mixing drinks while simultaneously dodging rogue darts.
+-> speak to Jeff
+    <<if $days is 1>>
+        <<if $talkedtoJeff is false>>
+            <<set $talkedtoJeff = true>>
+            Alex: Hi Jeff, How is it going tonight?
+            Jeff: You know, the usual stuff, had to kick some people out. Had to much to drink. But nevermind that, what's it gonna be today?
+            -> homebrewed beer
+                <<set $EcoPoints += 1>>
+                Alex: The homebrewed one for me, support your locals!
+                Jeff: Right you are, it gets brewed right in the back.
+                
+            -> imported from germany
+                Alex: I will take the imported one from germany.
+                Jeff: Right you are, I will get it for you.
+                
+            As Jeff finished talking you see a fresh beer in front of you, Jeffs a master at his job.
+            Alex: Thanks! That will be all for me tonight. Tomorrow I have to visit my mother for her birthday and have to get up early.
+        <<else>>
+            Jeff: Have a good night Alex!
+            Alex: You too Jeff!
+        <<endif>>
+    <<endif>>
+    
+       <<if $days is 2>>
+        <<if $talkedtoJeff is false>>
+            <<set $talkedtoJeff = true>>
+            Alex: Hi Jeff, How is it going tonight?
+            Jeff: You know, the usual stuff, had to kick some people out. Had to much to drink. But nevermind that, what's it gonna be today?
+            -> homebrewed beer
+                <<set $EcoPoints += 1>>
+                Alex: The homebrewed one for me, support your locals!
+                Jeff: Right you are, it gets brewed right in the back.
+                
+            -> imported from germany
+                Alex: I will take the imported one from germany.
+                Jeff: Right you are, I will get it for you.
+                
+            As Jeff finished talking, you see a fresh beer in front of you. Jeff's a master at his job.
+            Alex: Thanks! Hey Jeff?
+            Jeff: What’s up, Alex?
+            Alex: What happened here yesterday?
+            Jeff: You don’t remember? We had our dart party – the more people drank, the better they threw. Hahaha.
+            Alex: But I already left after one beer because I thought my mother's birthday is the next day...
+            Jeff: No, surely not. You drank quite a bit. You even got a good score at the dart game.
+            Alex: Hmm, something is weird.
+            Alex: Jeff, I'm leaving for today. Tomorrow is my mom's birthday. Thanks for the beer.
+            Jeff: Alright, see you tomorrow.
+        <<else>>
+            Jeff: Have a good night Alex!
+            Alex: You too Jeff!
+        <<endif>>
+    <<endif>>
+
+       <<if $days is 3>>
+        <<if $talkedtoJeff is false>>
+            <<set $talkedtoJeff = true>>
+            Alex: Jeff I need your help!
+            Jeff: Before we talk, what's it gonna be today?
+            -> homebrewed beer
+                <<set $EcoPoints += 1>>
+                Alex: The homebrewed one for me, support your locals!
+                Jeff: Right you are, it gets brewed right in the back.
+                
+            -> imported from germany
+                Alex: I will take the imported one from germany.
+                Jeff: Right you are, I will get it for you.
+                
+            Alex: Jeff, I can't shake this feeling that I'm losing my mind.
+            Jeff: We all feel a bit crazy at times, Alex. What's going on?
+            Alex: Seriously, Jeff, something's off with me. It might sound bizarre, but it's been Friday for three days now.
+            Jeff: That does sound strange. Anything specific happen?
+            Alex: It might sound unrelated, but I heard about environmental issues on the radio – plastic, bees, and the river. What does that have to do with my weird loop?
+            Jeff: You're chosen to set an example. You need to better yourself and make choices that help the environment. It's not about grand gestures, but every decision matters.
+            Alex: So, if I make the right choices, this loop ends?
+            Jeff: That's the idea.
+            Alex: How do you know all this?
+            Jeff: I'm a bartender. I hear a lot from different people.
+            Alex: Wait, so my time loop is some kind of environmental wake-up call?
+            Jeff: Exactly. It's a unique chance for you to make a positive impact.
+            Alex: Why me, though? Why not someone else?
+            Jeff: Who knows? Maybe you were just in the right place at the right time. What matters now is how you handle it.
+            Alex: This is overwhelming, Jeff. Saving the environment is a big responsibility.
+            Jeff: Start small. Make eco-friendly choices, reduce your carbon footprint, get involved in local initiatives.
+            Alex: How do I know if I'm making a difference?
+            Jeff: Sometimes, it's about the ripple effect. Your actions can inspire others. Imagine if everyone did a little bit – it could lead to significant change.
+            Alex: It's surreal, Jeff.
+            Jeff: Life's full of surprises. Embrace this one. Use it to make a positive impact for yourself and the world.
+            Alex: Thanks, Jeff. I never thought a bartender would be my guide out of a time loop.
+            Jeff: Secrets are shared at this bar. Now, go out there and make a difference. Break the loop with every conscious choice you make.
+            Alex: I will, Jeff. I'll make every day count.
+        <<else>>
+            Jeff: Have a good night Alex!
+            Alex: You too Jeff!
+        <<endif>>
+    <<endif>>
+
+       <<if $days is 4>>
+        <<if $talkedtoJeff is false>>
+            <<set $talkedtoJeff = true>>
+            Jeff: what's it gonna be today?
+            -> homebrewed beer
+                <<set $EcoPoints += 1>>
+                Alex: The homebrewed one for me, support your locals!
+                Jeff: Right you are, it gets brewed right in the back.
+                
+            -> imported from germany
+                Alex: I will take the imported one from germany.
+                Jeff: Right you are, I will get it for you.
+                
+            Jeff: How was your day?
+            Alex: It's hard to say for sure. I suppose I'll find out tomorrow if everything I did today was right...
+            Jeff: The anticipation can be tough.
+            Alex: I appreciate that you remember everything and stick by me through these challenging times.
+            Jeff: Always have, always will.
+            Alex: Well, I should get going. Time seems to pass quicker when I'm asleep. Thanks for everything, Jeff!
+            Jeff: Until tomorrow, Alex.
+
+        <<else>>
+            Jeff: Have a good night Alex!
+            Alex: You too Jeff!
+        <<endif>>
+    <<endif>>
+
+
+===
+
+title: BarExit
+position: -242,2416
+---
+
+<<declare $BarExit = 0 as number>>
+
+<<if $BarExit is 0>>
+    <<if $talkedtoJeff is true>>
+        <<set $BarExit = 1>>
+        Alex: Ok, I should go home now, I have to get up early tomorrow.
+        <<set $days +=1>> //tage erhöhen
+
+        
+    <<else>>
+        Alex: I should talk to Jeff first.
+    <<endif>>
+<<endif>>
+
+
+
+
+
+
+<<declare $ending = false as bool>>
+//Ende
+<<if $EcoPoints is 9>>
+    <<set $ending = true>>
+<<else>>
+// set all variables back to false
+    <<set $BathroomExit = 0>>
+    <<set $KitchenExit = 0>>
+    <<set $OfficeExit = 0>>
+    <<set $BarExit = 0>>
+    <<set $talkedtoAnna = false>>
+    <<set $talkedtoTimmy = false>>
+    <<set $finishedwork = false>>
+    <<set $talkedtoJeff = false>>
+    <<set $tookcar = false>>
+    <<set $tookbus = false>>
+    <<set $tookbike = false>>
+    <<set $tookwalk = false>>
+    <<set $stayedInBed = false>>
+    <<set $Kitchenready = false>>
+    <<set $usedShower = false>>
+    <<set $usedSink= false>>
+    
+
+    <<set $ending = false>>
+    <<set $EcoPoints = 0>>
+<<endif>>
+
+===
