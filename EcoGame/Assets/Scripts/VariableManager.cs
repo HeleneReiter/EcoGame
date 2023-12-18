@@ -30,6 +30,15 @@ public class VariableManager : MonoBehaviour
     public GameObject playerSleeping;
     public GameObject playerAwake;
 
+    private bool inBedroom = false;
+    private bool inBathroom = false;
+    private bool inKitchen = false;
+    private bool inOffice = false;
+    private bool inBar = false;
+
+
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +64,8 @@ public class VariableManager : MonoBehaviour
 
         //Ending
         endingReached = false; 
+
+        
     }
 
     // Update is called once per frame
@@ -66,9 +77,17 @@ public class VariableManager : MonoBehaviour
         variableStorage.TryGetValue("$gotUp", out gotUp);
         variableStorage.TryGetValue("$awake", out awake);
         variableStorage.TryGetValue("$endingReached", out endingReached);
+
+        variableStorage.TryGetValue("$inBedroom", out inBedroom);
+        variableStorage.TryGetValue("$inBathroom", out inBathroom);
+        variableStorage.TryGetValue("$inKitchen", out inKitchen);
+        variableStorage.TryGetValue("$inOffice", out inOffice);
+        variableStorage.TryGetValue("$inBar", out inBar);
+
         thirdDay();
         GotUp();
         Ending();
+
     }
 
     public void thirdDay()
@@ -114,4 +133,6 @@ public class VariableManager : MonoBehaviour
             SceneManager.LoadScene("End");
         }
     }
+
+   
 }

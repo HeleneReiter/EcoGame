@@ -22,7 +22,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49476
+49392
 Successfully changed project path to: /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame
 /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -54,12 +54,12 @@ Successfully changed project path to: /Users/helenereiter/Unity_Projekte/EcoGame
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8040095424] Host "[IP] 10.0.0.5 [Port] 0 [Flags] 2 [Guid] 1768712837 [EditorId] 1768712837 [Version] 1048832 [Id] OSXEditor(0,10.0.0.5) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [7997529792] Host "[IP] 10.0.0.5 [Port] 0 [Flags] 2 [Guid] 3596006279 [EditorId] 3596006279 [Version] 1048832 [Id] OSXEditor(0,10.0.0.5) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [8040095424] Host "[IP] 10.0.0.5 [Port] 0 [Flags] 2 [Guid] 1768712837 [EditorId] 1768712837 [Version] 1048832 [Id] OSXEditor(0,10.0.0.5) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [7997529792] Host "[IP] 10.0.0.5 [Port] 0 [Flags] 2 [Guid] 3596006279 [EditorId] 3596006279 [Version] 1048832 [Id] OSXEditor(0,10.0.0.5) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
-Refreshing native plugins compatible for Editor in 218.40 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 121.83 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.33f1 (ee5a2aa03ab2)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.33f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -74,51 +74,51 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.33f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.33f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2021.3.33f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56348
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56414
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.33f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.33f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002795 seconds.
+Registered in 0.002531 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 160.85 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 112.92 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.921 seconds
+- Completed reload, in  0.686 seconds
 Domain Reload Profiling:
-	ReloadAssembly (922ms)
-		BeginReloadAssembly (117ms)
+	ReloadAssembly (686ms)
+		BeginReloadAssembly (104ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (686ms)
-			LoadAssemblies (117ms)
+		EndReloadAssembly (495ms)
+			LoadAssemblies (105ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (174ms)
+			SetupTypeCache (104ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (384ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (321ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (161ms)
+				RefreshPlugins (113ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (173ms)
-				ProcessInitializeOnLoadMethodAttributes (38ms)
+				ProcessInitializeOnLoadAttributes (160ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.018332 seconds.
+Registered in 0.023733 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 128.87 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 114.16 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
@@ -182,29 +182,29 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Use
 (Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.921 seconds
+- Completed reload, in  1.758 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1922ms)
-		BeginReloadAssembly (114ms)
+	ReloadAssembly (1758ms)
+		BeginReloadAssembly (112ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (1703ms)
-			LoadAssemblies (115ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (1541ms)
+			LoadAssemblies (129ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (382ms)
+			SetupTypeCache (353ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (66ms)
-			SetupLoadedEditorAssemblies (1112ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (985ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (129ms)
-				BeforeProcessingInitializeOnLoad (98ms)
-				ProcessInitializeOnLoadAttributes (850ms)
-				ProcessInitializeOnLoadMethodAttributes (30ms)
+				RefreshPlugins (114ms)
+				BeforeProcessingInitializeOnLoad (90ms)
+				ProcessInitializeOnLoadAttributes (747ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -213,13 +213,13 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launching external process: /Applications/Unity/Hub/Editor/2021.3.33f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3992 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 60 unused Assets / (297.9 KB). Loaded Objects now: 4430.
-Memory consumption went from 148.8 MB to 148.5 MB.
-Total: 16.146792 ms (FindLiveObjects: 0.149750 ms CreateObjectMapping: 0.075042 ms MarkObjects: 15.810666 ms  DeleteObjects: 0.109500 ms)
+Unloading 60 unused Assets / (Unknown). Loaded Objects now: 4430.
+Memory consumption went from 148.4 MB to 148.5 MB.
+Total: 16.050250 ms (FindLiveObjects: 0.158375 ms CreateObjectMapping: 0.075250 ms MarkObjects: 15.735542 ms  DeleteObjects: 0.080000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -235,21 +235,21 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 918.738327 seconds.
-  path: Assets/Scripts/YarnSpinner/Days.yarn
-  artifactKey: Guid(f12273ea2259e4328a1e068303faaf89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 1049.435397 seconds.
+  path: Assets/Scripts/GameScript.cs
+  artifactKey: Guid(5b00a18f137ae4890aadb19c54351c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/YarnSpinner/Days.yarn using Guid(f12273ea2259e4328a1e068303faaf89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '390ac8d2379ee08bd8cb743d52ebf4f8') in 0.075822 seconds 
-Number of asset objects unloaded after import = 1
+Start importing Assets/Scripts/GameScript.cs using Guid(5b00a18f137ae4890aadb19c54351c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '135ea246d2867b18483def5b4094b111') in 0.063538 seconds 
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006767 seconds.
+Registered in 0.007315 seconds.
 Begin MonoManager ReloadAssembly
-Thread 0x2999ab000 may have been prematurely finalized
+Thread 0x28d507000 may have been prematurely finalized
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
@@ -312,155 +312,29 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Use
 (Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.898 seconds
+- Completed reload, in  2.356 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1899ms)
-		BeginReloadAssembly (181ms)
+	ReloadAssembly (2357ms)
+		BeginReloadAssembly (188ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (61ms)
-		EndReloadAssembly (1628ms)
-			LoadAssemblies (150ms)
+			CreateAndSetChildDomain (72ms)
+		EndReloadAssembly (2026ms)
+			LoadAssemblies (128ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (350ms)
+			SetupTypeCache (556ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (874ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (902ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (60ms)
-				ProcessInitializeOnLoadAttributes (782ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (791ms)
 				ProcessInitializeOnLoadMethodAttributes (27ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3968 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (22.9 KB). Loaded Objects now: 4435.
-Memory consumption went from 150.4 MB to 150.4 MB.
-Total: 14.625125 ms (FindLiveObjects: 0.172959 ms CreateObjectMapping: 0.078708 ms MarkObjects: 14.346125 ms  DeleteObjects: 0.026375 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 375.693783 seconds.
-  path: Assets/Scripts/YarnSpinner/Dialouge.yarnproject
-  artifactKey: Guid(a88d93cd24679459fb0b27306f371428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/YarnSpinner/Dialouge.yarnproject using Guid(a88d93cd24679459fb0b27306f371428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd13a59c332b2009ced324cf65c4e0f27') in 0.055753 seconds 
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007725 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16b857000 may have been prematurely finalized
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.Exception: Error! Visual Scripting: couldn't find visual scripting package
-  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:31 
-  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
-  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
-  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
-  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
-  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
-  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
-  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
-  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
-  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:134)
-
-(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 134)
-
-Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
-Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-YarnSpinnerTests.CommandsInAnAssemblyDefinition.Generated.cs:12)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
-
-(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
-
-Adding registration method Yarn.Unity.DefaultActions.RegisterActions
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
-Yarn.Unity.DefaultActions:AddRegisterFunction () (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/DefaultActions.cs:18)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
-
-(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
-
-Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
-Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-Assembly-CSharp.Generated.cs:12)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
-
-(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.874 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1875ms)
-		BeginReloadAssembly (165ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (62ms)
-		EndReloadAssembly (1622ms)
-			LoadAssemblies (101ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (354ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (49ms)
-			SetupLoadedEditorAssemblies (887ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (61ms)
-				ProcessInitializeOnLoadAttributes (792ms)
-				ProcessInitializeOnLoadMethodAttributes (29ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -469,9 +343,9 @@ Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3968 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (22.9 KB). Loaded Objects now: 4439.
-Memory consumption went from 154.6 MB to 154.6 MB.
-Total: 14.475375 ms (FindLiveObjects: 0.159958 ms CreateObjectMapping: 0.077000 ms MarkObjects: 14.208792 ms  DeleteObjects: 0.028083 ms)
+Unloading 49 unused Assets / (22.9 KB). Loaded Objects now: 4434.
+Memory consumption went from 150.4 MB to 150.4 MB.
+Total: 14.234791 ms (FindLiveObjects: 0.172208 ms CreateObjectMapping: 0.075292 ms MarkObjects: 13.954792 ms  DeleteObjects: 0.031458 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -488,12 +362,12 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008089 seconds.
+Registered in 0.007609 seconds.
 Begin MonoManager ReloadAssembly
-Thread 0x16b857000 may have been prematurely finalized
+Thread 0x284687000 may have been prematurely finalized
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
@@ -556,40 +430,40 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Use
 (Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.993 seconds
+- Completed reload, in  2.121 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1993ms)
-		BeginReloadAssembly (182ms)
+	ReloadAssembly (2122ms)
+		BeginReloadAssembly (244ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (69ms)
-		EndReloadAssembly (1713ms)
-			LoadAssemblies (108ms)
+			CreateAndSetChildDomain (74ms)
+		EndReloadAssembly (1752ms)
+			LoadAssemblies (199ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (391ms)
+			SetupTypeCache (372ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (896ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (945ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (82ms)
-				ProcessInitializeOnLoadAttributes (777ms)
-				ProcessInitializeOnLoadMethodAttributes (30ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (842ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (3ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3968 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (23.0 KB). Loaded Objects now: 4443.
-Memory consumption went from 154.6 MB to 154.6 MB.
-Total: 14.696625 ms (FindLiveObjects: 0.177792 ms CreateObjectMapping: 0.076625 ms MarkObjects: 14.412833 ms  DeleteObjects: 0.027750 ms)
+Unloading 49 unused Assets / (23.0 KB). Loaded Objects now: 4438.
+Memory consumption went from 150.4 MB to 150.4 MB.
+Total: 14.108125 ms (FindLiveObjects: 0.160916 ms CreateObjectMapping: 0.073833 ms MarkObjects: 13.826459 ms  DeleteObjects: 0.046083 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -605,33 +479,1827 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 101.627530 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(131a6b21c8605f84396be9f6751fb6e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 455.752466 seconds.
+  path: Assets/Scripts/YarnDialogueStart.cs
+  artifactKey: Guid(9d54a7baa3a314a1281784e083ada84b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Scenes using Guid(131a6b21c8605f84396be9f6751fb6e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c23e514d24f6b65fe96946cd87fc526') in 0.007140 seconds 
+Start importing Assets/Scripts/YarnDialogueStart.cs using Guid(9d54a7baa3a314a1281784e083ada84b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6732568e5e92506c3af670cbf85d404') in 0.011648 seconds 
 Number of asset objects unloaded after import = 0
 ========================================================================
-Received Import Request.
-  Time since last request: 2.383601 seconds.
-  path: Assets/Scenes/Start 1.unity
-  artifactKey: Guid(475a291f4f2c5433e8174f485c2306e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scenes/Start 1.unity using Guid(475a291f4f2c5433e8174f485c2306e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f74217a32975902ae061aac770ac41a1') in 0.001717 seconds 
-Number of asset objects unloaded after import = 0
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008517 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x282087000 may have been prematurely finalized
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:134)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 134)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-YarnSpinnerTests.CommandsInAnAssemblyDefinition.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.DefaultActions.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.DefaultActions:AddRegisterFunction () (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/DefaultActions.cs:18)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-Assembly-CSharp.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.456 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2456ms)
+		BeginReloadAssembly (350ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (137ms)
+		EndReloadAssembly (1968ms)
+			LoadAssemblies (237ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (508ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (945ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (85ms)
+				ProcessInitializeOnLoadAttributes (823ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3968 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (23.0 KB). Loaded Objects now: 4442.
+Memory consumption went from 150.5 MB to 150.4 MB.
+Total: 14.236542 ms (FindLiveObjects: 0.161000 ms CreateObjectMapping: 0.076834 ms MarkObjects: 13.965334 ms  DeleteObjects: 0.031792 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.720827 seconds.
-  path: Assets/Scenes/End.unity
-  artifactKey: Guid(475a291f4f2c5433e8174f485c2306e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 21.150848 seconds.
+  path: Assets/Scripts/YarnDialogueStart.cs
+  artifactKey: Guid(9d54a7baa3a314a1281784e083ada84b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Scenes/End.unity using Guid(475a291f4f2c5433e8174f485c2306e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcbca9d1688997ccfe3c9327cb0a6a9a') in 0.001265 seconds 
+Start importing Assets/Scripts/YarnDialogueStart.cs using Guid(9d54a7baa3a314a1281784e083ada84b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb1d73d2be79d53c1c454485b8e86231') in 0.007815 seconds 
 Number of asset objects unloaded after import = 0
 ========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007683 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x2821d3000 may have been prematurely finalized
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:134)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 134)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-YarnSpinnerTests.CommandsInAnAssemblyDefinition.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.DefaultActions.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.DefaultActions:AddRegisterFunction () (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/DefaultActions.cs:18)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-Assembly-CSharp.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.298 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2299ms)
+		BeginReloadAssembly (238ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (80ms)
+		EndReloadAssembly (1949ms)
+			LoadAssemblies (157ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (487ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (930ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (813ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3968 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (23.0 KB). Loaded Objects now: 4446.
+Memory consumption went from 150.5 MB to 150.4 MB.
+Total: 14.263292 ms (FindLiveObjects: 0.173208 ms CreateObjectMapping: 0.076333 ms MarkObjects: 13.983541 ms  DeleteObjects: 0.029125 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
 Received Import Request.
-  Time since last request: 217.943590 seconds.
-  path: Assets/Scenes/Level01.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 208.351409 seconds.
+  path: Assets/Sounds/519065__angelkunev__door-unlock.wav
+  artifactKey: Guid(e5d84e2e216c54ccfa72a726ef9c8b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Scenes/Level01.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b2039315ef36320eed484aee1be0743') in 0.002810 seconds 
+Start importing Assets/Sounds/519065__angelkunev__door-unlock.wav using Guid(e5d84e2e216c54ccfa72a726ef9c8b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d7b6a3a22306b72e9be206147560aab') in 0.631249 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 14.724207 seconds.
+  path: Assets/Sounds/UnlockDorr.wav
+  artifactKey: Guid(e5d84e2e216c54ccfa72a726ef9c8b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sounds/UnlockDorr.wav using Guid(e5d84e2e216c54ccfa72a726ef9c8b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '770e92993a7de0b2e37e79d17748a350') in 0.008243 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 7.142790 seconds.
+  path: Assets/Sounds/UnlockDoor.wav
+  artifactKey: Guid(e5d84e2e216c54ccfa72a726ef9c8b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Sounds/UnlockDoor.wav using Guid(e5d84e2e216c54ccfa72a726ef9c8b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb467a7d3a4dcffc759a59d955a445da') in 0.006958 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005927 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x282147000 may have been prematurely finalized
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:134)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 134)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-YarnSpinnerTests.CommandsInAnAssemblyDefinition.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.DefaultActions.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.DefaultActions:AddRegisterFunction () (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/DefaultActions.cs:18)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-Assembly-CSharp.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.776 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3777ms)
+		BeginReloadAssembly (406ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (185ms)
+		EndReloadAssembly (3221ms)
+			LoadAssemblies (255ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (840ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (111ms)
+			SetupLoadedEditorAssemblies (1563ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (145ms)
+				ProcessInitializeOnLoadAttributes (1344ms)
+				ProcessInitializeOnLoadMethodAttributes (63ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3968 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (23.0 KB). Loaded Objects now: 4460.
+Memory consumption went from 156.8 MB to 156.8 MB.
+Total: 32.661875 ms (FindLiveObjects: 0.332042 ms CreateObjectMapping: 0.175125 ms MarkObjects: 32.079833 ms  DeleteObjects: 0.073208 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 239.912007 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(f694a51530b764d839c0ae9259cd3776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Scripts using Guid(f694a51530b764d839c0ae9259cd3776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c183892363f294926c7fd693334c44b8') in 0.008104 seconds 
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006661 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x2815d7000 may have been prematurely finalized
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:134)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 134)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-YarnSpinnerTests.CommandsInAnAssemblyDefinition.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.DefaultActions.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.DefaultActions:AddRegisterFunction () (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/DefaultActions.cs:18)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-Assembly-CSharp.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.045 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2046ms)
+		BeginReloadAssembly (199ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (70ms)
+		EndReloadAssembly (1659ms)
+			LoadAssemblies (141ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (400ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (867ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (58ms)
+				ProcessInitializeOnLoadAttributes (774ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3968 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (23.0 KB). Loaded Objects now: 4464.
+Memory consumption went from 156.8 MB to 156.8 MB.
+Total: 15.085458 ms (FindLiveObjects: 0.201875 ms CreateObjectMapping: 0.079083 ms MarkObjects: 14.767041 ms  DeleteObjects: 0.036542 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 585.101531 seconds.
+  path: Assets/Scripts/YarnSpinner/Dialouge.yarnproject
+  artifactKey: Guid(a88d93cd24679459fb0b27306f371428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Scripts/YarnSpinner/Dialouge.yarnproject using Guid(a88d93cd24679459fb0b27306f371428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c693b963aa110cb51766bdf5ff5f40e3') in 0.071872 seconds 
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006526 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x2815d7000 may have been prematurely finalized
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:134)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 134)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-YarnSpinnerTests.CommandsInAnAssemblyDefinition.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.DefaultActions.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.DefaultActions:AddRegisterFunction () (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/DefaultActions.cs:18)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-Assembly-CSharp.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.013 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2013ms)
+		BeginReloadAssembly (238ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (81ms)
+		EndReloadAssembly (1674ms)
+			LoadAssemblies (179ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (368ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (883ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (789ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3968 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (23.0 KB). Loaded Objects now: 4468.
+Memory consumption went from 160.9 MB to 160.9 MB.
+Total: 14.357000 ms (FindLiveObjects: 0.184708 ms CreateObjectMapping: 0.074709 ms MarkObjects: 14.050125 ms  DeleteObjects: 0.046875 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009181 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x2815d7000 may have been prematurely finalized
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:134)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 134)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-YarnSpinnerTests.CommandsInAnAssemblyDefinition.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.DefaultActions.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.DefaultActions:AddRegisterFunction () (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/DefaultActions.cs:18)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-Assembly-CSharp.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  4.266 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4267ms)
+		BeginReloadAssembly (561ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (213ms)
+		EndReloadAssembly (3501ms)
+			LoadAssemblies (451ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (873ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (107ms)
+			SetupLoadedEditorAssemblies (1619ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (141ms)
+				ProcessInitializeOnLoadAttributes (1402ms)
+				ProcessInitializeOnLoadMethodAttributes (65ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3968 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (22.9 KB). Loaded Objects now: 4472.
+Memory consumption went from 161.0 MB to 160.9 MB.
+Total: 18.330958 ms (FindLiveObjects: 0.188042 ms CreateObjectMapping: 0.098958 ms MarkObjects: 18.008125 ms  DeleteObjects: 0.033833 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008941 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x2815d7000 may have been prematurely finalized
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:134)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 134)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-YarnSpinnerTests.CommandsInAnAssemblyDefinition.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.DefaultActions.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.DefaultActions:AddRegisterFunction () (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/DefaultActions.cs:18)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-Assembly-CSharp.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.875 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3875ms)
+		BeginReloadAssembly (274ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (107ms)
+		EndReloadAssembly (3395ms)
+			LoadAssemblies (195ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (836ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (105ms)
+			SetupLoadedEditorAssemblies (1640ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (145ms)
+				ProcessInitializeOnLoadAttributes (1422ms)
+				ProcessInitializeOnLoadMethodAttributes (61ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3968 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (23.0 KB). Loaded Objects now: 4476.
+Memory consumption went from 161.0 MB to 161.0 MB.
+Total: 15.731333 ms (FindLiveObjects: 0.195167 ms CreateObjectMapping: 0.091750 ms MarkObjects: 15.412750 ms  DeleteObjects: 0.030542 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008116 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x2815d7000 may have been prematurely finalized
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:134)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 134)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-YarnSpinnerTests.CommandsInAnAssemblyDefinition.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.DefaultActions.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.DefaultActions:AddRegisterFunction () (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/DefaultActions.cs:18)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-Assembly-CSharp.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.449 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3450ms)
+		BeginReloadAssembly (219ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (92ms)
+		EndReloadAssembly (3093ms)
+			LoadAssemblies (130ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (812ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (114ms)
+			SetupLoadedEditorAssemblies (1389ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (143ms)
+				ProcessInitializeOnLoadAttributes (1182ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3968 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (23.0 KB). Loaded Objects now: 4480.
+Memory consumption went from 161.0 MB to 161.0 MB.
+Total: 32.438208 ms (FindLiveObjects: 0.321625 ms CreateObjectMapping: 0.179375 ms MarkObjects: 31.878709 ms  DeleteObjects: 0.056416 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007184 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x2815d7000 may have been prematurely finalized
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:134)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 134)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-YarnSpinnerTests.CommandsInAnAssemblyDefinition.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.DefaultActions.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.DefaultActions:AddRegisterFunction () (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/DefaultActions.cs:18)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-Assembly-CSharp.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.112 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3113ms)
+		BeginReloadAssembly (167ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (62ms)
+		EndReloadAssembly (2844ms)
+			LoadAssemblies (101ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (729ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (105ms)
+			SetupLoadedEditorAssemblies (1336ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (108ms)
+				ProcessInitializeOnLoadAttributes (1188ms)
+				ProcessInitializeOnLoadMethodAttributes (31ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3968 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (23.0 KB). Loaded Objects now: 4484.
+Memory consumption went from 161.0 MB to 161.0 MB.
+Total: 15.968000 ms (FindLiveObjects: 0.178916 ms CreateObjectMapping: 0.087667 ms MarkObjects: 15.671084 ms  DeleteObjects: 0.029125 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006417 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x2815d7000 may have been prematurely finalized
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:134)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 134)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-YarnSpinnerTests.CommandsInAnAssemblyDefinition.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.DefaultActions.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.DefaultActions:AddRegisterFunction () (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/DefaultActions.cs:18)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-Assembly-CSharp.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.256 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3257ms)
+		BeginReloadAssembly (163ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (58ms)
+		EndReloadAssembly (3003ms)
+			LoadAssemblies (104ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (669ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (102ms)
+			SetupLoadedEditorAssemblies (1492ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (128ms)
+				ProcessInitializeOnLoadAttributes (1296ms)
+				ProcessInitializeOnLoadMethodAttributes (57ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3968 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (23.0 KB). Loaded Objects now: 4488.
+Memory consumption went from 161.0 MB to 161.0 MB.
+Total: 31.025250 ms (FindLiveObjects: 0.396208 ms CreateObjectMapping: 0.185542 ms MarkObjects: 30.381208 ms  DeleteObjects: 0.060500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007282 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x2815d7000 may have been prematurely finalized
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:134)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 134)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-YarnSpinnerTests.CommandsInAnAssemblyDefinition.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.DefaultActions.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.DefaultActions:AddRegisterFunction () (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/DefaultActions.cs:18)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-Assembly-CSharp.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.453 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3454ms)
+		BeginReloadAssembly (166ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (3189ms)
+			LoadAssemblies (107ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (778ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (108ms)
+			SetupLoadedEditorAssemblies (1545ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (135ms)
+				ProcessInitializeOnLoadAttributes (1358ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3968 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (23.0 KB). Loaded Objects now: 4492.
+Memory consumption went from 161.0 MB to 161.0 MB.
+Total: 31.287625 ms (FindLiveObjects: 0.336875 ms CreateObjectMapping: 0.176542 ms MarkObjects: 30.724083 ms  DeleteObjects: 0.048292 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008049 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x2815d7000 may have been prematurely finalized
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:134)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 134)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-YarnSpinnerTests.CommandsInAnAssemblyDefinition.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.DefaultActions.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.DefaultActions:AddRegisterFunction () (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/DefaultActions.cs:18)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-Assembly-CSharp.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.051 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3052ms)
+		BeginReloadAssembly (165ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (57ms)
+		EndReloadAssembly (2796ms)
+			LoadAssemblies (104ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (461ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (107ms)
+			SetupLoadedEditorAssemblies (1505ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (140ms)
+				ProcessInitializeOnLoadAttributes (1290ms)
+				ProcessInitializeOnLoadMethodAttributes (63ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3968 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (23.0 KB). Loaded Objects now: 4496.
+Memory consumption went from 161.0 MB to 161.0 MB.
+Total: 33.454459 ms (FindLiveObjects: 0.611042 ms CreateObjectMapping: 0.260209 ms MarkObjects: 32.522166 ms  DeleteObjects: 0.059542 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007861 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x2815d7000 may have been prematurely finalized
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:134)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 134)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-YarnSpinnerTests.CommandsInAnAssemblyDefinition.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.DefaultActions.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.DefaultActions:AddRegisterFunction () (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/DefaultActions.cs:18)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-Assembly-CSharp.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.151 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3152ms)
+		BeginReloadAssembly (182ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (65ms)
+		EndReloadAssembly (2871ms)
+			LoadAssemblies (114ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (592ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (103ms)
+			SetupLoadedEditorAssemblies (1445ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (140ms)
+				ProcessInitializeOnLoadAttributes (1236ms)
+				ProcessInitializeOnLoadMethodAttributes (57ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.31 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3968 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (23.0 KB). Loaded Objects now: 4500.
+Memory consumption went from 161.1 MB to 161.0 MB.
+Total: 31.185167 ms (FindLiveObjects: 0.339917 ms CreateObjectMapping: 0.182375 ms MarkObjects: 30.598625 ms  DeleteObjects: 0.062083 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006977 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x2815d7000 may have been prematurely finalized
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:134)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 134)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-YarnSpinnerTests.CommandsInAnAssemblyDefinition.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.DefaultActions.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.DefaultActions:AddRegisterFunction () (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/DefaultActions.cs:18)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-Assembly-CSharp.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.290 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2291ms)
+		BeginReloadAssembly (209ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (75ms)
+		EndReloadAssembly (1937ms)
+			LoadAssemblies (139ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (446ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (992ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (868ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3968 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (23.0 KB). Loaded Objects now: 4504.
+Memory consumption went from 161.1 MB to 161.0 MB.
+Total: 14.120209 ms (FindLiveObjects: 0.189291 ms CreateObjectMapping: 0.080125 ms MarkObjects: 13.814584 ms  DeleteObjects: 0.035209 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008039 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x2815d7000 may have been prematurely finalized
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in /Users/helenereiter/Unity_Projekte/EcoGame/EcoGame/Library/PackageCache/com.unity.visualscripting@1.9.1/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:134)
+
+(Filename: /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs Line: 134)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-YarnSpinnerTests.CommandsInAnAssemblyDefinition.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.DefaultActions.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.DefaultActions:AddRegisterFunction () (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/DefaultActions.cs:18)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Adding registration method Yarn.Unity.Generated.ActionRegistration.RegisterActions
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Yarn.Unity.Actions:AddRegistrationMethod (System.Action`1<Yarn.Unity.IActionRegistration>) (at Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs:606)
+Yarn.Unity.Generated.ActionRegistration:AddRegisterFunction () (at YarnSpinner.Unity.SourceCodeGenerator/ActionRegistrationSourceGenerator/YarnActionRegistration-Assembly-CSharp.Generated.cs:12)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:151)
+
+(Filename: Library/PackageCache/dev.yarnspinner.unity@2.3.1/Runtime/Commands/Actions.cs Line: 606)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.090 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3091ms)
+		BeginReloadAssembly (179ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (68ms)
+		EndReloadAssembly (2813ms)
+			LoadAssemblies (105ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (572ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (89ms)
+			SetupLoadedEditorAssemblies (1440ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (128ms)
+				ProcessInitializeOnLoadAttributes (1247ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3968 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (23.0 KB). Loaded Objects now: 4508.
+Memory consumption went from 161.1 MB to 161.1 MB.
+Total: 32.690709 ms (FindLiveObjects: 0.469625 ms CreateObjectMapping: 0.206375 ms MarkObjects: 31.958666 ms  DeleteObjects: 0.054500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

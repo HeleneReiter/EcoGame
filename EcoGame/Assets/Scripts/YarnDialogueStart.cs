@@ -18,6 +18,7 @@ public class YarnDialogueStart : MonoBehaviour
     public string conversationStartNode;
 
 
+
     public void Start()
     {
         interactable = true;

@@ -17,6 +17,7 @@ public class InteractableText : MonoBehaviour
     public Collider2D colliderObject;
     RaycastHit2D hit;
     private DialogueRunner dialogueRunner;
+   
 
     void Start()
     {

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Yarn.Unity;
+using UnityEngine.Audio;
 
 public class GameScript : MonoBehaviour
 {
@@ -29,6 +30,8 @@ public class GameScript : MonoBehaviour
     private GameObject currentScene;
     private GameObject nextScene;
 
+    public AudioSource audioSource;
+    public AudioClip audioClip;
 
 
     // Start is called before the first frame update
@@ -44,7 +47,6 @@ public class GameScript : MonoBehaviour
         int currentIndexText = System.Array.IndexOf(texts, currentText);
         nextText = texts[(currentIndexText + 1) % texts.Length];
 
-
         currentScene.SetActive(true);
         nextScene.SetActive(false);
 
@@ -54,7 +56,6 @@ public class GameScript : MonoBehaviour
         currentStartNode = startnodes[0];
         int currentIndexStartNode = System.Array.IndexOf(startnodes, currentStartNode);
         nextStartNode = startnodes[(currentIndexStartNode + 1) % startnodes.Length];
-
     }
 
     // Update is called once per frame
@@ -68,9 +69,6 @@ public class GameScript : MonoBehaviour
         nextScene = scenes[nextIndex];
         nextText = texts[nextIndex];
         nextStartNode = startnodes[nextIndex];
-
-    
-        
     }
 
      private void StartConversation()
@@ -90,12 +88,13 @@ public class GameScript : MonoBehaviour
 
     void SceneChange()
     {
-        
+       
         currentScene.SetActive(false);
         nextScene.SetActive(true);
 
         currentText.SetActive(false);
         nextText.SetActive(true);
+        
     }
 
     void Hitdetect()
@@ -136,10 +135,9 @@ public class GameScript : MonoBehaviour
                         currentStartNode = nextStartNode;
                         currentScene = nextScene;
                         currentText = nextText;
-                  
-                        
 
-                        
+                        audioSource.PlayOneShot(audioClip);
+                
 
                     }
                 }
@@ -151,4 +149,5 @@ public class GameScript : MonoBehaviour
             }
         }
     }
+
 }
