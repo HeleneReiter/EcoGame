@@ -31,7 +31,12 @@ public class GameScript : MonoBehaviour
     private GameObject nextScene;
 
     public AudioSource audioSource;
-    public AudioClip audioClip;
+    public AudioClip DoorSound;
+    public AudioClip SinkSound;
+    public AudioClip CoffeeSound;
+    public AudioClip DeskSound;
+
+
 
 
     // Start is called before the first frame update
@@ -136,14 +141,24 @@ public class GameScript : MonoBehaviour
                         currentScene = nextScene;
                         currentText = nextText;
 
-                        audioSource.PlayOneShot(audioClip);
+                        audioSource.PlayOneShot(DoorSound);
                 
 
                     }
                 }
-                else
+                else if (hit.collider.gameObject.tag == "Sink")
                 {
-                    print("No hit");
+                    audioSource.PlayOneShot(DoorSound);
+                }
+
+                else if (hit.collider.gameObject.tag == "Coffee")
+                {
+                    audioSource.PlayOneShot(CoffeeSound);
+                }
+
+                else if (hit.collider.gameObject.tag == "Desk")
+                {
+                    audioSource.PlayOneShot(DeskSound);
                 }
 
             }
