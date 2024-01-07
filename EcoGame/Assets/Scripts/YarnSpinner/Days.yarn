@@ -132,11 +132,20 @@ position: -490,378
 ---
 Alex: Ok now a fresh start in the day!
 <<set $usedShower = true>>
--> long hot shower
-    Alex: Ahh, that was nice. 
--> short shower 
-    Alex: Already over? 
-    <<set $EcoPoints +=1>>
+
+<<if $days is 1>>
+    -> long hot shower
+        Alex: Ahh, that was nice. 
+<<elseif $days is 2>>
+    -> long hot shower
+        Alex: Ahh, that was nice. 
+<<else>>
+    -> long hot shower
+        Alex: Ahh, that was nice. 
+    -> short shower 
+        Alex: Already over? 
+        <<set $EcoPoints +=4>>
+<<endif>>
 
 ===
 title: Sink(Object)
@@ -174,18 +183,22 @@ position: -231,654
 <<set $inKitchen = true>>
 <<declare $Kitchenready = false as bool>>
 <<if $days is 1>>
-    Radio: Good morning, folks! Today's weather is looking nice and traffic seems to be flowing smoothly. Stay tuned for more updates!
+    Radio: Good morning, folks! 
+    Radio: Today's weather is looking nice and traffic seems to be flowing smoothly. 
+    Radio: Stay tuned for more updates!
 
     <<if $stayedInBed is true>>
-        Alex: Alex: No time for breakfast, I will buy some on the way.
+        Alex: No time for breakfast, I will buy some on the way.
     <<else>>
         Alex: I have some time left, I will make some breakfast. Let's see what I have in the fridge.
     <<endif>>
 <<endif>>
 
 <<if $days is 2>>
-    Radio: Greetings! This Friday, we regret to inform you that the plastic bags in your kitchen have formed an alliance and are currently plotting world domination. 
-    Radio: Reports suggest they're demanding better treatment and considering a strike. In other news, it appears that seagulls are now forming an organized choir to protest against beach pollution. 
+    Radio: Greetings! This Friday, we regret to inform you that the plastic bags in your kitchen have formed an alliance... 
+    Radio: ...and are currently plotting world domination! 
+    Radio: Reports suggest they're demanding better treatment and considering a strike. 
+    Radio: In other news, it appears that seagulls are now forming an organized choir to protest against beach pollution. 
     Radio: Tune in for updates on this feathery musical revolution.
 
     Alex: Did he say Friday? And what about plastic bags?
@@ -195,7 +208,8 @@ position: -231,654
 <<if $days is 3>>
     Radio: Rise and shine, eco-champions! Brace yourselves for this Friday! 
     Radio: The bees in your backyard have declared themselves the rulers of the garden kingdom and they're demanding more nectar rights. 
-    Radio: Meanwhile, the local river has decided to take a spontaneous vacation and is now flowing through the streets near town, offering free swimming lessons to everyone. 
+    Radio: Meanwhile, the local river has decided to take a spontaneous vacation...
+    Radio: and is now flowing through the streets near town, offering free swimming lessons to everyone. 
     Radio: Stay tuned for our exclusive coverage of this liquid escapade!
 
     Alex: Did he say Friday, again??
@@ -204,17 +218,21 @@ position: -231,654
 <<endif>>
 
 <<if $days is 4>>
-    Radio: Good morning, defenders of the green! Today, we regret to announce that the sun has gone on strike, tired of being taken for granted. 
-    Radio: In its absence, we are now facing a global shortage of sunshine, prompting a surge in sales of glow-in-the-dark sunglasses. 
+    Radio: Good morning, defenders of the green!
+    Radio: Today, we regret to announce that the sun has gone on strike, tired of being taken for granted. 
+    Radio: In its absence, we are now facing a global shortage of sunshine, ...
+    Radio: prompting a surge in sales of glow-in-the-dark sunglasses. 
     Radio: On a brighter note, the squirrels seem to have organized a nutty carnival, showcasing their acrobatic skills in the treetops. 
     Radio: Grab your front-row seats for this treetop extravaganza!
 
-    Alex: Omg what is happening to the world?!
-    Alex: Ok nothing can be done with an empty stomach, better get something to eat.
+    Alex: Omg, what is happening to the world?!
+    Alex: Ok, nothing can be done with an empty stomach, better get something to eat.
 <<endif>>
 
 <<if $ending is true>>
-    Radio: Greetings, everyone! This beautiful Saturday morning brings with it delightful weather, and the traffic appears to be moving effortlessly. 
+    Radio: Greetings, everyone!
+    Radio: This beautiful Saturday morning brings with it delightful weather, ...
+    Radio: and the traffic appears to be moving effortlessly. 
     Radio: On a different note, the city is steadfast in its commitment to sustainability. 
     Radio: Keep an eye out for further updates and have a nice weekend!
 
@@ -227,20 +245,29 @@ position: -231,654
 ===
 
 
-
 title: Fridge
 position: -230,795
 ---
 
 Alex: What should I eat today?
--> Sandwich with meat
-    Alex: Uh yummy!
-    <<set $Kitchenready = true>>
-    
--> Toast with marmelade 
-    Alex: I love it!
-     <<set $Kitchenready = true>>
-     <<set $EcoPoints +=1>>
+
+<<if $days is 1>>
+    -> Sandwich with meat
+        Alex: Uh yummy!
+        <<set $Kitchenready = true>>
+<<elseif $days is 2>>
+    -> Sandwich with meat
+        Alex: Uh yummy!
+        <<set $Kitchenready = true>>
+<<else>>
+    -> Sandwich with meat
+        Alex: Uh yummy!
+        <<set $Kitchenready = true>>
+    -> Toast with marmelade 
+        Alex: I love it!
+        <<set $Kitchenready = true>>
+        <<set $EcoPoints +=4>>
+<<endif>>
 
 
 ===
@@ -262,15 +289,6 @@ position: -227,938
             -> car 
                 <<set $tookcar = true>>
                 Alex: I will take the car.
-            -> bus
-                <<set $tookbus = true>>
-                Alex: I will take the bus.
-            -> bike
-                <<set $tookbike = true>>
-                Alex: I will take the bike.
-            -> walk
-                <<set $tookwalk = true>>
-                Alex: I will walk.
         <<else>>
             <<if $stayedInBed is true>>
                 Alex: I should get some breakfast on the way.
@@ -285,8 +303,8 @@ position: -227,938
             Alex gets a message on his phone:
             Alex's mom: Hey sweetie, don't forget my party tomorrow at 1pm. We are happy to see you soon!
             Alex: Wait!? Isn't today the party? There are no messages from yesterday...
-            Alex: And my phone says it's Friday too.
-            Alex: This is so strange. Yesterday was Friday, wasn't it?
+            Alex: And my phone says it's Friday too. Yesterday was Friday, wasn't it?
+            Alex: This is so strange. 
             Alex: I see if anybody is at work ... how can this be?
             Alex: Ok better get going. If it's a Workday I am more than late.
 
@@ -294,15 +312,6 @@ position: -227,938
             -> car 
                 <<set $tookcar = true>>
                 Alex: I will take the car.
-            -> bus
-                <<set $tookbus = true>>
-                Alex: I will take the bus.
-            -> bike
-                <<set $tookbike = true>>
-                Alex: I will take the bike.
-            -> walk
-                <<set $tookwalk = true>>
-                Alex: I will walk.
         <<else>>
             Alex: I should make some breakfast first.
         <<endif>>
@@ -387,15 +396,6 @@ position: -224,1181
     
     <<if $tookcar is true>> 
         Alex: The Traffic was smooth like butter, I made it right on time.
-    <<elseif $tookbus is true>>
-        Alex: The Traffic was smooth like butter, the bus had no delay and I made it right on time.
-        <<set $EcoPoints +=1>>
-    <<elseif $tookbike is true>>
-        Alex: Perfect weather for riding a bike, shame I have now to work.
-        <<set $EcoPoints +=1>>
-    <<elseif $tookwalk is true>>
-        Alex: Perfect weather for a walk, shame I have now to work.
-        <<set $EcoPoints +=1>>
     <<endif>>
 
     <<if $stayedInBed is true>>
@@ -410,35 +410,27 @@ position: -224,1181
     
     <<if $tookcar is true>> 
         Alex: Traffic was busy today... 
-    <<elseif $tookbus is true>>
-        Alex: The Traffic was busy today, but no people on the bus
-        <<set $EcoPoints +=1>>
-    <<elseif $tookbike is true>>
-        Alex: A bit windy for riding a bike, but I made it to work
-        <<set $EcoPoints +=1>>
-    <<elseif $tookwalk is true>>
-        Alex: Walking was good, but the weather today is kinda cloudy
-        <<set $EcoPoints +=1>>
     <<endif>>
-
 
     Alex: Ok, looks like everyone is at work like a normal workday. 
     Alex: Better talk to Anna.
 <<endif>>
 
 <<if $days is 3>>
-    
+
     <<if $tookcar is true>> 
         Alex: Traffic was terrible, cars everywhere.
+
     <<elseif $tookbus is true>>
         Alex: The bus had terrible delay!
-        <<set $EcoPoints +=1>>
+        <<set $EcoPoints +=2>>
     <<elseif $tookbike is true>>
         Alex: There were so many cars on the road, I had to drive on the sidewalk.
-        <<set $EcoPoints +=1>>
+        <<set $EcoPoints +=4>>
     <<elseif $tookwalk is true>>
         Alex: The cars didnt let me pass, I waited so long.
-        <<set $EcoPoints +=1>>
+        <<set $EcoPoints +=4>>
+
     <<endif>>
 
     Alex: Ok, looks like everyone is at work like a normal workday. 
@@ -451,13 +443,13 @@ position: -224,1181
         Alex: Traffic was terrible, cars everywhere.
     <<elseif $tookbus is true>>
         Alex: The bus did't come, so I had to walk.
-        <<set $EcoPoints +=1>>
+        <<set $EcoPoints +=2>>
     <<elseif $tookbike is true>>
         Alex: I had really difficulties by navigating through the cars.
-        <<set $EcoPoints +=1>>
+        <<set $EcoPoints +=4>>
     <<elseif $tookwalk is true>>
         Alex: I walked, but the air was so bad, there were cars everywhere.
-        <<set $EcoPoints +=1>>
+        <<set $EcoPoints +=4>>
     <<endif>>
 
     Alex: Ok, looks like everyone is at work like a normal workday. 
@@ -488,12 +480,12 @@ position: -222,1318
                 Alex: I got up early and had some awesome breakfast, the perfect start in the day.
             <<endif>>
             Alex: How was your morning Anna?
-            Anna: As you know I am not a morning person and had to watch the final season of The green Awakening yesterday.
+            Anna: As you know I am not a morning person and had to watch "The green Awakening" yesterday.
             Anna: This made it even more difficult to get up today, but there is nothing coffee can't fix.
             Anna: Anyway, I have some work for you!
             Anna: Your Job today is to get the written interview from Timmy at his desk and edit it for the next paper for tomorrow morning.
             Alex: Alright I get to it right away.
-            Alex: Ok next stop Timmy. I bet he is at his desk right now. Buried under paper as always.
+            Alex: Ok, next stop: Timmy! I bet he is at his desk right now. Buried under paper as always.
             <<set $talkedtoAnna = true>>
         <<else>>
             Anna: Hey Alex, how is it going?
@@ -511,10 +503,11 @@ position: -222,1318
         <<if $talkedtoAnna is false>>
             Alex: Hey Anna!
             Anna: Oh, good morning Alex! You are kinda late, did something happen this morning?
-            Alex: It was kind of weird. I thought today was Saturday and was ready to drive to my mother for her birthday, but thank god she reminded me that today is Friday.
+            Alex: It was kind of weird. I thought today was Saturday and was ready to drive to my mother for her birthday, ...
+            Alex: ... but thank god she reminded me that today is Friday.
             Anna: You got lucky. It would have been really embarrassing to show up at your mother's house for her birthday one day too early.
             Alex: Yeah, really lucky. So, how was your morning?
-            Anna: As you know, I'm not a morning person and had to watch the final season of "The Green Awakening" yesterday. 
+            Anna: As you know, I'm not a morning person and had to watch "The Green Awakening" yesterday. 
             This made it even more difficult to get up today, but there's nothing coffee can't fix.
             Alex: Wait, didn't you already watch that two days earlier?
             Anna: No, the last episode got published only yesterday.
@@ -542,16 +535,20 @@ position: -222,1318
         <<if $talkedtoAnna is false>>
             Alex: Hey Anna!
             Anna: Oh, good morning Alex! You are kinda late, did something happen this morning?
-            Alex: Anna, I think something's seriously wrong. It's the third consecutive Friday, 
+            Alex: Anna, I think something's seriously wrong. It's the third consecutive Friday,...
             and I'm completely baffled about what's happening to me.
             Anna: What are you talking about? Yesterday was Thursday, and today is Friday, just like always.
             Alex: No, it's not! Yesterday was Friday, the day before was Friday, and today is Friday again. 
             I know it sounds unbelievable, but you have to believe me.
-            Anna: Alex, I think you might be sick. You should go home and rest. Maybe you've overexerted yourself.
-            Alex thinks: She doesn't believe me, and honestly, I can't blame her. I sound like a lunatic who has lost touch with reality.
-            Alex: No, I'm fine. Maybe I was just stressed, and I got confused with the days. What's on my agenda for today?
+            Anna: Alex, I think you might be sick. 
+            Anna: You should go home and rest. 
+            Anna: Maybe you've overexerted yourself.
+            Alex thinks: She doesn't believe me, and honestly, I can't blame her. 
+            Alex thinks: I sound like a lunatic who has lost touch with reality.
+            Alex: No, I'm fine. Maybe I was just stressed, and I got confused with the days. 
+            Alex: What's on my agenda for today?
             Anna: Are you sure you're okay? That sounded really stressed.
-            Alex: Yeah, I have to do the interview, right? I heard it from Timmy.
+            Alex: Yeah, I have to do the interview, right? 
             Anna: Yes, your task for today is to retrieve the written interview from Timmy at his desk and edit it for tomorrow morning's paper.
             Anna: How did you know that?
             Alex: Just guessed. I'll get right on it.
@@ -573,8 +570,7 @@ position: -222,1318
             Alex: Hey Anna!
             Anna: Oh, good morning Alex! How was your morning so far?
             Alex: How was your morning, Anna?
-            Anna: As you know, I'm not a morning person and had to watch the final season of 
-            "The Green Awakening" yesterday. This made it even more difficult to get up today, but there is nothing coffee can't fix.
+            Anna: As you know, I'm not a morning person and had to watch the "The Green Awakening" yesterday. This made it even more difficult to get up today, but there is nothing coffee can't fix.
             Anna: Anyway, I have some work for you:
             Anna: Your job today is to get the written interview from Timmy at his desk and edit it for the next paper for tomorrow morning.
             Alex: Alright, I'll get to it right away.
@@ -595,9 +591,15 @@ title: CoffeeMachine(Object)
 position: -461,1315
 ---
 Alex: Uhh a nice coffee is exactly what I need!
--> use mug 
-    <<set $EcoPoints +=1>>
--> use plastic cup
+<<if $days is 1>>
+    -> use plastic cup
+<<elseif $days is 2>>
+    -> use plastic cup
+<<else>>
+    -> use mug 
+    <<set $EcoPoints +=4>>
+    -> use plastic cup
+<<endif>>
 
 Alex: Uff that smells good, brings me back to life!
 
@@ -650,7 +652,8 @@ position: 5,1316
             Timmy: Alex! I have this interview written for you, it has to be here somewhere ...
             Alex takes the paper he recognizes 
             Alex: Is that it?
-            Timmy: Ahhh yess, you are very smart today! Don't forget to bring it to Anna after you are finished.
+            Timmy: Ahhh yess, you are very smart today! 
+            Timmy: Don't forget to bring it to Anna after you are finished.
             Alex: Thanks for the paper and have a nice day!
             <<set $talkedtoTimmy = true>>
         <<elseif $talkedtoTimmy is true>>
@@ -669,19 +672,23 @@ position: 5,1316
             Timmy: Yess! There you go, Alex. Don't forget to bring it to Anna after you are finished.
             Alex: Thank you, Timmy. You really don't want to use a PC?
             Timmy: No, thank you I am good.
-
             -> try to convince Timmy 
                 Alex considers how to approach convincing Timmy to use a PC.
                 Alex: Hey, Timmy, can I talk to you for a moment?
                 Timmy: Sure, what's up?
-                Alex: I've been thinking, you know, about our work and all these piles of paper. What if we considered using a computer instead of printing everything?
+                Alex: I've been thinking, you know, about our work and all these piles of paper. 
+                Alex: What if we considered using a computer instead of printing everything?
                 Timmy: Oh, I don't know, Alex. I like the old-school feel of paper. It's comforting.
-                Alex: I get that, but think about the convenience and efficiency of digital work. No more searching through piles, and we could easily make edits without wasting paper.
+                Alex: I get that, but think about the convenience and efficiency of digital work.
+                Alex: No more searching through piles, and we could easily make edits without wasting paper.
                 Timmy: Yeah, but I'm used to this. It feels real.
-                Alex: I hear you, but consider the environmental impact. We're cutting down a lot of trees for all this printing. Going digital is a greener option, you know?
+                Alex: I hear you, but consider the environmental impact. We're cutting down a lot of trees for all this printing. 
+                Alex: Going digital is a greener option, you know?
                 Timmy: I never really thought about it that way.
-                Alex: Plus, it's not as complicated as it sounds. I can help you set up a laptop, and we can give it a trial period. If you don't like it, we can always go back to the old way.
-                Timmy: Hmm, you make some good points. Okay, let's give it a shot. But if I can't get used to it, we're reverting to paper.
+                Alex: Plus, it's not as complicated as it sounds. I can help you set up a laptop, and we can give it a trial period. 
+                Alex: If you don't like it, we can always go back to the old way.
+                Timmy: Hmm, you make some good points. Okay, let's give it a shot. 
+                Timmy: But if I can't get used to it, we're reverting to paper.
                 Alex: Fair enough, Timmy. Thanks for being open to it. This might make our work a lot smoother.
                 <<set $EcoPoints +=1>>
             -> leave
@@ -712,12 +719,6 @@ position: -226,1469
             Anna: Thank you Alex, you could have sent it per email as well, but thanks.
             Alex: I will remember for the next time, wish you a nice evening bye.
             Anna: You too, bye Alex!
-        -> send email
-            <<set $EcoPoints +=1>>
-            Alex: I have sent you the interview per email, hope thats ok.
-            Anna: Yeah really good, printing is outdated this times.
-            Alex: Wish you a nice evening, bye.
-            Anna: You too, bye Alex.    
     <<elseif $talkedtoAnna is false>>
         Alex: I should ask Anna what I have to do today.
     <<elseif $finishedwork is true>>
@@ -725,6 +726,31 @@ position: -226,1469
     <<else>>
         Alex: I should get the interview from Timmy.
     <<endif>>
+<<elseif $days is 2>>
+    <<if $talkedtoAnna and $talkedtoTimmy is true>>
+            <<set $finishedwork = true>>
+            Alex: Ok I now that I have the paper I have to type it off and then make the layout for the newspaper tomorrow.
+            Alex: It is the paper from yesterday...
+            After some time ...
+            Alex: Ok finished, should I print it or just send it per email to Anna?
+            -> print
+                Alex: Anna here the interview for tomorrow.
+                Anna: Thank you Alex, you could have sent it per email as well, but thanks.
+                Alex: I will remember for the next time, wish you a nice evening bye.
+                Anna: You too, bye Alex!
+            -> send email
+                <<set $EcoPoints +=1>>
+                Alex: I have sent you the interview per email, hope thats ok.
+                Anna: Yeah really good, printing is outdated this times.
+                Alex: Wish you a nice evening, bye.
+                Anna: You too, bye Alex.    
+        <<elseif $talkedtoAnna is false>>
+            Alex: I should ask Anna what I have to do today.
+        <<elseif $finishedwork is true>>
+            Alex: I'm already finished with my work.
+        <<else>>
+            Alex: I should get the interview from Timmy.
+        <<endif>>
 <<else>>
     <<if $talkedtoAnna and $talkedtoTimmy is true>>
         <<set $finishedwork = true>>
@@ -738,7 +764,7 @@ position: -226,1469
             Alex: I will remember for the next time, wish you a nice evening bye.
             Anna: You too, bye Alex!
         -> send email
-            <<set $EcoPoints +=1>>
+            <<set $EcoPoints +=4>>
             Alex: I have sent you the interview per email, hope thats ok.
             Anna: Yeah really good, printing is outdated this times.
             Alex: Wish you a nice evening, bye.
@@ -800,38 +826,29 @@ position: -246,2050
         <<if $talkedtoJeff is false>>
             <<set $talkedtoJeff = true>>
             Alex: Hi Jeff, How is it going tonight?
-            Jeff: You know, the usual stuff, had to kick some people out. Had to much to drink. But nevermind that, what's it gonna be today?
-            -> homebrewed beer
-                <<set $EcoPoints += 1>>
-                Alex: The homebrewed one for me, support your locals!
-                Jeff: Right you are, it gets brewed right in the back.
-                
+            Jeff: You know, the usual stuff, had to kick some people out. Had to much to drink. 
+            Jeff: But nevermind that, what's it gonna be today?
             -> imported from germany
                 Alex: I will take the imported one from germany.
                 Jeff: Right you are, I will get it for you.
                 
             As Jeff finished talking you see a fresh beer in front of you, Jeffs a master at his job.
-            Alex: Thanks! That will be all for me tonight. Tomorrow I have to visit my mother for her birthday and have to get up early.
+            Alex: Thanks! That will be all for me tonight. 
+            Alex: Tomorrow I have to visit my mother for her birthday and have to get up early.
         <<else>>
             Jeff: Have a good night Alex!
             Alex: You too Jeff!
         <<endif>>
     <<endif>>
     
-       <<if $days is 2>>
+    <<if $days is 2>>
         <<if $talkedtoJeff is false>>
             <<set $talkedtoJeff = true>>
             Alex: Hi Jeff, How is it going tonight?
             Jeff: You know, the usual stuff, had to kick some people out. Had to much to drink. But nevermind that, what's it gonna be today?
-            -> homebrewed beer
-                <<set $EcoPoints += 1>>
-                Alex: The homebrewed one for me, support your locals!
-                Jeff: Right you are, it gets brewed right in the back.
-                
             -> imported from germany
                 Alex: I will take the imported one from germany.
                 Jeff: Right you are, I will get it for you.
-                
             As Jeff finished talking, you see a fresh beer in front of you. Jeff's a master at his job.
             Alex: Thanks! Hey Jeff?
             Jeff: What’s up, Alex?
@@ -854,7 +871,7 @@ position: -246,2050
             Alex: Jeff I need your help!
             Jeff: Before we talk, what's it gonna be today?
             -> homebrewed beer
-                <<set $EcoPoints += 1>>
+                <<set $EcoPoints += 4>>
                 Alex: The homebrewed one for me, support your locals!
                 Jeff: Right you are, it gets brewed right in the back.
                 
@@ -864,26 +881,38 @@ position: -246,2050
                 
             Alex: Jeff, I can't shake this feeling that I'm losing my mind.
             Jeff: We all feel a bit crazy at times, Alex. What's going on?
-            Alex: Seriously, Jeff, something's off with me. It might sound bizarre, but it's been Friday for three days now.
+            Alex: Seriously, Jeff, something's off with me. 
+            Alex: It might sound bizarre, but it's been Friday for three days now.
             Jeff: That does sound strange. Anything specific happen?
-            Alex: It might sound unrelated, but I heard about environmental issues on the radio – plastic, bees, and the river. What does that have to do with my weird loop?
-            Jeff: You're chosen to set an example. You need to better yourself and make choices that help the environment. It's not about grand gestures, but every decision matters.
+            Alex: It might sound unrelated, but I heard about environmental issues on the radio:
+            Alex: plastic, bees, and the river. 
+            Alex: What does that have to do with my weird loop?
+            Jeff: You're chosen to set an example. You need to better yourself and make choices that help the environment. 
+            Jeff: It's not about grand gestures, but every decision matters.
             Alex: So, if I make the right choices, this loop ends?
-            Jeff: That's the idea.
+            Jeff: That's the idea!
             Alex: How do you know all this?
             Jeff: I'm a bartender. I hear a lot from different people.
-            Alex: Wait, so my time loop is some kind of environmental wake-up call?
-            Jeff: Exactly. It's a unique chance for you to make a positive impact.
+            Alex: Wait, so my time loop is some kind of environmental wake-up call?!
+            Jeff: Exactly.
+            Jeff: It's a unique chance for you to make a positive impact.
             Alex: Why me, though? Why not someone else?
-            Jeff: Who knows? Maybe you were just in the right place at the right time. What matters now is how you handle it.
-            Alex: This is overwhelming, Jeff. Saving the environment is a big responsibility.
-            Jeff: Start small. Make eco-friendly choices, reduce your carbon footprint, get involved in local initiatives.
+            Jeff: Who knows? Maybe you were just in the right place at the right time. 
+            Jeff: What matters now is how you handle it.
+            Alex: This is overwhelming, Jeff. 
+            Alex: Saving the environment is a big responsibility.
+            Jeff: Start small. Make eco-friendly choices, ...
+            Jeff: ...reduce your carbon footprint, get involved in local initiatives.
             Alex: How do I know if I'm making a difference?
-            Jeff: Sometimes, it's about the ripple effect. Your actions can inspire others. Imagine if everyone did a little bit – it could lead to significant change.
+            Jeff: Sometimes, it's about the ripple effect. 
+            Jeff: Your actions can inspire others. 
+            Jeff: Imagine if everyone did a little bit – it could lead to significant change.
             Alex: It's surreal, Jeff.
-            Jeff: Life's full of surprises. Embrace this one. Use it to make a positive impact for yourself and the world.
+            Jeff: Life's full of surprises. Embrace this one. 
+            Jeff: Use it to make a positive impact for yourself and the world.
             Alex: Thanks, Jeff. I never thought a bartender would be my guide out of a time loop.
-            Jeff: Secrets are shared at this bar. Now, go out there and make a difference. Break the loop with every conscious choice you make.
+            Jeff: Secrets are shared at this bar. Now, go out there and make a difference. 
+            Jeff: Break the loop with every conscious choice you make.
             Alex: I will, Jeff. I'll make every day count.
         <<else>>
             Jeff: Have a good night Alex!
@@ -896,7 +925,7 @@ position: -246,2050
             <<set $talkedtoJeff = true>>
             Jeff: what's it gonna be today?
             -> homebrewed beer
-                <<set $EcoPoints += 1>>
+                <<set $EcoPoints += 4>>
                 Alex: The homebrewed one for me, support your locals!
                 Jeff: Right you are, it gets brewed right in the back.
                 
@@ -909,7 +938,9 @@ position: -246,2050
             Jeff: The anticipation can be tough.
             Alex: I appreciate that you remember everything and stick by me through these challenging times.
             Jeff: Always have, always will.
-            Alex: Well, I should get going. Time seems to pass quicker when I'm asleep. Thanks for everything, Jeff!
+            Alex: Well, I should get going.
+            Alex: Time seems to pass quicker when I'm asleep. 
+            Alex: Thanks for everything, Jeff!
             Jeff: Until tomorrow, Alex.
 
         <<else>>
@@ -943,11 +974,9 @@ position: -242,2416
 
 
 
-
-
 <<declare $ending = false as bool>>
 //Ende
-<<if $EcoPoints is 7>>
+<<if $EcoPoints is 48>>
     <<set $ending = true>>
     <<set $days = 5>>
 <<else>>
