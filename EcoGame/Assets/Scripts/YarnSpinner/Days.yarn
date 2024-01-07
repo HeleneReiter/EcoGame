@@ -1,6 +1,5 @@
 ﻿title: BedroomStart
 tags: bedroom
-color: blue
 position: -255,-313
 ---
 <<set $BarExit = 0>>

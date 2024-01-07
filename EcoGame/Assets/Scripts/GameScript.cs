@@ -148,7 +148,7 @@ public class GameScript : MonoBehaviour
                 }
                 else if (hit.collider.gameObject.tag == "Sink")
                 {
-                    audioSource.PlayOneShot(DoorSound);
+                    audioSource.PlayOneShot(SinkSound);
                 }
 
                 else if (hit.collider.gameObject.tag == "Coffee")
