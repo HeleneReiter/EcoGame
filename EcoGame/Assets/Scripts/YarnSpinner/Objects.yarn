@@ -61,6 +61,7 @@ group: bar
 ---
 Alex: Take a look at those scores! 
 Alex: Perhaps they've invented their own scoring system – the farther off the mark, the more points you get.
+
 ===
 title: Alcohol(Object)
 position: -548,2193
@@ -69,6 +70,7 @@ group: bar
 Alex: No wonder the darts are exploring uncharted territory! 
 Alex: Looks like they've got a distillery behind the bar instead of the usual drinks. 
 Alex: I guess precision and pints don't mix well!
+
 ===
 title: Lightstrings(Object)
 position: 148,2194
@@ -79,14 +81,17 @@ Alex: Is it just me, or does Jeff's Bar has a special talent for turning a simpl
 Alex: And those fairy lights! It's like stumbling into a tipsy wonderland in here!
 ===
 
-title: Mirror
+title: Mirror(Object)
 position: -1,379
 ---
+
 <<if $days is 1>>
     Alex: Do I look ok? 
     Alex: Maybe a bit tired, but should be alright.
     Alex: Right Susanne?
     Silence
     Alex: Uch, nevermind.
+<<else>>
+    Alex: Oof, i should sleep more, even my eyebags have eyebags.
 <<endif>>
 ===

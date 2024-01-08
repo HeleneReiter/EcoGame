@@ -1,4 +1,4 @@
-﻿title: BedroomStart
+title: BedroomStart
 tags: bedroom
 position: -255,-313
 ---
@@ -143,7 +143,7 @@ Alex: Ok now a fresh start in the day!
         Alex: Ahh, that was nice. 
     -> short shower 
         Alex: Already over? 
-        <<set $EcoPoints +=4>>
+        <<set $EcoPoints +=2>>
 <<endif>>
 
 ===
@@ -154,6 +154,7 @@ position: -243,379
 Alex: Minty toothpaste, my favorite. Washing my teeth is the first stroke of freshness for the day.  
 
 ===
+
 
 title: BathroomExit
 position: -1,379
@@ -265,7 +266,7 @@ Alex: What should I eat today?
     -> Toast with marmelade 
         Alex: I love it!
         <<set $Kitchenready = true>>
-        <<set $EcoPoints +=4>>
+        <<set $EcoPoints +=2>>
 <<endif>>
 
 
@@ -311,6 +312,9 @@ position: -227,938
             -> car 
                 <<set $tookcar = true>>
                 Alex: I will take the car.
+            -> bus
+                <<set $tookbus = true>>
+                Alex: I will take the bus.
         <<else>>
             Alex: I should make some breakfast first.
         <<endif>>
@@ -422,13 +426,13 @@ position: -224,1181
 
     <<elseif $tookbus is true>>
         Alex: The bus had terrible delay!
-        <<set $EcoPoints +=2>>
+        <<set $EcoPoints +=1>>
     <<elseif $tookbike is true>>
         Alex: There were so many cars on the road, I had to drive on the sidewalk.
-        <<set $EcoPoints +=4>>
+        <<set $EcoPoints +=2>>
     <<elseif $tookwalk is true>>
         Alex: The cars didnt let me pass, I waited so long.
-        <<set $EcoPoints +=4>>
+        <<set $EcoPoints +=3>>
 
     <<endif>>
 
@@ -442,13 +446,13 @@ position: -224,1181
         Alex: Traffic was terrible, cars everywhere.
     <<elseif $tookbus is true>>
         Alex: The bus did't come, so I had to walk.
-        <<set $EcoPoints +=2>>
+        <<set $EcoPoints +=1>>
     <<elseif $tookbike is true>>
         Alex: I had really difficulties by navigating through the cars.
-        <<set $EcoPoints +=4>>
+        <<set $EcoPoints +=2>>
     <<elseif $tookwalk is true>>
         Alex: I walked, but the air was so bad, there were cars everywhere.
-        <<set $EcoPoints +=4>>
+        <<set $EcoPoints +=3>>
     <<endif>>
 
     Alex: Ok, looks like everyone is at work like a normal workday. 
@@ -463,12 +467,12 @@ title: Anna
 position: -222,1318
 ---
 
--> observe anna
+-> observe Anna
     Alex: That is Anna my boss, she is a nice person.
     Alex: She is always busy, but still finds time to talk to me.
     Alex: She seem to be tired today, maybe I should ask her if she is ok.
     Alex: I should ask her what I have to do today.
--> speak to anna 
+-> speak to Anna 
     <<if $days is 1>>
         <<if $talkedtoAnna is false>>
             Alex: Good Morning Anna!
@@ -509,7 +513,7 @@ position: -222,1318
             Anna: As you know, I'm not a morning person and had to watch "The Green Awakening" yesterday. 
             This made it even more difficult to get up today, but there's nothing coffee can't fix.
             Alex: Wait, didn't you already watch that two days earlier?
-            Anna: No, the last episode got published only yesterday.
+            Anna: No, it was published yesterday.
             Alex: Okay, weird. I thought you told me that yesterday already...
             Anna: Are you sure you're alright today?
             Alex: Yeah, I'm fine. What do I have to do today?
@@ -536,7 +540,8 @@ position: -222,1318
             Anna: Oh, good morning Alex! You are kinda late, did something happen this morning?
             Alex: Anna, I think something's seriously wrong. It's the third consecutive Friday,...
             and I'm completely baffled about what's happening to me.
-            Anna: What are you talking about? Yesterday was Thursday, and today is Friday, just like always.
+            Anna: What are you talking about? You need some coffee! 
+            Anna: Yesterday was Thursday, and today is Friday, just like always.
             Alex: No, it's not! Yesterday was Friday, the day before was Friday, and today is Friday again. 
             I know it sounds unbelievable, but you have to believe me.
             Anna: Alex, I think you might be sick. 
@@ -569,7 +574,8 @@ position: -222,1318
             Alex: Hey Anna!
             Anna: Oh, good morning Alex! How was your morning so far?
             Alex: How was your morning, Anna?
-            Anna: As you know, I'm not a morning person and had to watch the "The Green Awakening" yesterday. This made it even more difficult to get up today, but there is nothing coffee can't fix.
+            Anna: As you know, I'm not a morning person and had to watch the "The Green Awakening" yesterday.
+            Anna: This made it even more difficult to get up today, but there is nothing coffee can't fix.
             Anna: Anyway, I have some work for you:
             Anna: Your job today is to get the written interview from Timmy at his desk and edit it for the next paper for tomorrow morning.
             Alex: Alright, I'll get to it right away.
@@ -595,9 +601,9 @@ Alex: Uhh a nice coffee is exactly what I need!
 <<elseif $days is 2>>
     -> use plastic cup
 <<else>>
-    -> use mug 
-    <<set $EcoPoints +=4>>
     -> use plastic cup
+    -> use mug 
+        <<set $EcoPoints +=2>>
 <<endif>>
 
 Alex: Uff that smells good, brings me back to life!
@@ -651,7 +657,7 @@ position: 5,1316
             Timmy: Alex! I have this interview written for you, it has to be here somewhere ...
             Alex takes the paper he recognizes 
             Alex: Is that it?
-            Timmy: Ahhh yess, you are very smart today! 
+            Timmy: Ahhh yess, you are very smart! 
             Timmy: Don't forget to bring it to Anna after you are finished.
             Alex: Thanks for the paper and have a nice day!
             <<set $talkedtoTimmy = true>>
@@ -737,12 +743,6 @@ position: -226,1469
                 Anna: Thank you Alex, you could have sent it per email as well, but thanks.
                 Alex: I will remember for the next time, wish you a nice evening bye.
                 Anna: You too, bye Alex!
-            -> send email
-                <<set $EcoPoints +=1>>
-                Alex: I have sent you the interview per email, hope thats ok.
-                Anna: Yeah really good, printing is outdated this times.
-                Alex: Wish you a nice evening, bye.
-                Anna: You too, bye Alex.    
         <<elseif $talkedtoAnna is false>>
             Alex: I should ask Anna what I have to do today.
         <<elseif $finishedwork is true>>
@@ -763,7 +763,7 @@ position: -226,1469
             Alex: I will remember for the next time, wish you a nice evening bye.
             Anna: You too, bye Alex!
         -> send email
-            <<set $EcoPoints +=4>>
+            <<set $EcoPoints +=2>>
             Alex: I have sent you the interview per email, hope thats ok.
             Anna: Yeah really good, printing is outdated this times.
             Alex: Wish you a nice evening, bye.
@@ -864,19 +864,20 @@ position: -246,2050
         <<endif>>
     <<endif>>
 
-       <<if $days is 3>>
+    <<if $days is 3>>
         <<if $talkedtoJeff is false>>
             <<set $talkedtoJeff = true>>
             Alex: Jeff I need your help!
             Jeff: Before we talk, what's it gonna be today?
-            -> homebrewed beer
-                <<set $EcoPoints += 4>>
-                Alex: The homebrewed one for me, support your locals!
-                Jeff: Right you are, it gets brewed right in the back.
                 
             -> imported from germany
                 Alex: I will take the imported one from germany.
                 Jeff: Right you are, I will get it for you.
+
+            -> homebrewed beer
+                Alex: The homebrewed one for me, support your locals!
+                Jeff: Right you are, it gets brewed right in the back.
+                <<set $EcoPoints += 2>>
                 
             Alex: Jeff, I can't shake this feeling that I'm losing my mind.
             Jeff: We all feel a bit crazy at times, Alex. What's going on?
@@ -919,18 +920,18 @@ position: -246,2050
         <<endif>>
     <<endif>>
 
-       <<if $days is 4>>
+    <<if $days is 4>>
         <<if $talkedtoJeff is false>>
             <<set $talkedtoJeff = true>>
             Jeff: what's it gonna be today?
-            -> homebrewed beer
-                <<set $EcoPoints += 4>>
-                Alex: The homebrewed one for me, support your locals!
-                Jeff: Right you are, it gets brewed right in the back.
-                
-            -> imported from germany
+           -> imported from germany
                 Alex: I will take the imported one from germany.
                 Jeff: Right you are, I will get it for you.
+
+            -> homebrewed beer
+                Alex: The homebrewed one for me, support your locals!
+                Jeff: Right you are, it gets brewed right in the back.
+                <<set $EcoPoints += 2>>
                 
             Jeff: How was your day?
             Alex: It's hard to say for sure. I suppose I'll find out tomorrow if everything I did today was right...
@@ -975,7 +976,7 @@ position: -242,2416
 
 <<declare $ending = false as bool>>
 //Ende
-<<if $EcoPoints is 48>>
+<<if $EcoPoints >= 11>>
     <<set $ending = true>>
     <<set $days = 5>>
 <<else>>
