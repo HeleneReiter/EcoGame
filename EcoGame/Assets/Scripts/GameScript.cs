@@ -106,63 +106,55 @@ public class GameScript : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            print("Mouse button pressed");
+            print("Mausklick erkannt");
 
-            // Get the mouse position
+            // Mausposition abrufen
             mousePos = Input.mousePosition;
 
-            // pos von screen space zu world space umwandeln
+            // Position von Bildschirmraum in Weltraum umwandeln
             mousePosWorld = mainCamera.ScreenToWorldPoint(mousePos);
 
-            // umwandeln von Vector3 zu Vector2
+            // Umwandlung von Vector3 in Vector2
             mousePosWorld2D = new Vector2(mousePosWorld.x, mousePosWorld.y);
 
-            // Raycast 2D --> hit abspeichern
+            // Raycast 2D ausführen und Treffer speichern
             hit = Physics2D.Raycast(mousePosWorld2D, Vector2.zero);
 
-
-            if (!dialogueRunner.IsDialogueRunning)
+            // Überprüfen, ob der Raycast etwas getroffen hat
+            if (hit.collider != null)
             {
-                if (hit.collider != null)
+                print("Getroffen: " + hit.collider.gameObject.name + " " + hit.collider.gameObject.tag);
+
+                // Weiter mit den Überprüfungen nur, wenn kein Dialog läuft
+                if (!dialogueRunner.IsDialogueRunning)
                 {
-                    print("Hit: " + hit.collider.gameObject.name + hit.collider.gameObject.tag);
-                    if (hit.collider.gameObject.tag == "Door")
+                    string tag = hit.collider.gameObject.tag;
+
+                    if (tag == "Door")
                     {
-                        // Tür erkannt
-                        print("Door hit");
-
-                        // nächste Scene laden
-
+                        // Logik für Tür
                         SceneChange();
                         StartConversation();
-
-
-                        currentStartNode = nextStartNode;
-                        currentScene = nextScene;
-                        currentText = nextText;
-
                         audioSource.PlayOneShot(DoorSound);
-                
-
                     }
+                    else if (tag == "Sink")
+                    {
+                        // Logik für Waschbecken
+                        audioSource.PlayOneShot(SinkSound);
+                    }
+                    else if (tag == "Coffee")
+                    {
+                        // Logik für Kaffeemaschine
+                        audioSource.PlayOneShot(CoffeeSound);
+                    }
+                    else if (tag == "Desk")
+                    {
+                        // Logik für Schreibtisch
+                        audioSource.PlayOneShot(DeskSound);
+                    }
+                    // Weitere Bedingungen nach Bedarf hinzufügen
                 }
-                else if (hit.collider.gameObject.tag == "Sink")
-                {
-                    audioSource.PlayOneShot(SinkSound);
-                }
-
-                else if (hit.collider.gameObject.tag == "Coffee")
-                {
-                    audioSource.PlayOneShot(CoffeeSound);
-                }
-
-                else if (hit.collider.gameObject.tag == "Desk")
-                {
-                    audioSource.PlayOneShot(DeskSound);
-                }
-
             }
         }
     }
-
 }

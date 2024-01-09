@@ -34,6 +34,7 @@ position: -255,-313
 <<set $inBedroom = true>>
 <<set $usedCoffeeMachine = false>>
 
+
 <<if $days is 1>>
     Alex: Hmm? God no, how can it already be morning?
     -> get up
@@ -129,9 +130,8 @@ title: Shower(Object)
 position: -490,378
 ---
 Alex: Ok now a fresh start in the day!
-<<set $usedShower = false>>
 
-<<if $usedShower = false>>
+<<if $usedShower is false>>
     Alex: Ok now a fresh start in the day!
     <<set $usedShower = true>>
 
@@ -603,9 +603,9 @@ title: CoffeeMachine(Object)
 position: -461,1315
 ---
 Alex: Uhh a nice coffee is exactly what I need!
-<<if $usedCoffeeMachine = false>>
-    <<set $usedCoffeeMachine = true>>
 
+<<if $usedCoffeeMachine is false>>
+    <<set $usedCoffeeMachine = true>>
     <<if $days is 1>>
         -> use plastic cup
     <<elseif $days is 2>>
