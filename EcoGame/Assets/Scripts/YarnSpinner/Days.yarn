@@ -15,6 +15,8 @@ position: -255,-313
 <<declare $tookbus = false as bool>>
 <<declare $tookbike = false as bool>>
 
+<<declare $usedCoffeeMachine = false as bool>>
+
 
 <<declare $EcoPoints = 0 as number>>
 <<declare $thirdDayreached = false as bool>>
@@ -132,21 +134,22 @@ position: -490,378
 Alex: Ok now a fresh start in the day!
 
 <<if $usedShower is false>>
-    Alex: Ok now a fresh start in the day!
-    <<set $usedShower = true>>
-
     <<if $days is 1>>
         -> long hot shower
             Alex: Ahh, that was nice.
+            <<set $usedShower = true>>
     <<elseif $days is 2>>
         -> long hot shower
             Alex: Ahh, that was nice.
+            <<set $usedShower = true>>
     <<else>>
         -> long hot shower
             Alex: Ahh, that was nice.
+            <<set $usedShower = true>>
         -> short shower 
             Alex: Already over? 
             <<set $EcoPoints += 2>>
+            <<set $usedShower = true>>
     <<endif>>
 <<else>>
     Alex: I've already taken a shower today.
@@ -157,8 +160,14 @@ Alex: Ok now a fresh start in the day!
 title: Sink(Object)
 position: -243,379
 ---
-<<set $usedSink = true>>
-Alex: Minty toothpaste, my favorite. Brushing my teeth is the first stroke of freshness for the day.  
+
+<<if $usedSink is false>>
+    Alex: Minty toothpaste, my favorite. 
+    Alex: Brushing my teeth is the first stroke of freshness for the day.  
+    <<set $usedSink = true>>
+<<else>>
+    Alex: I've already brushed my theeth.
+<<endif>>
 
 ===
 

@@ -684,7 +684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   repeatable: 1
-  conversationStartNode: Mirror
+  conversationStartNode: Mirror(Object)
 --- !u!61 &42211892
 BoxCollider2D:
   m_ObjectHideFlags: 0
