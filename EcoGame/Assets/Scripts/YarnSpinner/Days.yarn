@@ -88,7 +88,7 @@ position: -255,-313
 
 <<if $days is 3>>
     <<set $awake = true>>
-    <<set $thirdDayreached = true>>
+    //<<set $thirdDayreached = true>>
     Alex: Already morning? Uff, ok I have to get up.
     Alex: Today has to be the Birthday of my mom, long drive ahead of me.
     -> Get up
@@ -148,7 +148,7 @@ Alex: Ok now a fresh start in the day!
         -> long hot shower
             Alex: Ahh, that was nice.
             <<set $usedShower = true>>
-    <<else>>
+    <<elseif $days > 2>>
         -> long hot shower
             Alex: Ahh, that was nice.
             <<set $usedShower = true>>
@@ -158,7 +158,7 @@ Alex: Ok now a fresh start in the day!
             <<set $usedShower = true>>
     <<endif>>
 <<else>>
-    Alex: I've already taken a shower today.
+    Alex: I've already showered today.
 <<endif>>
 
 
@@ -278,7 +278,7 @@ Alex: What should I eat today?
     -> Sandwich with meat
         Alex: Uh yummy!
         <<set $Kitchenready = true>>
-<<else>>
+<<elseif $days > 2>>
     -> Sandwich with meat
         Alex: Uh yummy!
         <<set $Kitchenready = true>>
@@ -304,7 +304,7 @@ position: -227,938
     <<if $days is 1>>
         <<if $Kitchenready is true>>
             <<set $KitchenExit = 1>>
-            Alex gets a message on his phone:
+            Alex gets a message on his phone
             Alex's mom: Hey sweetie, don't forget my party tomorrow at 1pm. We are happy to see you soon!
             Alex: I didn't forget, but thanks for the reminder mom.
 
@@ -323,7 +323,7 @@ position: -227,938
     <<elseif $days is 2>>
         <<if $Kitchenready is true>>
             <<set $KitchenExit = 1>>
-            Alex gets a message on his phone:
+            Alex gets a message on his phone
             Alex's mom: Hey sweetie, don't forget my party tomorrow at 1pm. We are happy to see you soon!
             Alex: Wait!? Isn't today the party? There are no messages from yesterday...
             Alex: And my phone says it's Friday too. Yesterday was Friday, wasn't it?
@@ -342,7 +342,7 @@ position: -227,938
      <<elseif $days is 3>>
         <<if $Kitchenready is true>>
             <<set $KitchenExit = 1>>
-            Alex gets a message on his phone:
+            Alex gets a message on his phone
             Alex: If that is my mom again, I am going crazy.
             Alex's mom: Hey sweetie, don't forget my party tomorrow at 1pm. We are happy to see you soon!
             Alex: ... what is happening?
@@ -368,7 +368,7 @@ position: -227,938
     <<elseif $days is 4>>
         <<if $Kitchenready is true>>
             <<set $KitchenExit = 1>>
-            Alex gets a message on his phone:
+            Alex gets a message on his phone
             Alex: One positive thing has this loop stuff, I get to hear from my mom everyday.
             Alex's mom: Hey sweetie, don't forget my party tomorrow at 1pm. We are happy to see you soon!
             Alex: Time for work as always.
@@ -390,7 +390,7 @@ position: -227,938
     <<elseif $ending is true>>
         <<if $Kitchenready is true>>
             <<set $KitchenExit = 1>>
-            Alex gets a message on his phone:
+            Alex gets a message on his phone
             Alex: If that is my mom again, I am going crazy.
             Alex's mom: Today is the day! We can't wait to see you!
             Alex: Me too! Finally it is time!
@@ -590,16 +590,16 @@ Alex: Uhh a nice coffee is exactly what I need!
     <<set $usedCoffeeMachine = true>>
     <<if $days is 1>>
         -> use plastic cup
-        Alex: Uff that smells good, brings me back to life!
+            Alex: Uff that smells good, brings me back to life!
     <<elseif $days is 2>>
         -> use plastic cup
-        Alex: Uff that smells good, brings me back to life!
+            Alex: Uff that smells good, brings me back to life!
     <<else>>
         -> use plastic cup
-        Alex: Uff that smells good, brings me back to life!
+            Alex: Uff that smells good, brings me back to life!
         -> use mug 
-        Alex: Uff that smells good, brings me back to life!
-        <<set $EcoPoints += 2>>
+            Alex: Uff that smells good, brings me back to life!
+            <<set $EcoPoints += 2>>
     <<endif>>
 <<else>>
     Alex: I've already had my coffee for today.
@@ -945,12 +945,17 @@ position: -242,2416
 
 <<declare $ending = false as bool>>
 //Ende
-<<if $EcoPoints >= 11>>
+<<if $EcoPoints >= 13>>
     <<set $ending = true>>
     <<set $days = 5>>
 
 <<else>>
 // set all variables back to false
+
+    <<set $OfficeExit = 0>>
+    <<set $KitchenExit = 0>>
+    <<set $BathroomExit = 0>>
+
 
     <<set $talkedtoAnna = false>>
     <<set $talkedtoTimmy = false>>
