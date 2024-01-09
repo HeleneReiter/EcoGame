@@ -10,6 +10,7 @@ position: -255,-313
 <<declare $stayedInBed = false as bool>>
 
 
+
 <<declare $tookcar = false as bool >>
 <<declare $tookwalk = false as bool>>
 <<declare $tookbus = false as bool>>

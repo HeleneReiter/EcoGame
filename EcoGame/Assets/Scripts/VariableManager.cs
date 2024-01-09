@@ -18,7 +18,6 @@ public class VariableManager : MonoBehaviour
     private bool endingReached;
 
     private float ecoPoints;
-    private bool lamp_hit = false;
     private bool gotUp = false; // player got up from bed
     private bool awake = false; // player is awake
 
@@ -48,7 +47,6 @@ public class VariableManager : MonoBehaviour
         // Bedroom
         lightBackground.SetActive(false);
         darkBackground.SetActive(true); 
-        lamp_hit = false; 
         gotUp = false;
         awake = false;
 
@@ -65,7 +63,6 @@ public class VariableManager : MonoBehaviour
         //Ending
         endingReached = false; 
 
-        
     }
 
     // Update is called once per frame
@@ -73,7 +70,6 @@ public class VariableManager : MonoBehaviour
     {
         variableStorage.TryGetValue("$thirdDayreached", out thirdDayreached);
         variableStorage.TryGetValue("$EcoPoints", out ecoPoints);
-        variableStorage.TryGetValue("$lamp_hit", out lamp_hit);
         variableStorage.TryGetValue("$gotUp", out gotUp);
         variableStorage.TryGetValue("$awake", out awake);
         variableStorage.TryGetValue("$endingReached", out endingReached);
@@ -133,6 +129,8 @@ public class VariableManager : MonoBehaviour
             SceneManager.LoadScene("End");
         }
     }
+
+   
 
    
 }
