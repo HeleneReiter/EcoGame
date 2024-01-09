@@ -10308,7 +10308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   repeatable: 1
-  conversationStartNode: Lightstrings(Object)
+  conversationStartNode: Score(Object)
 --- !u!61 &1798649188
 BoxCollider2D:
   m_ObjectHideFlags: 0
