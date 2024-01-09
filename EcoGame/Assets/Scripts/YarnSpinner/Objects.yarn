@@ -85,13 +85,10 @@ title: Mirror(Object)
 position: -1,379
 ---
 
-<<if $days is 1>>
-    Alex: Do I look ok? 
-    Alex: Maybe a bit tired, but should be alright.
-    Alex: Right Susanne?
-    Silence
-    Alex: Uch, nevermind.
-<<else>>
-    Alex: Oof, i should sleep more, even my eyebags have eyebags.
-<<endif>>
+Alex: Do I look ok? 
+Alex: Maybe a bit tired, but should be alright.
+Alex: Right Susanne?
+Silence
+Alex: Uch, nevermind.
+
 ===
