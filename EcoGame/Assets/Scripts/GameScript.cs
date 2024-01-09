@@ -76,13 +76,13 @@ public class GameScript : MonoBehaviour
         nextStartNode = startnodes[nextIndex];
     }
 
-     private void StartConversation()
+    private void StartConversation()
     {
         isCurrentConversation = true;
         dialogueRunner.StartDialogue(currentStartNode);
         dialogueRunner.onDialogueComplete.AddListener(EndConversation);
     }
-     private void EndConversation()
+    private void EndConversation()
     {
         if (isCurrentConversation)
         {
@@ -93,66 +93,67 @@ public class GameScript : MonoBehaviour
 
     void SceneChange()
     {
-       
+
         currentScene.SetActive(false);
         nextScene.SetActive(true);
 
         currentText.SetActive(false);
         nextText.SetActive(true);
-        
+
     }
 
     void Hitdetect()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            print("Mausklick erkannt");
+            print("Mouse button pressed");
 
-            // Mausposition abrufen
+            // Get the mouse position
             mousePos = Input.mousePosition;
 
-            // Position von Bildschirmraum in Weltraum umwandeln
+            // pos von screen space zu world space umwandeln
             mousePosWorld = mainCamera.ScreenToWorldPoint(mousePos);
 
-            // Umwandlung von Vector3 in Vector2
+            // umwandeln von Vector3 zu Vector2
             mousePosWorld2D = new Vector2(mousePosWorld.x, mousePosWorld.y);
 
-            // Raycast 2D ausführen und Treffer speichern
+            // Raycast 2D --> hit abspeichern
             hit = Physics2D.Raycast(mousePosWorld2D, Vector2.zero);
 
-            // Überprüfen, ob der Raycast etwas getroffen hat
-            if (hit.collider != null)
+
+            if (!dialogueRunner.IsDialogueRunning)
             {
-                print("Getroffen: " + hit.collider.gameObject.name + " " + hit.collider.gameObject.tag);
-
-                // Weiter mit den Überprüfungen nur, wenn kein Dialog läuft
-                if (!dialogueRunner.IsDialogueRunning)
+                if (hit.collider != null)
                 {
-                    string tag = hit.collider.gameObject.tag;
-
-                    if (tag == "Door")
+                    print("Hit: " + hit.collider.gameObject.name + hit.collider.gameObject.tag);
+                    if (hit.collider.gameObject.tag == "Door")
                     {
-                        // Logik für Tür
+                        // Tür erkannt
+                        print("Door hit");
+
+                        // nächste Scene laden
                         SceneChange();
                         StartConversation();
+
+                        currentStartNode = nextStartNode;
+                        currentScene = nextScene;
+                        currentText = nextText;
+
                         audioSource.PlayOneShot(DoorSound);
+
                     }
-                    else if (tag == "Sink")
+                    else if (hit.collider.gameObject.tag == "Sink")
                     {
-                        // Logik für Waschbecken
                         audioSource.PlayOneShot(SinkSound);
                     }
-                    else if (tag == "Coffee")
+                    else if (hit.collider.gameObject.tag == "Coffee")
                     {
-                        // Logik für Kaffeemaschine
                         audioSource.PlayOneShot(CoffeeSound);
                     }
-                    else if (tag == "Desk")
+                    else if (hit.collider.gameObject.tag == "Desk")
                     {
-                        // Logik für Schreibtisch
                         audioSource.PlayOneShot(DeskSound);
                     }
-                    // Weitere Bedingungen nach Bedarf hinzufügen
                 }
             }
         }
