@@ -32,9 +32,9 @@ public class GameScript : MonoBehaviour
 
     public AudioSource audioSource;
     public AudioClip DoorSound;
-    public AudioClip SinkSound;
-    public AudioClip CoffeeSound;
-    public AudioClip DeskSound;
+    // public AudioClip SinkSound;
+    // public AudioClip CoffeeSound;
+    // public AudioClip DeskSound;
 
 
 
@@ -142,18 +142,18 @@ public class GameScript : MonoBehaviour
                         audioSource.PlayOneShot(DoorSound);
 
                     }
-                    else if (hit.collider.gameObject.tag == "Sink")
-                    {
-                        audioSource.PlayOneShot(SinkSound);
-                    }
-                    else if (hit.collider.gameObject.tag == "Coffee")
-                    {
-                        audioSource.PlayOneShot(CoffeeSound);
-                    }
-                    else if (hit.collider.gameObject.tag == "Desk")
-                    {
-                        audioSource.PlayOneShot(DeskSound);
-                    }
+                    // else if (hit.collider.gameObject.tag == "Sink")
+                    // {
+                    //     audioSource.PlayOneShot(SinkSound);
+                    // }
+                    // else if (hit.collider.gameObject.tag == "Coffee")
+                    // {
+                    //     audioSource.PlayOneShot(CoffeeSound);
+                    // }
+                    // else if (hit.collider.gameObject.tag == "Desk")
+                    // {
+                    //     audioSource.PlayOneShot(DeskSound);
+                    // }
                 }
             }
         }
