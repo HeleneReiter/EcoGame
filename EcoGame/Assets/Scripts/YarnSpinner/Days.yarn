@@ -132,14 +132,13 @@ position: -242,216
 <<declare $usedSink = false as bool>>
 
 Alex: Uff, I have to shower and brush my teeth. 
-Alex: Then I in the kitchen for some breakfast.
+Alex: Then time for some breakfast.
 
 ===
 title: Shower(Object)
 position: -490,378
 ---
 Alex: Ok now a fresh start in the day!
-
 <<if $usedShower is false>>
     <<if $days is 1>>
         -> long hot shower
@@ -149,7 +148,23 @@ Alex: Ok now a fresh start in the day!
         -> long hot shower
             Alex: Ahh, that was nice.
             <<set $usedShower = true>>
-    <<elseif $days > 2>>
+    <<elseif $days is 3>>
+        -> long hot shower
+            Alex: Ahh, that was nice.
+            <<set $usedShower = true>>
+        -> short shower 
+            Alex: Already over? 
+            <<set $EcoPoints += 2>>
+            <<set $usedShower = true>>
+    <<elseif $days is 4>>
+        -> long hot shower
+            Alex: Ahh, that was nice.
+            <<set $usedShower = true>>
+        -> short shower 
+            Alex: Already over? 
+            <<set $EcoPoints += 2>>
+            <<set $usedShower = true>>
+    <<elseif $days is 5>>
         -> long hot shower
             Alex: Ahh, that was nice.
             <<set $usedShower = true>>
@@ -173,7 +188,7 @@ position: -243,379
     Alex: Brushing my teeth is the first stroke of freshness for the day.  
     <<set $usedSink = true>>
 <<else>>
-    Alex: I've already brushed my theeth.
+    Alex: I've already brushed my teeth. 
 <<endif>>
 
 ===
@@ -258,7 +273,6 @@ position: -231,654
     Alex: Saturday, he said Saturday!
     Alex: It is finally over!! My mom has her party today!
     Alex: Now quickly! No time for breakfast!
-    <<set $endingReached = true>>
 <<endif>>
 
 ===
@@ -395,7 +409,7 @@ position: -227,938
             Alex: If that is my mom again, I am going crazy.
             Alex's mom: Today is the day! We can't wait to see you!
             Alex: Me too! Finally it is time!
-            //hier ende einfügen
+            <<set $endingReached = true>>
         <<endif>>
     <<endif>>
 <<endif>>
@@ -413,7 +427,7 @@ position: -224,1181
 
 <<if $days is 1>>
     <<if $tookcar is true>> 
-        Alex: The Traffic was smooth like butter, I made it right on time.
+        Alex: The traffic was smooth like butter, I made it right on time.
     <<endif>>
     <<if $stayedInBed is true>>
         Alex: Got a nice Coffee to Go and sandwich. 
