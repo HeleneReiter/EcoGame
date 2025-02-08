@@ -1,11 +1,23 @@
 # EcoGame
  Game repository for Games with a purpose lecture
 
- Da der **Library Ordner zu groß** ist, diesen bitte nicht auf Github pushen!
- Davor immer aus dem EcoGame ordner raus tun und dann die gänderten Files hochladen.
+## Theme
+Genre: Visual Novel/Simulation
 
- --> trotzdem, wenn ihr das Spiel in Unity starten wollt: alle packages, die verwendetet werden installieren (glaub eh nur yarn bei euch)
- --> library ordner wird neu erstellt beim starten
+In “The Green Awakening” the player immerses themselves in the typical daily life of a 25-year-old working individual. Throughout the day, subtle decision points emerge, demanding the player's thoughtful choices. Despite the routine repeating itself each day, minor variations unfold. Success in the game hinges on consistently making correct choices, ultimately allowing the player to break free from the loop and reach the conclusion of the game.
 
-- pngs bzw animationen vom Character in **character ordner** speichern
-- pngs für Hintergrund und Objekte bitte in **environment** Ordner
+## Gameplay 
+### Game Mechanics: 
+Branching narrative with choices, point and click (look at objects, interact with objects), Dialogue Options
+ 
+### Gameplay Overview:
+As players progress through each day, they encounter nuanced decision points that mirror real-world environmental choices. The routine of every day resets, but subtle changes manifest, emphasizing the interconnectedness of actions and consequences. Success in the game depends on consistently making eco-conscious choices, guiding the player towards breaking free from the cycle and reaching a meaningful conclusion.
+
+
+## Setup
+ Library Folder not included due to size. Package Yarn used for story writing.
+
+
+
+
+
