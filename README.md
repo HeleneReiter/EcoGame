@@ -1,5 +1,6 @@
 # EcoGame
- Game repository for Games with a purpose lecture
+
+GameTrailer: https://youtu.be/qnoTximSj50
 
 ## Theme
 Genre: Visual Novel/Simulation
